@@ -23,6 +23,7 @@ brew install chrome-cli
 brew install cmake
 brew install composer
 brew install coreutils
+brew install dockutil
 brew install drush
 brew install duti
 brew install git
