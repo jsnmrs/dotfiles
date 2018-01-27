@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+# Git diff from HEAD to commit hash,
+# send to file on desktop, open in text editor
+function gitdiff() {
+  local timestamp=$(date +%Y%m%d%H%M%S);
+  git diff --name-status HEAD $1 > ~/Desktop/diff$timestamp.txt && open ~/Desktop/diff$timestamp.txt;
+}
+
+# `a` with no arguments opens the current directory in Atom Editor, otherwise
+# opens the given location
+function a() {
+  if [ $# -eq 0 ]; then
+    atom .;
+  else
+    atom "$@";
+  fi;
+}
+
+# `s` with no arguments opens the current directory in Sublime Text, otherwise
+# opens the given location
+function s() {
+  if [ $# -eq 0 ]; then
+    subl .;
+  else
+    subl "$@";
+  fi;
+}
+
+# `t` with no arguments opens the current directory in Git Tower, otherwise
+# opens the given location
+function t() {
+  if [ $# -eq 0 ]; then
+    gittower .;
+  else
+    gittower "$@";
+  fi;
+}
+
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o() {
+  if [ $# -eq 0 ]; then
+    open .;
+  else
+    open "$@";
+  fi;
+}
+
+# List merged remote branches
+function check-merged() {
+  git checkout master &&
+  git pull &&
+  for branch in `git branch -r --merged | grep -v HEAD`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
+  echo -e "\nto remove:\\ngit push origin --delete branch-name";
+}
+
+# List unmerged remote branches
+function check-unmerged() {
+  git checkout master &&
+  git pull &&
+  for branch in `git branch -r --no-merged | grep -v HEAD`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
+  echo -e "\nto remove:\\ngit push origin --delete branch-name";
+}

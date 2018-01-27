@@ -1,0 +1,34 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: ""
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 15
+    preferredLineLength: 120
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: ""
+  linter: {}
+  "linter-phpcs":
+    autoConfigSearch: false
+    autoExecutableSearch: false
+    codeStandardOrConfigFile: "Drupal,DrupalPractice"
+    executablePath: "/Users/jason/.composer/vendor/bin/phpcs"
+  "linter-sass-lint":
+    noConfigDisable: true
+  "linter-ui-default":
+    showPanel: false
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  welcome:
+    showOnStartup: false

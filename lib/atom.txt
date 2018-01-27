@@ -1,0 +1,13 @@
+atom-beautify
+busy-signal
+file-icons
+intentions
+less-than-slash
+linter
+linter-phpcs
+linter-phpmd
+linter-sass-lint
+linter-ui-default
+minimap
+monokai
+open-in-browser
