@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -x
 
 # ~/.macos — https://mths.be/macos
 
