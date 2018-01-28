@@ -23,10 +23,10 @@ sudo scutil --set LocalHostName "greenline"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "greenline"
 
 # Increase limit of open files.
-sudo tee -a /etc/sysctl.conf <<-EOF
-kern.maxfiles=20480
-kern.maxfilesperproc=18000
-EOF
+# sudo tee -a /etc/sysctl.conf <<-EOF
+# kern.maxfiles=20480
+# kern.maxfilesperproc=18000
+# EOF
 
 # Remove default content
 rm -rf ~/Downloads/About\ Downloads.lpdf
@@ -167,14 +167,14 @@ sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -int 1
 sudo defaults write /Library/Preferences/com.apple.alf loggingenabled -int 1
 
 # Do not automatically allow signed software to receive incoming connections
-sudo defaults write /Library/Preferences/com.apple.alf allowsignedenabled -bool false
+#sudo defaults write /Library/Preferences/com.apple.alf allowsignedenabled -bool false
 
 # Reload the firewall
 # (uncomment if above is not commented out)
-launchctl unload /System/Library/LaunchAgents/com.apple.alf.useragent.plist
-sudo launchctl unload /System/Library/LaunchDaemons/com.apple.alf.agent.plist
-sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist
-launchctl load /System/Library/LaunchAgents/com.apple.alf.useragent.plist
+#launchctl unload /System/Library/LaunchAgents/com.apple.alf.useragent.plist
+#sudo launchctl unload /System/Library/LaunchDaemons/com.apple.alf.agent.plist
+#sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist
+#launchctl load /System/Library/LaunchAgents/com.apple.alf.useragent.plist
 
 # Disable IR remote control
 sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
@@ -195,16 +195,16 @@ sudo systemsetup -setremoteappleevents off
 sudo systemsetup -setremotelogin off
 
 # Disable wake-on modem
-sudo systemsetup -setwakeonmodem off
-sudo pmset -a ring 0
+#sudo systemsetup -setwakeonmodem off
+#sudo pmset -a ring 0
 
 # Disable wake-on LAN
-systemsetup -setwakeonnetworkaccess off
-sudo pmset -a womp 0
+#systemsetup -setwakeonnetworkaccess off
+#sudo pmset -a womp 0
 
 # Disable file-sharing via AFP or SMB
-sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.AppleFileServer.plist
-sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.smbd.plist
+#sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.AppleFileServer.plist
+#sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.smbd.plist
 
 # Display login window as name and password
 sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool true
@@ -233,28 +233,28 @@ sudo defaults write /Library/Preferences/com.apple.virtualMemory UseEncryptedSwa
 sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool true
 
 # Disable diagnostic reports.
-sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.SubmitDiagInfo.plist
+#sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.SubmitDiagInfo.plist
 
 # Show location icon in menu bar when System Services request your location.
 sudo defaults write /Library/Preferences/com.apple.locationmenu.plist ShowSystemServices -bool true
 
 # Log firewall events for 90 days.
-sudo perl -p -i -e 's/rotate=seq compress file_max=5M all_max=50M/rotate=utc compress file_max=5M ttl=90/g' "/etc/asl.conf"
-sudo perl -p -i -e 's/appfirewall.log file_max=5M all_max=50M/appfirewall.log rotate=utc compress file_max=5M ttl=90/g' "/etc/asl.conf"
+#sudo perl -p -i -e 's/rotate=seq compress file_max=5M all_max=50M/rotate=utc compress file_max=5M ttl=90/g' "/etc/asl.conf"
+#sudo perl -p -i -e 's/appfirewall.log file_max=5M all_max=50M/appfirewall.log rotate=utc compress file_max=5M ttl=90/g' "/etc/asl.conf"
 
 # Log authentication events for 90 days.
-sudo perl -p -i -e 's/rotate=seq file_max=5M all_max=20M/rotate=utc file_max=5M ttl=90/g' "/etc/asl/com.apple.authd"
+#sudo perl -p -i -e 's/rotate=seq file_max=5M all_max=20M/rotate=utc file_max=5M ttl=90/g' "/etc/asl/com.apple.authd"
 
 # Log installation events for a year.
-sudo perl -p -i -e 's/format=bsd/format=bsd mode=0640 rotate=utc compress file_max=5M ttl=365/g' "/etc/asl/com.apple.install"
+#sudo perl -p -i -e 's/format=bsd/format=bsd mode=0640 rotate=utc compress file_max=5M ttl=365/g' "/etc/asl/com.apple.install"
 
 # Increase the retention time for system.log and secure.log (CIS Requirement 1.7.1I)
-sudo perl -p -i -e 's/\/var\/log\/wtmp.*$/\/var\/log\/wtmp   \t\t\t640\ \ 31\    *\t\@hh24\ \J/g' "/etc/newsyslog.conf"
+#sudo perl -p -i -e 's/\/var\/log\/wtmp.*$/\/var\/log\/wtmp   \t\t\t640\ \ 31\    *\t\@hh24\ \J/g' "/etc/newsyslog.conf"
 
 # CIS 3.3 audit_control flags setting.
-sudo perl -p -i -e 's|flags:lo,aa|flags:lo,aa,ad,fd,fm,-all,^-fa,^-fc,^-cl|g' /private/etc/security/audit_control
-sudo perl -p -i -e 's|filesz:2M|filesz:10M|g' /private/etc/security/audit_control
-sudo perl -p -i -e 's|expire-after:10M|expire-after: 30d |g' /private/etc/security/audit_control
+#sudo perl -p -i -e 's|flags:lo,aa|flags:lo,aa,ad,fd,fm,-all,^-fa,^-fc,^-cl|g' /private/etc/security/audit_control
+#sudo perl -p -i -e 's|filesz:2M|filesz:10M|g' /private/etc/security/audit_control
+#sudo perl -p -i -e 's|expire-after:10M|expire-after: 30d |g' /private/etc/security/audit_control
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -330,26 +330,26 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 ###############################################################################
 
 # Turns on lid wakeup
-sudo pmset -a lidwake 1
+#sudo pmset -a lidwake 1
 
 # Automatic restart on power loss
-sudo pmset -a autorestart 1
+#sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+#sudo systemsetup -setrestartfreeze on
 
 # Sets displaysleep to 15 minutes
-sudo pmset -a displaysleep 15
+#sudo pmset -a displaysleep 15
 
 # Do not allow machine to sleep on charger
-sudo pmset -c sleep 0
+#sudo pmset -c sleep 0
 
-# Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 5
+# Set machine sleep to 20 minutes on battery
+#sudo pmset -b sleep 20
 
 # Set standby delay to default 1 hour
 # See: https://www.ewal.net/2012/09/09/slow-wake-for-macbook-pro-retina/
-sudo pmset -a standbydelay 3600
+#sudo pmset -a standbydelay 3600
 
 # Never go into computer sleep mode
 #sudo systemsetup -setcomputersleep Off > /dev/null
@@ -358,7 +358,7 @@ sudo pmset -a standbydelay 3600
 # 0: Disable hibernation (speeds up entering sleep mode)
 # 3: Copy RAM to disk so the system state can still be restored in case of a
 #    power failure.
-sudo pmset -a hibernatemode 3
+#sudo pmset -a hibernatemode 3
 
 # Remove the sleep image file to save disk space
 #sudo rm /private/var/vm/sleepimage
@@ -875,7 +875,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 sudo defaults write com.apple.TimeMachine MaxSize -integer 1048576
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+#hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Activity Monitor                                                            #
