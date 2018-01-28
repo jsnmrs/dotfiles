@@ -64,6 +64,9 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+# Check for and update Node modules in package.json
+alias npmupdate="ncu -a && rm -rf node_modules && npm install"
+
 # Print list of globally-installed Node modules
 alias nodelist="npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}'"
 
