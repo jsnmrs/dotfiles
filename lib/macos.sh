@@ -34,7 +34,7 @@ rm -rf ~/Public/Drop\ Box
 rm -rf ~/Public/.com.apple.timemachine.supported
 
 # Set Use dark menu bar and Dock
-sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
