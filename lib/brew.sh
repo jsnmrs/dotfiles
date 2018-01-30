@@ -18,7 +18,6 @@ brew tap homebrew/bundle
 brew tap homebrew/php
 
 brew install ack
-brew install bash
 brew install chrome-cli
 brew install cmake
 brew install composer
