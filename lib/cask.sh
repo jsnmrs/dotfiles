@@ -30,6 +30,7 @@ brew cask install --appdir="/Applications" arq
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" blockblock
+brew cask install --appdir="/Applications" brave
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
 brew cask install --appdir="/Applications" colour-contrast-analyser
