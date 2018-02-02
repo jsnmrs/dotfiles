@@ -38,6 +38,7 @@ brew cask install --appdir="/Applications" couleurs
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" firefox-developer-edition
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" caskroom/versions/google-chrome-canary
 brew cask install --appdir="/Applications" grandperspective
