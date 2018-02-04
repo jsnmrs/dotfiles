@@ -44,9 +44,9 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Menu bar: hide the User icon
 defaults -currentHost write dontAutoLoad -array \
-        "/System/Library/CoreServices/Menu Extras/User.menu"
-        "/System/Library/CoreServices/Menu Extras/Eject.menu"
-        "/System/Library/CoreServices/Menu Extras/TextInput.menu"
+        "/System/Library/CoreServices/Menu Extras/User.menu" \
+        "/System/Library/CoreServices/Menu Extras/Eject.menu" \
+        "/System/Library/CoreServices/Menu Extras/TextInput.menu" \
         "/System/Library/CoreServices/Menu Extras/Displays.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
         "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
