@@ -43,7 +43,8 @@ sudo nvram SystemAudioVolume=" "
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Menu bar: hide the User icon
-defaults -currentHost write dontAutoLoad -array \
+# https://github.com/mathiasbynens/dotfiles/issues/731#issuecomment-274596895
+defaults -currentHost write com.apple.systemuiserver dontAutoLoad -array \
         "/System/Library/CoreServices/Menu Extras/User.menu" \
         "/System/Library/CoreServices/Menu Extras/Eject.menu" \
         "/System/Library/CoreServices/Menu Extras/TextInput.menu" \
