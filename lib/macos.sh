@@ -34,7 +34,7 @@ rm -rf ~/Public/Drop\ Box
 rm -rf ~/Public/.com.apple.timemachine.supported
 
 # Set Use dark menu bar and Dock
-defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -45,11 +45,13 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 # Menu bar: hide the User icon
 defaults -currentHost write dontAutoLoad -array \
         "/System/Library/CoreServices/Menu Extras/User.menu"
+        "/System/Library/CoreServices/Menu Extras/Eject.menu"
+        "/System/Library/CoreServices/Menu Extras/TextInput.menu"
+        "/System/Library/CoreServices/Menu Extras/Displays.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
         "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
         "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
         "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-        "/System/Library/CoreServices/Menu Extras/TextInput.menu" \
         "/System/Library/CoreServices/Menu Extras/Volume.menu" \
         "/System/Library/CoreServices/Menu Extras/VPN.menu" \
         "/System/Library/CoreServices/Menu Extras/Battery.menu" \
