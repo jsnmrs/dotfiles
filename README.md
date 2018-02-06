@@ -17,15 +17,19 @@ You can clone the repository wherever you want. I like to keep it in `~/Projects
 git clone https://github.com/jsnmrs/dotfiles.git && cd dotfiles
 ```
 
-## Installing applications and settings with `install.sh`
+## Configuring Atom with `atom.sh`
 
-The [install.sh script](https://github.com/jsnmrs/dotfiles/blob/master/install.sh) runs a number of smaller, topic-based scripts. Specifically:
+Running `source ./atom/atom.sh` will:
+
+1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
+2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
+3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
+
 
 1. [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) — installs (or updates) Homebrew, installs a list of Homebrew formulae
 2. [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/cask.sh) — installs a list of fonts, applications, and Mac App Store Applications
 3. [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/node.sh) — installs a list of Node modules globally
 4. [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
-5. [atom.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/atom.sh) — installs a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/lib/atom.txt), then moves [this config.cson](https://github.com/jsnmrs/dotfiles/blob/master/lib/config.cson) into `~/.atom/`
 6. [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
 
 Looking through the files and scripts in `lib/` before running install.sh is definitely recommended.
