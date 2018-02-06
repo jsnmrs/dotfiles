@@ -36,7 +36,7 @@ Looking through the files and scripts in `lib/` before running install.sh is def
 
 The [bootstrap.sh script](https://github.com/jsnmrs/dotfiles/blob/master/bootstrap.sh) will run a git pull and copy all of the dotfiles (.\*) from the root of this directory into to your home folder.
 
-Take a look through the dotfiles (.\*) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder can be overwritten.
+Take a look through the dotfiles (.\*) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder will be overwritten.
 
 **Run it:** `source bootstrap.sh`
 
