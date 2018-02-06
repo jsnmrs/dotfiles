@@ -9,7 +9,6 @@ function dotsync() {
         --exclude "lib/" \
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
-        --exclude "install.sh" \
         --exclude "LICENSE.md" \
         --exclude "README.md" \
         -avh --no-perms . ~;
