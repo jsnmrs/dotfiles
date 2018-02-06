@@ -24,7 +24,6 @@ brew install composer
 brew install coreutils
 brew install dockutil
 brew install drush
-brew install duti
 brew install git
 brew install grep
 brew install libyaml
