@@ -2,12 +2,20 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-**On a new machine or fresh macOS install:** before you can do much on the command line (like using Git), Xcode Command Line Tools need to be installed and the license agreed to.
+- [Step 0](#new-machine-or-fresh-macos-install)
+- [Getting started, using Git](#getting-started-using-git)
+- [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
+- [Establishing dotfiles with `bootstrap.sh`](#establishing-dotfiles-with-bootstrapsh)
+- [Housekeeping](#housekeeping)
+- [Inspiration](#inspired-by)
+
+## New machine or fresh macOS install
+
+Before you can do much on the command line (like using Git), Xcode Command Line Tools need to be installed and the license agreed to.
 
 1. Open Applications > Utilites > Terminal
 2. Install Xcode Command Line Tools `xcode-select --install`
 3. Click install, agree to license
-
 
 ## Getting started, using Git
 
@@ -19,11 +27,13 @@ git clone https://github.com/jsnmrs/dotfiles.git && cd dotfiles
 
 ## Configuring Atom with `atom.sh`
 
-Running `source ./atom/atom.sh` will:
+The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) script will:
 
 1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
 2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
 3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
+
+**Run it:** `source ./atom/atom.sh`
 
 
 1. [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) — installs (or updates) Homebrew, installs a list of Homebrew formulae
