@@ -2,7 +2,7 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/lib/screenshot.jpg)
+![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/config/screenshot.jpg)
 
 - [Step zero](#new-machine-or-fresh-macos-install)
 - [Getting started, using Git](#getting-started-using-git)
@@ -64,19 +64,19 @@ export APItoken=0000ffff0000ffff0000ffff0000ffff0000ffff
 
 ### Installing Homebrew and binaries with `brew.sh`
 
-The [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) script will install (or update) Homebrew, then install a list of Homebrew formulae.
+The [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/brew.sh) script will install (or update) Homebrew, then install a list of Homebrew formulae.
 
-**Run it:** `source ./lib/brew.sh`
+**Run it:** `source ./config/brew.sh`
 
 ### Installing applications with `cask.sh`
 
-The [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/cask.sh) script will:
+The [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/cask.sh) script will:
 
 1. Install (or update) Homebrew
 2. Install a short list of applications and fonts via cask
 3. Running script with `--full` or `-f` option will install a larger list of Applications
 
-**Run it:** `source ./lib/cask.sh [--full]`
+**Run it:** `source ./config/cask.sh [--full]`
 
 ### Configuring Atom with `atom.sh`
 
@@ -89,11 +89,11 @@ The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) scr
 **Run it:** `source ./atom/atom.sh`
 
 
-### [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/node.sh) — installs a list of Node modules globally
+### [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/node.sh) — installs a list of Node modules globally
 
-### [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
+### [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
 
-### [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
+### [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
 
 ## Housekeeping
 

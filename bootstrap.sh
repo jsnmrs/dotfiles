@@ -7,7 +7,7 @@ git pull;
 function dotsync() {
   rsync --exclude ".git/" \
         --exclude "atom/" \
-        --exclude "lib/" \
+        --exclude "config/" \
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
         --exclude "LICENSE.md" \
