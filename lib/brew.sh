@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Homebrew
+# Install or update Homebrew
 if ! brew --version >/dev/null 2>&1
   then
   echo -e "\\n⬇️  Installing Homebrew"
@@ -12,7 +12,7 @@ else
   brew update
 fi
 
-echo -e "\n⬇️  Installing Homebrew taps and formulae"
+echo -e "\\n⬇️  Installing Homebrew taps and formulae"
 
 brew tap homebrew/bundle
 brew tap homebrew/php
@@ -25,7 +25,6 @@ brew install coreutils
 brew install dockutil
 brew install drush
 brew install git
-brew install grep
 brew install libyaml
 brew install mas
 brew install mysql

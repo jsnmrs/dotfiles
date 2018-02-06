@@ -6,8 +6,9 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
 - [Step 0](#new-machine-or-fresh-macos-install)
 - [Getting started, using Git](#getting-started-using-git)
-- [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
 - [Establishing dotfiles with `bootstrap.sh`](#establishing-dotfiles-with-bootstrapsh)
+- [Installing Homebrew and binaries with `brew.sh`](#installing-homebrew-and-binaries-with-brewsh)
+- [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
 - [Housekeeping](#housekeeping)
 - [Inspiration](#heavily-inspired-by)
 
@@ -26,27 +27,6 @@ You can clone the repository wherever you want. I like to keep it in `~/Projects
 ```bash
 git clone https://github.com/jsnmrs/dotfiles.git && cd dotfiles
 ```
-
-## Configuring Atom with `atom.sh`
-
-The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) script will:
-
-1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
-2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
-3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
-
-**Run it:** `source ./atom/atom.sh`
-
-
-1. [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) — installs (or updates) Homebrew, installs a list of Homebrew formulae
-2. [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/cask.sh) — installs a list of fonts, applications, and Mac App Store Applications
-3. [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/node.sh) — installs a list of Node modules globally
-4. [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
-6. [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
-
-Looking through the files and scripts in `lib/` before running install.sh is definitely recommended.
-
-**Run it:** `source install.sh`
 
 ## Establishing dotfiles with `bootstrap.sh`
 
@@ -76,6 +56,33 @@ alias businesspapers="cd ~/Projects/my/important/business/papers"
 # Access tokens
 export APItoken=0000ffff0000ffff0000ffff0000ffff0000ffff
 ```
+
+## Installing Homebrew and binaries with `brew.sh`
+
+The [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) will install (or update) Homebrew, then install a list of Homebrew formulae.
+
+**Run it:** `source ./lib/brew.sh`
+
+## Configuring Atom with `atom.sh`
+
+The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) script will:
+
+1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
+2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
+3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
+
+**Run it:** `source ./atom/atom.sh`
+
+
+1. [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/brew.sh) — installs (or updates) Homebrew, installs a list of Homebrew formulae
+2. [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/cask.sh) — installs a list of fonts, applications, and Mac App Store Applications
+3. [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/node.sh) — installs a list of Node modules globally
+4. [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
+6. [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/lib/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
+
+Looking through the files and scripts in `lib/` before running install.sh is definitely recommended.
+
+**Run it:** `source install.sh`
 
 ## Housekeeping
 
