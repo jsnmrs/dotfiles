@@ -4,7 +4,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
 ![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/lib/screenshot.jpg)
 
-- [Step 0](#new-machine-or-fresh-macos-install)
+- [Step zero](#new-machine-or-fresh-macos-install)
 - [Getting started, using Git](#getting-started-using-git)
 - [Establishing dotfiles with `bootstrap.sh`](#establishing-dotfiles-with-bootstrapsh)
     - [Add private commands and settings to `.extra`](#add-private-commands-and-settings-to-extra)
@@ -15,9 +15,9 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 - [Housekeeping](#housekeeping)
 - [Inspiration](#heavily-inspired-by)
 
-## New machine or fresh macOS install
+## Step zero
 
-Before you can do much on the command line (like using Git), Xcode Command Line Tools need to be installed and the license agreed to.
+**On a new machine or fresh macOS install:** before you can do much on the command line (like using Git), Xcode Command Line Tools need to be installed and the license agreed to.
 
 1. Open Applications > Utilites > Terminal
 2. Install Xcode Command Line Tools `xcode-select --install`
