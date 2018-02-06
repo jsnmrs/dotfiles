@@ -2,6 +2,8 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
+![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/lib/screenshot.jpg)
+
 - [Step 0](#new-machine-or-fresh-macos-install)
 - [Getting started, using Git](#getting-started-using-git)
 - [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
