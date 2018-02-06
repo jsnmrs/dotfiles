@@ -6,6 +6,7 @@ git pull;
 
 function dotsync() {
   rsync --exclude ".git/" \
+        --exclude "atom/" \
         --exclude "lib/" \
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
