@@ -7,7 +7,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 - [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
 - [Establishing dotfiles with `bootstrap.sh`](#establishing-dotfiles-with-bootstrapsh)
 - [Housekeeping](#housekeeping)
-- [Inspiration](#inspired-by)
+- [Inspiration](#heavily-inspired-by)
 
 ## New machine or fresh macOS install
 
