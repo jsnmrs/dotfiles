@@ -14,6 +14,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
     - [Installing global Node modules with `node.sh`](#installing-global-node-modules-with-nodesh)
     - [Installing RVM and Ruby gems `ruby.sh`](#installing-rvm-and-ruby-gems-rubysh)
     - [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
+    - [Setting macOS defaults with `macos.sh`](#setting-macos-defaults-with-macossh)
 - [Housekeeping](#housekeeping)
 - [Inspiration](#heavily-inspired-by)
 
@@ -106,7 +107,11 @@ The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.sh) s
 
 **Run it:** `source ./config/atom.sh`
 
-### [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
+### Setting macOS defaults with `macos.sh`
+
+The [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.13. Reviewing and comment out uncertain commands before running.
+
+**Run it:** `source ./config/macos.sh`
 
 ## Housekeeping
 
