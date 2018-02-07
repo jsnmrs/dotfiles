@@ -109,7 +109,7 @@ The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.sh) s
 
 ### Setting macOS defaults with `macos.sh`
 
-The [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.13. Reviewing and comment out uncertain commands before running.
+The [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.13. Tip: review and comment out uncertain commands before running.
 
 **Run it:** `source ./config/macos.sh`
 
