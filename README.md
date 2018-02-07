@@ -4,13 +4,15 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
 ![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/config/screenshot.jpg)
 
-- [Step zero](#new-machine-or-fresh-macos-install)
+- [Step zero](#step-zero)
 - [Getting started, using Git](#getting-started-using-git)
 - [Establishing dotfiles with `bootstrap.sh`](#establishing-dotfiles-with-bootstrapsh)
     - [Add private commands and settings to `.extra`](#add-private-commands-and-settings-to-extra)
 - [Install scripts](#install-scripts)
     - [Installing Homebrew and binaries with `brew.sh`](#installing-homebrew-and-binaries-with-brewsh)
     - [Installing applications with `cask.sh`](#installing-applications-with-casksh)
+    - [Installing global Node modules with `node.sh`](#installing-global-node-modules-with-nodesh)
+    - [Installing RVM and Ruby gems `ruby.sh`](#installing-rvm-and-ruby-gems-rubysh)
     - [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
 - [Housekeeping](#housekeeping)
 - [Inspiration](#heavily-inspired-by)
@@ -78,6 +80,20 @@ The [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/cask.sh) scr
 
 **Run it:** `source ./config/cask.sh [--full]`
 
+### Installing global Node modules with `node.sh`
+
+The [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/node.sh) script will install (or update) a list of global Node modules.
+
+**Run it:** `source ./config/node.sh`
+
+### Installing [RVM](https://rvm.io) and Ruby gems `ruby.sh`
+
+The [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) script will:
+
+1. Install (or update) a list of global Node modules.
+
+**Run it:** `source ./config/ruby.sh`
+
 ### Configuring Atom with `atom.sh`
 
 The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) script will:
@@ -87,11 +103,6 @@ The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) scr
 3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
 
 **Run it:** `source ./atom/atom.sh`
-
-
-### [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/node.sh) — installs a list of Node modules globally
-
-### [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) — installs [RVM](https://rvm.io) and a list of Ruby gems
 
 ### [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
 
