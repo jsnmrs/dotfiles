@@ -98,13 +98,13 @@ The [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) scr
 
 ### Configuring Atom with `atom.sh`
 
-The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/atom.sh) script will:
+The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.sh) script will:
 
-1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
+1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.list)
 2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
-3. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) into `~/.atom/`.
+3. Copy the [atom.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.cson) to `~/.atom/config.cson`.
 
-**Run it:** `source ./atom/atom.sh`
+**Run it:** `source ./config/atom.sh`
 
 ### [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) — sets some sensible macOS defaults, forked and customized from [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh)
 
