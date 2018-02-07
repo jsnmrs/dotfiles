@@ -86,11 +86,13 @@ The [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/node.sh) scr
 
 **Run it:** `source ./config/node.sh`
 
-### Installing [RVM](https://rvm.io) and Ruby gems `ruby.sh`
+### Installing RVM and Ruby gems `ruby.sh`
 
 The [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) script will:
 
-1. Install (or update) a list of global Node modules.
+1. Install (or update) [RVM](https://rvm.io)
+2. Run RVM setup script
+3. Install list of Ruby gems
 
 **Run it:** `source ./config/ruby.sh`
 
