@@ -610,19 +610,22 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 defaults write com.apple.dock wvous-br-corner -int 4
 
 # Remove apps I don't use from the dock.
-for shortcut_label in "Launchpad" "Calendar" "Contacts" "Mail" \
-    "Safari" "Siri" "Maps" "FaceTime" "iTunes" "iBooks" "App Store" "Reminders" \
-    "Photos" "Messages"; do
-    dockutil --remove "${shortcut_label}" --allhomes --no-restart
-done
+# for shortcut_label in "Siri" "Launchpad" "Safari" "Mail" "Contacts" "Calendar" \
+#     "Notes" "Reminders" "Maps" "Photos" "Messages" "FaceTime" "Pages" "Numbers" \
+#     "Keynote" "iTunes" "iBooks" "App Store"; do
+#     dockutil --remove "${shortcut_label}" --allhomes --no-restart
+# done
+
+# Clear dock
+dockutil --remove all --no-restart
 
 # Add new app shortcuts to the dock.
 for app in "Google Chrome" "1Password 6" "Fantastical 2" "OmniFocus" "Notes" \
-    "Slack" "Microsoft Outlook" "HipChat" "Utilities/Terminal" "Atom" "Tower" \
+    "Slack" "Microsoft Outlook" "HipChat" "iTerm" "Atom" "Tower" \
     "Spotify" "Messages"; do
     dockutil --find "${app}"
     if [ $? -ne 0 ]; then
-        dockutil --add "/Applications/${app}.app" --replacing "${app}" --no-restart
+        dockutil --add "/Applications/${app}.app" --no-restart
     fi
 done
 
@@ -817,7 +820,7 @@ tell application "Terminal"
 	(* Open the custom theme so that it gets added to the list
 	   of available terminal themes (note: this will open two
 	   additional terminal windows). *)
-	do shell script "open './lib/" & themeName & ".terminal'"
+	do shell script "open './config/" & themeName & ".terminal'"
 
 	(* Wait a little bit to ensure that the custom theme is added. *)
 	delay 1
@@ -862,10 +865,10 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # Install the Solarized Dark theme for iTerm
-#open "./lib/Solarized Dark.itermcolors"
+open "./config/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
-#defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Time Machine                                                                #
@@ -997,7 +1000,7 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
 # Use `~/Documents/Torrents` to store incomplete downloads
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads"
 
 # Use `~/Downloads` to store completed downloads
 defaults write org.m0k.transmission DownloadLocationConstant -bool true
