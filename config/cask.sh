@@ -60,7 +60,6 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" caskroom/versions/google-chrome-canary
   brew cask install --appdir="/Applications" handbrake
   brew cask install --appdir="/Applications" hazel
-  brew cask install --appdir="/Applications" hipchat
   brew cask install --appdir="/Applications" imageoptim
   brew cask install --appdir="/Applications" kaleidoscope
   brew cask install --appdir="/Applications" kindle

@@ -621,7 +621,7 @@ dockutil --remove all --no-restart
 
 # Add new app shortcuts to the dock.
 for app in "Google Chrome" "1Password 6" "Fantastical 2" "OmniFocus" "Notes" \
-    "Slack" "Microsoft Outlook" "HipChat" "iTerm" "Atom" "Tower" \
+    "Slack" "Microsoft Outlook" "iTerm" "Atom" "Tower" \
     "Spotify" "Messages"; do
     dockutil --find "${app}"
     if [ $? -ne 0 ]; then
