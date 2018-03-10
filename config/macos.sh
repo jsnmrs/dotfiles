@@ -124,10 +124,10 @@ defaults write com.apple.helpviewer DevMode -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+#sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+#sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -228,7 +228,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -boo
 
 # Destroy FileVault key when going into standby mode, forcing a re-auth.
 # Source: https://web.archive.org/web/20160114141929/https://training.apple.com/pdf/WP_FileVault2.pdf
-sudo pmset destroyfvkeyonstandby 1
+#sudo pmset destroyfvkeyonstandby 1
 
 # Enable secure virtual memory
 sudo defaults write /Library/Preferences/com.apple.virtualMemory UseEncryptedSwap -bool true
