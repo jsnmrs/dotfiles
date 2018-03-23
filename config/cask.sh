@@ -30,6 +30,7 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" grandperspective
 brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" omnidisksweeper
 brew cask install --appdir="/Applications" the-unarchiver
 
 # Extended list of applications to install
