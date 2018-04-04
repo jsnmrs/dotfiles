@@ -31,13 +31,11 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" grandperspective
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" omnidisksweeper
-brew cask install --appdir="/Applications" shiftit
 brew cask install --appdir="/Applications" the-unarchiver
 
 # Extended list of applications to install
 if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   mas install 937984704 # Amphetamine
-  mas install 413857545 # Divvy
   mas install 975937182 # Fantastical 2
   mas install 439697913 # Icon Slate
   mas install 408981434 # iMovie
@@ -70,6 +68,7 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" licecap
   brew cask install --appdir="/Applications" little-snitch
   brew cask install --appdir="/Applications" microsoft-office
+  brew cask install --appdir="/Applications" moom
   brew cask install --appdir="/Applications" namechanger
   brew cask install --appdir="/Applications" scrutiny
   brew cask install --appdir="/Applications" sequel-pro
