@@ -25,6 +25,7 @@ brew install coreutils
 brew install dockutil
 brew install drush
 brew install git
+brew install git-lfs
 brew install libyaml
 brew install mas
 brew install mysql
