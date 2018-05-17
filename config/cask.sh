@@ -51,16 +51,12 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" alfred
   brew cask install --appdir="/Applications" arq
   brew cask install --appdir="/Applications" bartender
-  brew cask install --appdir="/Applications" blockblock
   brew cask install --appdir="/Applications" calibre
   brew cask install --appdir="/Applications" cleanmymac
   brew cask install --appdir="/Applications" colour-contrast-analyser
   brew cask install --appdir="/Applications" couleurs
   brew cask install --appdir="/Applications" dropbox
-  brew cask install --appdir="/Applications" firefox-developer-edition
-  brew cask install --appdir="/Applications" caskroom/versions/google-chrome-canary
   brew cask install --appdir="/Applications" handbrake
-  brew cask install --appdir="/Applications" hazel
   brew cask install --appdir="/Applications" imageoptim
   brew cask install --appdir="/Applications" kaleidoscope
   brew cask install --appdir="/Applications" kindle
