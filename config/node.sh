@@ -9,5 +9,6 @@ else
   npm install -g grunt-cli
   npm install -g gulp-cli
   npm install -g npm-check-updates
-  npm install -g vue-cli
+  npm install -g @vue/cli
+  npm install -g @vue/cli-init
 fi
