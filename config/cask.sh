@@ -25,6 +25,7 @@ brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 
 brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" daisydisk
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
