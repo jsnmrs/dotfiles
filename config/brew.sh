@@ -12,10 +12,7 @@ else
   brew update
 fi
 
-echo -e "\\n⬇️  Installing Homebrew taps and formulae"
-
-brew tap homebrew/bundle
-brew tap homebrew/php
+echo -e "\\n⬇️  Installing Homebrew formulae"
 
 brew install ack
 brew install chrome-cli
@@ -23,7 +20,6 @@ brew install cmake
 brew install composer
 brew install coreutils
 brew install dockutil
-brew install drush
 brew install git
 brew install git-lfs
 brew install libyaml

@@ -25,14 +25,10 @@ brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 
 brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" daisydisk
 brew cask install --appdir="/Applications" encryptme
-brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" grandperspective
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" omnidisksweeper
-brew cask install --appdir="/Applications" the-unarchiver
 
 # Extended list of applications to install
 if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
@@ -56,7 +52,9 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" cleanmymac
   brew cask install --appdir="/Applications" colour-contrast-analyser
   brew cask install --appdir="/Applications" couleurs
+  brew cask install --appdir="/Applications" daisydisk
   brew cask install --appdir="/Applications" dropbox
+  brew cask install --appdir="/Applications" firefox
   brew cask install --appdir="/Applications" handbrake
   brew cask install --appdir="/Applications" imageoptim
   brew cask install --appdir="/Applications" kaleidoscope
@@ -77,6 +75,7 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" sublime-text
   brew cask install --appdir="/Applications" superduper
   brew cask install --appdir="/Applications" taskpaper
+  brew cask install --appdir="/Applications" the-unarchiver
   brew cask install --appdir="/Applications" tower
   brew cask install --appdir="/Applications" transmission
   brew cask install --appdir="/Applications" transmit

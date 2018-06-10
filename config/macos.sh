@@ -620,8 +620,8 @@ defaults write com.apple.dock wvous-br-corner -int 4
 dockutil --remove all --no-restart
 
 # Add new app shortcuts to the dock.
-for app in "Google Chrome" "1Password 6" "Fantastical 2" "OmniFocus" "Notes" \
-    "Slack" "Microsoft Outlook" "iTerm" "Atom" "Tower" \
+for app in "Google Chrome" "1Password 7" "Fantastical 2" "OmniFocus" "Notes" \
+    "Slack" "Box Notes" "Microsoft Outlook" "iTerm" "Atom" "Tower" \
     "Spotify" "Messages"; do
     dockutil --find "${app}"
     if [ $? -ne 0 ]; then
