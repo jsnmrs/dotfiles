@@ -11,4 +11,5 @@ else
   npm install -g npm-check-updates
   npm install -g @vue/cli
   npm install -g @vue/cli-init
+  npm install -g @vue/cli-service-global
 fi
