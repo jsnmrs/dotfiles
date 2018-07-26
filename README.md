@@ -1,4 +1,4 @@
-# Jason’s dotfiles
+# Jason’s dotfiles [![Build Status](https://travis-ci.org/jsnmrs/dotfiles.svg?branch=master)](https://travis-ci.org/jsnmrs/dotfiles)
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
