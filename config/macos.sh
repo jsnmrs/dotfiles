@@ -609,26 +609,6 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 # Bottom right screen corner → Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
 
-# Remove apps I don't use from the dock.
-# for shortcut_label in "Siri" "Launchpad" "Safari" "Mail" "Contacts" "Calendar" \
-#     "Notes" "Reminders" "Maps" "Photos" "Messages" "FaceTime" "Pages" "Numbers" \
-#     "Keynote" "iTunes" "iBooks" "App Store"; do
-#     dockutil --remove "${shortcut_label}" --allhomes --no-restart
-# done
-
-# Clear dock
-dockutil --remove all --no-restart
-
-# Add new app shortcuts to the dock.
-for app in "Google Chrome" "1Password 7" "Fantastical 2" "OmniFocus" "Notes" \
-    "Slack" "Box Notes" "Microsoft Outlook" "iTerm" "Atom" "Tower" \
-    "Spotify" "Messages"; do
-    dockutil --find "${app}"
-    if [ $? -ne 0 ]; then
-        dockutil --add "/Applications/${app}.app" --no-restart
-    fi
-done
-
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
