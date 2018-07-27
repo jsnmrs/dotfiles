@@ -77,7 +77,7 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" superduper
   brew cask install --appdir="/Applications" taskpaper
   brew cask install --appdir="/Applications" the-unarchiver
-  brew cask install --appdir="/Applications" tower
+  brew cask install --appdir="/Applications" tower2
   brew cask install --appdir="/Applications" transmission
   brew cask install --appdir="/Applications" transmit
   brew cask install --appdir="/Applications" virtualbox
