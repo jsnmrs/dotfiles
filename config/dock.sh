@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+# Check for dockutil
+if ! dockutil --version >/dev/null 2>&1
+  then
+  brew install dockutil
+else
+  echo -e "\\ndockutil is installed"
+fi
+
+# Flag for completely clearing existing dock
+if [ "$1" == "--clear" ] || [ "$1" == "-c" ]; then
+  echo -e "clearing existing dock icons"
+  dockutil --remove all --no-restart
+fi;
+
 # Add new app shortcuts to the dock.
 for app in "Google Chrome" \
            "1Password 7" \
@@ -15,36 +29,10 @@ for app in "Google Chrome" \
            "Messages"; do
     if ! dockutil --find "${app}"
     then
-        dockutil --add "/Applications/${app}.app"
+        dockutil --add "/Applications/${app}.app" --no-restart
     fi
 done
 
-# Reload Dock
 killall Dock
 
-echo "Done. Missing dock icons are usually fixed by a full restart."
-
-# Clear dock
-# dockutil --remove all --no-restart
-
-# Selectively remove apps I don't use from the dock.
-# for shortcut_label in "Siri" \
-#                       "Launchpad" \
-#                       "Safari" \
-#                       "Mail" \
-#                       "Contacts" \
-#                       "Calendar" \
-#                       "Notes" \
-#                       "Reminders" \
-#                       "Maps" \
-#                       "Photos" \
-#                       "Messages" \
-#                       "FaceTime" \
-#                       "Pages" \
-#                       "Numbers" \
-#                       "Keynote" \
-#                       "iTunes" \
-#                       "iBooks" \
-#                       "App Store"; do
-#     dockutil --remove "${shortcut_label}" --allhomes --no-restart
-# done
+echo -e "\\nDone. Missing dock icons are usually fixed by a full restart."
