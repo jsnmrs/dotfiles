@@ -24,6 +24,7 @@ brew cask install font-lato
 brew cask install font-open-sans
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
+brew cask install font-source-serif-pro
 
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" encryptme
@@ -66,7 +67,6 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" microsoft-office
   brew cask install --appdir="/Applications" moom
   brew cask install --appdir="/Applications" namechanger
-  brew cask install --appdir="/Applications" quicken
   brew cask install --appdir="/Applications" scrutiny
   brew cask install --appdir="/Applications" sequel-pro
   brew cask install --appdir="/Applications" sketch
