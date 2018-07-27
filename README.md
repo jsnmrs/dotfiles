@@ -15,6 +15,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
     - [Installing RVM and Ruby gems `ruby.sh`](#installing-rvm-and-ruby-gems-rubysh)
     - [Configuring Atom with `atom.sh`](#configuring-atom-with-atomsh)
     - [Setting macOS defaults with `macos.sh`](#setting-macos-defaults-with-macossh)
+    - [Configure macOS dock icons with `dock.sh`](#configure-macos-dock-icons-with-docksh)
 - [Housekeeping](#housekeeping)
 - [Inspiration](#heavily-inspired-by)
 
@@ -112,6 +113,12 @@ The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.sh) s
 The [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.13. Tip: review and comment out uncertain commands before running.
 
 **Run it:** `source ./config/macos.sh`
+
+### Configure macOS dock icons with `dock.sh`
+
+The [dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/dock.sh) script uses [dockutil](https://github.com/kcrawford/dockutil) to add specified application icons to the dock. Running script with `--clear` or `-c` option will completely clear the existing dock.
+
+**Run it:** `source ./config/dock.sh [--clear]`
 
 ## Housekeeping
 
