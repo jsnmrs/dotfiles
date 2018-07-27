@@ -17,6 +17,7 @@ echo -e "\\n⬇️  Installing Homebrew casks"
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap caskroom/versions
+brew tap buo/cask-upgrade
 
 brew cask install font-inconsolata
 brew cask install font-lato
