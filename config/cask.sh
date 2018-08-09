@@ -46,6 +46,7 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
 
   brew cask install --appdir="/Applications" 1password
   brew cask install --appdir="/Applications" adobe-creative-cloud
+  brew cask install --appdir="/Applications" aerial
   brew cask install --appdir="/Applications" alfred
   brew cask install --appdir="/Applications" arq
   brew cask install --appdir="/Applications" bartender
