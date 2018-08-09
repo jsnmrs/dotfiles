@@ -42,7 +42,6 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   mas install 867299399 # OmniFocus 2
   mas install 880001334 # Reeder
   mas install 904280696 # Things 3
-  mas install 557168941 # Tweetbot
   mas install 494803304 # WiFi Explorer
 
   brew cask install --appdir="/Applications" 1password
