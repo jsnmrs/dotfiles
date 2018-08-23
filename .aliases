@@ -15,7 +15,7 @@ alias jksrv="bundle exec jekyll serve --watch"
 alias phpsrv="php -S localhost:8000"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; sudo gem update --system; sudo gem update; gem cleanup; brew update; brew upgrade; mas upgrade; npm install npm -g; npm update -g; brew cleanup; brew prune; brew cask cleanup'
+alias update='sudo softwareupdate -i -a; sudo gem update --system; sudo gem update; gem cleanup; brew update; brew upgrade; mas upgrade; npm install npm -g; npm update -g; brew cleanup; brew prune'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
