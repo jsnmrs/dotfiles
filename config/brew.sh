@@ -26,6 +26,8 @@ brew install libyaml
 brew install mas
 brew install mysql
 brew install node
+brew install nvm
+mkdir "~/.nvm"
 brew install openssh
 brew install openssl@1.1
 brew install phantomjs

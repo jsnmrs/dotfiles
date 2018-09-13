@@ -23,6 +23,10 @@ export EDITOR='atom -w'
 # Set up RVM
 source $HOME/.rvm/scripts/rvm;
 
+# Set up NVM
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
