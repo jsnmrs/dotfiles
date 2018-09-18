@@ -82,4 +82,11 @@ if [ "$1" == "--full" ] || [ "$1" == "-f" ]; then
   brew cask install --appdir="/Applications" virtualbox
   brew cask install --appdir="/Applications" virtualbox-extension-pack
   brew cask install --appdir="/Applications" zoomus
+
+  # Install Box Notes
+  cd ~/Downloads || exit
+  curl -O https://e3.boxcdn.net/box-installers/boxnotes/mac/latest/Box%20Notes.zip
+  unzip -q Box%20Notes.zip
+  rm Box%20Notes.zip
+  mv "Box Notes.app" "/Applications/Box Notes.app"
 fi;
