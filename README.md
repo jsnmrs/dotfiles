@@ -77,10 +77,9 @@ The [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/brew.sh) scr
 The [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/cask.sh) script will:
 
 1. Install (or update) Homebrew
-2. Install a short list of applications and fonts via cask
-3. Running script with `--full` or `-f` option will install a larger list of Applications
+2. Install a list of applications and fonts via cask
 
-**Run it:** `source ./config/cask.sh [--full]`
+**Run it:** `source ./config/cask.sh`
 
 ### Installing global Node modules with `node.sh`
 
