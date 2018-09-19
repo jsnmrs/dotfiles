@@ -22,6 +22,7 @@ for app in "Google Chrome" \
            "Notes" \
            "Slack" \
            "Microsoft Outlook" \
+           "Box Notes" \
            "iTerm" \
            "Atom" \
            "Tower" \
