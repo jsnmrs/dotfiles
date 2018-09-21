@@ -28,6 +28,7 @@ brew cask install font-source-serif-pro
 
 mas install 937984704 # Amphetamine
 mas install 975937182 # Fantastical 2
+mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 715768417 # Microsoft Remote Desktop
