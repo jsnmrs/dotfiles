@@ -32,7 +32,7 @@ mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 715768417 # Microsoft Remote Desktop
-mas install 867299399 # OmniFocus 2
+mas install 1346203938 # OmniFocus 3
 mas install 880001334 # Reeder
 mas install 904280696 # Things 3
 mas install 494803304 # WiFi Explorer
