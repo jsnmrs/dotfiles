@@ -73,6 +73,7 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" taskpaper
 brew cask install --appdir="/Applications" the-unarchiver
+brew cask install --appdir="/Applications" timing
 brew cask install --appdir="/Applications" tower2
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" transmit4
