@@ -19,10 +19,10 @@ for app in "Google Chrome" \
            "1Password 7" \
            "Fantastical 2" \
            "OmniFocus" \
+           "TickTick" \
            "Notes" \
            "Slack" \
            "Microsoft Outlook" \
-           "Box Notes" \
            "iTerm" \
            "Atom" \
            "Tower" \
