@@ -7,7 +7,7 @@ less-than-slash
 linter
 linter-phpcs
 linter-phpmd
-linter-sass-lint
+linter-stylelint
 linter-ui-default
 minimap
 monokai

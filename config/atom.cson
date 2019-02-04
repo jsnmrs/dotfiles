@@ -24,8 +24,6 @@
     autoExecutableSearch: false
     codeStandardOrConfigFile: "Drupal,DrupalPractice"
     executablePath: "/Users/jason/.composer/vendor/bin/phpcs"
-  "linter-sass-lint":
-    noConfigDisable: true
   "linter-ui-default":
     showPanel: false
   "tree-view":
