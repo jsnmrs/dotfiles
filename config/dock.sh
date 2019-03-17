@@ -16,18 +16,13 @@ fi;
 
 # Add new app shortcuts to the dock.
 for app in "Google Chrome" \
-           "1Password 7" \
            "Fantastical 2" \
            "OmniFocus" \
            "TickTick" \
-           "Notes" \
-           "Slack" \
-           "Microsoft Outlook" \
            "iTerm" \
            "Atom" \
            "Tower" \
-           "Spotify" \
-           "Messages"; do
+           "Spotify"; do
     if ! dockutil --find "${app}"
     then
         dockutil --add "/Applications/${app}.app" --no-restart
