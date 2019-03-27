@@ -19,6 +19,7 @@ for app in "Google Chrome" \
            "Fantastical 2" \
            "OmniFocus" \
            "TickTick" \
+           "Notes" \
            "iTerm" \
            "Atom" \
            "Tower" \
