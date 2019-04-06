@@ -65,7 +65,7 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Strongly check for and update Node modules in package.json
-alias npmupdate="rm -rf node_modules && rm -f package-lock.json && ncu -a && npm install"
+alias npmupdate="rm -rf node_modules && rm -f package-lock.json && ncu -u && npm install"
 
 # Print list of globally-installed Node modules
 alias nodelist="npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}'"
