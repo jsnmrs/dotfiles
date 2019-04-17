@@ -56,6 +56,7 @@ brew cask install --appdir="/Applications" handbrake
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" kaleidoscope
+brew cask install --appdir="/Applications" kap
 brew cask install --appdir="/Applications" kindle
 brew cask install --appdir="/Applications" knockknock
 brew cask install --appdir="/Applications" licecap
