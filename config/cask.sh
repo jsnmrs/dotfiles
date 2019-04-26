@@ -32,8 +32,7 @@ mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
-mas install 880001334 # Reeder
-mas install 904280696 # Things 3
+mas install 1449412482 # Reeder 4
 mas install 494803304 # WiFi Explorer
 
 brew cask install --appdir="/Applications" 1password
