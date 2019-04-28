@@ -34,3 +34,4 @@ brew install phantomjs
 brew install shellcheck
 brew install trash
 brew install tree
+brew install yarn
