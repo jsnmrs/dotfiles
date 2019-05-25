@@ -14,7 +14,7 @@ fi
 
 echo -e "\\n⬇️  Installing Homebrew formulae"
 
-brew install ack
+brew install ack --HEAD
 brew install chrome-cli
 brew install cmake
 brew install composer
