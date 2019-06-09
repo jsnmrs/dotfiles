@@ -2,7 +2,7 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-![Mac OS X 10.13 High Sierra with Solarized Dark terminal](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/config/screenshot.jpg)
+![macOS 10.14 Mojave desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/assets/screenshot.jpg)
 
 - [Step zero](#step-zero)
 - [Getting started, using Git](#getting-started-using-git)
@@ -35,13 +35,13 @@ You can clone the repository wherever you want. I like to keep it in `~/Projects
 git clone https://github.com/jsnmrs/dotfiles.git && cd dotfiles
 ```
 
-## Establishing dotfiles with `bootstrap.sh`
+## Establishing dotfiles
 
-The [bootstrap.sh script](https://github.com/jsnmrs/dotfiles/blob/master/bootstrap.sh) will run a git pull and copy all of the dotfiles (.\*) from the root of this directory into to your home folder.
+The [home/install.sh script](https://github.com/jsnmrs/dotfiles/blob/master/home/install.sh) will run a copy all of the dotfiles (.\*) in `home/` into to your home folder.
 
-Take a look through the dotfiles (.\*) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder will be overwritten.
+Take a look through [the dotfiles (.\*)](https://github.com/jsnmrs/dotfiles/blob/master/home/) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder will be overwritten.
 
-**Run it:** `source bootstrap.sh`
+**Run it:** `source home/install.sh`
 
 ### Add private commands and settings to `.extra`
 
@@ -66,58 +66,59 @@ export APItoken=0000ffff0000ffff0000ffff0000ffff0000ffff
 
 ## Install scripts
 
-### Installing Homebrew and binaries with `brew.sh`
+### Installing Homebrew, binaries, and applications
 
-The [brew.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/brew.sh) script will install (or update) Homebrew, then install a list of Homebrew formulae.
-
-**Run it:** `source ./config/brew.sh`
-
-### Installing applications with `cask.sh`
-
-The [cask.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/cask.sh) script will:
+The [homebrew/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/homebrew/install.sh) script will:
 
 1. Install (or update) Homebrew
-2. Install a list of applications and fonts via cask
+2. Install a list of Homebrew formulae
+3. Install a list of fonts via Homebrew cask
+4. Install a list of Mac App Store applications via `mas`
+5. Install a list of applications via Homebrew Cask
 
-**Run it:** `source ./config/cask.sh`
+**Run it:** `source homebrew/install.sh`
 
-### Installing global Node modules with `node.sh`
+### Installing NVM and global Node modules
 
-The [node.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/node.sh) script will install (or update) a list of global Node modules.
+The [node/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/node/install.sh) script will:
 
-**Run it:** `source ./config/node.sh`
+1. Install (or update) [NVM](https://github.com/nvm-sh/nvm)
+2. Install (or update to) the latest stable version of Node.js
+3. Install list of global Node modules.
 
-### Installing RVM and Ruby gems `ruby.sh`
+**Run it:** `source node/install.sh`
 
-The [ruby.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/ruby.sh) script will:
+### Installing RVM and Ruby gems
+
+The [ruby/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/ruby/install.sh) script will:
 
 1. Install (or update) [RVM](https://rvm.io)
 2. Run RVM setup script
 3. Install list of Ruby gems
 
-**Run it:** `source ./config/ruby.sh`
+**Run it:** `source ruby/install.sh`
 
-### Configuring Atom with `atom.sh`
+### Configuring Atom
 
-The [`atom.sh`](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.sh) script will:
+The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/install.sh) script will:
 
-1. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.list)
-2. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
-3. Copy the [atom.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/config/atom.cson) to `~/.atom/config.cson`.
+1. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
+2. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) to `~/.atom/config.cson`.
+3. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
 
-**Run it:** `source ./config/atom.sh`
+**Run it:** `source atom/install.sh`
 
-### Setting macOS defaults with `macos.sh`
+### Setting macOS defaults
 
-The [macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.13. Tip: review and comment out uncertain commands before running.
+The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.14. Tip: review and comment out uncertain commands before running.
 
-**Run it:** `source ./config/macos.sh`
+**Run it:** `source macos/configure-macos.sh`
 
-### Configure macOS dock icons with `dock.sh`
+### Configure macOS dock icons
 
-The [dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/dock.sh) script uses [dockutil](https://github.com/kcrawford/dockutil) to add specified application icons to the dock. Running script with `--clear` or `-c` option will completely clear the existing dock.
+The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-dock.sh) script will clear and add specific application icons to the dock.
 
-**Run it:** `source ./config/dock.sh [--clear]`
+**Run it:** `source macos/configure-dock.sh`
 
 ## Housekeeping
 
@@ -133,3 +134,4 @@ The [dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/config/dock.sh) scr
 - [Mathias Bynens’ dotfiles repo](https://mths.be/dotfiles)
 - [Kevin Deldycke’s dotfiles repo](https://github.com/kdeldycke/dotfiles)
 - [Paul Irish’s dotfiles repo](https://github.com/paulirish/dotfiles/)
+- [Paul Miller’s dotfiles repo](https://github.com/paulmillr/dotfiles)

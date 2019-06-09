@@ -1,3 +1,7 @@
+# Defines environment variables.
+extra="$HOME/.extra"
+[[ -f "$extra" ]] && source $extra
+
 # Add to PATH
 export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
@@ -26,20 +30,3 @@ source $HOME/.rvm/scripts/rvm;
 # Set up NVM
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{bash_prompt,aliases,functions,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
-
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
-
-# Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
-
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell;

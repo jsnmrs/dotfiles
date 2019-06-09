@@ -1,22 +1,32 @@
 #!/usr/bin/env bash
 
-# Install or update Homebrew
-if ! brew --version >/dev/null 2>&1
+if test ! "$(brew --version)"
   then
   echo -e "\\n⬇️  Installing Homebrew"
-  # Clean-up any failed Homebrew installs first
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  echo -e "\\n🔁  Updating installed Homebrew"
+  echo -e "\\n🔁 Updating installed Homebrew"
   brew update
+  brew upgrade
 fi
 
-echo -e "\\n⬇️  Installing Homebrew casks"
+echo -e "\\n⬇️  Installing Homebrew formulae"
 
-brew tap caskroom/cask
-brew tap caskroom/fonts
-brew tap caskroom/versions
+brew install cmake
+brew install composer
+brew install coreutils
+brew install git
+brew install git-lfs
+brew install libyaml
+brew install mas
+brew install mysql
+brew install openssh
+brew install openssl@1.1
+brew install shellcheck
+brew install trash
+brew install tree
+
+echo -e "\\n⬇️  Installing fonts via Homebrew Cask"
 
 brew cask install font-inconsolata
 brew cask install font-lato
@@ -25,7 +35,10 @@ brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
 
+echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
+
 mas install 937984704 # Amphetamine
+mas install 918207447 # Annotate
 mas install 975937182 # Fantastical 2
 mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
@@ -36,28 +49,35 @@ mas install 880001334 # Reeder 3
 # mas install 1449412482 # Reeder 4
 mas install 494803304 # WiFi Explorer
 
+echo -e "\\n⬇️  Installing applications via Homebrew Cask"
+
+brew tap homebrew/cask-versions
+
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" adobe-creative-cloud
 brew cask install --appdir="/Applications" aerial
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" applepi-baker
 brew cask install --appdir="/Applications" arq
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" bartender
+brew cask install --appdir="/Applications" brave-browser
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
 brew cask install --appdir="/Applications" colour-contrast-analyser
 brew cask install --appdir="/Applications" couleurs
 brew cask install --appdir="/Applications" daisydisk
+brew cask install --appdir="/Applications" dash
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" firefox-developer-edition # homebrew/cask-versions
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" handbrake
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" kaleidoscope
 brew cask install --appdir="/Applications" kap
-brew cask install --appdir="/Applications" kindle
 brew cask install --appdir="/Applications" knockknock
 brew cask install --appdir="/Applications" licecap
 brew cask install --appdir="/Applications" little-snitch
@@ -78,16 +98,7 @@ brew cask install --appdir="/Applications" the-unarchiver
 brew cask install --appdir="/Applications" ticktick
 brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
-brew cask install --appdir="/Applications" transmit4
+brew cask install --appdir="/Applications" transmit4 # homebrew/cask-versions
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" virtualbox-extension-pack
 brew cask install --appdir="/Applications" zoomus
-
-# Install Box Notes
-echo -e "\\n⬇️  Downloading and installing Box Notes"
-cd ~/Downloads || exit
-curl -O https://e3.boxcdn.net/box-installers/boxnotes/mac/latest/Box%20Notes.zip
-unzip -q Box%20Notes.zip
-rm Box%20Notes.zip
-mv "Box Notes.app" "/Applications/Box Notes.app"
-echo -e "\\n✅  Box Notes installed"

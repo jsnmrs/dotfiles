@@ -7,7 +7,7 @@ function gitdiff() {
   git diff --name-status HEAD $1 > ~/Desktop/diff$timestamp.txt && open ~/Desktop/diff$timestamp.txt;
 }
 
-# `a` with no arguments opens the current directory in Atom Editor, otherwise
+# `a` with no arguments opens the current directory in Atom, otherwise
 # opens the given location
 function a() {
   if [ $# -eq 0 ]; then

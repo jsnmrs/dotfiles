@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-echo -e "\\n⬇️  Install RVM"
+echo -e "\\n⬇️  Installing RVM"
 curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
 
-echo -e "\\n➡️  Run RVM setup script"
+echo -e "\\n➡️  Run rvm setup script"
 # shellcheck source=/dev/null
 source "$HOME/.rvm/scripts/rvm"
 

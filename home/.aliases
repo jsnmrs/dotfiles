@@ -2,13 +2,15 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias home="cd ~/"
 alias desktop="cd ~/Desktop"
 alias dotfiles="cd ~/Projects/dotfiles"
 alias downloads="cd ~/Downloads"
 alias dropbox="cd ~/Dropbox"
 alias projects="cd ~/Projects"
+
+alias usebash="chsh -s $(which bash)"
+alias usezsh="chsh -s $(which zsh)"
 
 # Start local servers
 alias jksrv="bundle exec jekyll serve --watch"
@@ -17,20 +19,12 @@ alias phpsrv="php -S localhost:8000"
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; sudo gem update --system; sudo gem update; gem cleanup; brew update; brew upgrade; mas upgrade; npm install npm -g; npm update -g; brew cleanup'
 
-# Google Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
-
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Randomize MAC address until reboot
 # https://remysharp.com/2017/05/29/getting-free-wifi
 alias macspoof="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
-
-# Show active network interfaces
-alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
@@ -50,25 +44,12 @@ alias dockspace="defaults write com.apple.dock persistent-apps -array-add '{\"ti
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
 # Speed up Time Machine backups - re-run after every reboot
 # http://www.imore.com/how-speed-your-time-machine-backups
 alias timemachine="sudo sysctl debug.lowpri_throttle_enabled=0"
-
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
 # Strongly check for and update Node modules in package.json
 alias npmupdate="rm -rf node_modules && rm -f package-lock.json && ncu -u && npm install"
-
-# Print list of globally-installed Node modules
-alias nodelist="npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}'"
-
-# Remove all globally-installed Node modules
-alias nodeclean="npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm"
