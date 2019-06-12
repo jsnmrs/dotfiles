@@ -1,0 +1,7 @@
+# ack config - https://beyondgrep.com/
+# inspired by: https://csswizardry.com/2017/01/ack-for-css-developers/
+
+--ignore-directory=is:node_modules
+--ignore-directory=is:bower_components
+--type-set=sass:ext:scss,sass
+--type-set=markdown:ext:md,markdown
