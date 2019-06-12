@@ -1,7 +1,14 @@
 #!/usr/bin/env zsh
 
-source "$HOME/.aliases"
-source "$HOME/.functions"
+# Defines untrackesd environment variables.
+extra="$HOME/.extra"
+[[ -f "$extra" ]] && source $extra
+
+aliases="$HOME/.aliases"
+[[ -f "$aliases" ]] && source $aliases
+
+functions="$HOME/.functions"
+[[ -f "$functions" ]] && source $functions
 
 autoload -U promptinit; promptinit
 prompt pure

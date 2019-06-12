@@ -1,7 +1,3 @@
-# Defines environment variables.
-extra="$HOME/.extra"
-[[ -f "$extra" ]] && source $extra
-
 # Add to PATH
 export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
