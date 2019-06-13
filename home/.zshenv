@@ -20,9 +20,6 @@ export LC_ALL='en_US.UTF-8';
 # Set Atom to default editor
 export EDITOR='atom -w'
 
-# Set up RVM
-source $HOME/.rvm/scripts/rvm;
-
 # Set up NVM
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
