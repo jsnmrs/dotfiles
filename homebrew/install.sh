@@ -39,7 +39,7 @@ brew cask install font-source-serif-pro
 echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
 
 mas install 937984704 # Amphetamine
-mas install 918207447 # Annotate
+# mas install 918207447 # Annotate
 mas install 975937182 # Fantastical 2
 mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
@@ -48,6 +48,7 @@ mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 880001334 # Reeder 3
 # mas install 1449412482 # Reeder 4
+# mas install 904280696 # Things 3
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications via Homebrew Cask"
