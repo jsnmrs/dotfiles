@@ -39,6 +39,7 @@ brew cask install font-source-serif-pro
 echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
 
 mas install 937984704 # Amphetamine
+mas install 1435957248 # Drafts
 mas install 975937182 # Fantastical 2
 mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
