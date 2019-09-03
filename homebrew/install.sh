@@ -89,7 +89,6 @@ brew cask install --appdir="/Applications" namechanger
 brew cask install --appdir="/Applications" omnidisksweeper
 brew cask install --appdir="/Applications" scrutiny
 brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" sketch
 brew cask install --appdir="/Applications" sketchup
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
