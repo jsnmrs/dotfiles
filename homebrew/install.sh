@@ -87,6 +87,7 @@ brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" namechanger
 brew cask install --appdir="/Applications" omnidisksweeper
+brew cask install --appdir="/Applications" screaming-frog-seo-spider
 brew cask install --appdir="/Applications" scrutiny
 brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" sketchup
