@@ -12,6 +12,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
     - [Installing Homebrew, binaries, and applications](#installing-homebrew-binaries-and-applications)
     - [Installing NVM and global Node modules](#installing-nvm-and-global-node-modules)
     - [Installing RVM and Ruby gems](#installing-rvm-and-ruby-gems)
+    - [Installing Composer packages](#installing-composer-packages)
     - [Configuring Atom](#configuring-atom)
     - [Setting macOS](#setting-macos-defaults)
     - [Configure macOS dock icons](#configure-macos-dock-icons)
@@ -97,6 +98,16 @@ The [ruby/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/ruby/instal
 
 **Run it:** `source ruby/install.sh`
 
+### Installing Composer packages
+
+The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/composer/install.sh) script will:
+
+1. Check for Composer installation
+2. Copy composer.json into `/.composer`
+3. Run `composer update`
+
+**Run it:** `source composer/install.sh`
+
 ### Configuring Atom
 
 The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/install.sh) script will:
@@ -126,6 +137,7 @@ The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/mac
 - `mas list` – list installed applications from Mac App Store
 - `npm list -g --depth=0` – list globally installed node modules
 - `gem query --local` – list locally installed Ruby gems
+- `composer global show` – list globally installed Composer packages
 - `apm list -i` – list installed Atom plugins and themes
 
 ## Heavily inspired by
