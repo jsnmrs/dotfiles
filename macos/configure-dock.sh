@@ -40,7 +40,7 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "Brave"
+add_app_to_dock "Brave Browser"
 add_spacer_to_dock
 add_app_to_dock "Fantastical 2"
 add_app_to_dock "OmniFocus"
