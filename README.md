@@ -2,7 +2,7 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-![macOS 10.14 Mojave desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/assets/screenshot.jpg)
+![macOS 10.15 Catalina desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/assets/screenshot.jpg)
 
 - [Step zero](#step-zero)
 - [Getting started, using Git](#getting-started-using-git)
@@ -120,7 +120,7 @@ The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/inst
 
 ### Setting macOS defaults
 
-The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS 10.14. Tip: review and comment out uncertain commands before running.
+The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS. Tip: review and comment out uncertain commands before running.
 
 **Run it:** `source macos/configure-macos.sh`
 
