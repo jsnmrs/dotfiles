@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Shortcuts for easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -9,9 +11,6 @@ alias downloads="cd ~/Downloads"
 alias dropbox="cd ~/Dropbox"
 alias projects="cd ~/Projects"
 
-alias usebash="chsh -s $(which bash)"
-alias usezsh="chsh -s $(which zsh)"
-
 # Start local servers
 alias jksrv="bundle exec jekyll serve --watch"
 alias phpsrv="php -S localhost:8000"
@@ -21,10 +20,6 @@ alias update='sudo softwareupdate -ia --include-config-data; sudo gem update --s
 
 # IP addresses
 alias localip="ipconfig getifaddr en0"
-
-# Randomize MAC address until reboot
-# https://remysharp.com/2017/05/29/getting-free-wifi
-alias macspoof="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
