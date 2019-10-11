@@ -5,7 +5,7 @@
 function gitdiff() {
   local timestamp;
   timestamp=$(date +%Y%m%d%H%M%S);
-  git diff --name-status HEAD $1 > ~/Desktop/diff$timestamp.txt && open ~/Desktop/diff$timestamp.txt;
+  git diff --name-status HEAD "$1" > ~/Desktop/diff"$timestamp".txt && open ~/Desktop/diff"$timestamp".txt;
 }
 
 # `a` with no arguments opens the current directory in Atom, otherwise
