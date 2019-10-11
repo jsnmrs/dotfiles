@@ -52,7 +52,7 @@ function o() {
 function check-merged() {
   git branch &&
   git pull &&
-  for branch in $(git branch -r --merged | grep -v HEAD); do echo -e "$(git show --format="%ci %cr %an" $branch | head -n 1)" \\t$branch; done | sort -r
+  for branch in $(git branch -r --merged | grep -v HEAD); do echo -e "$(git show --format="%ci %cr %an" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
@@ -60,7 +60,7 @@ function check-merged() {
 function check-unmerged() {
   git branch &&
   git pull &&
-  for branch in $(git branch -r --no-merged | grep -v HEAD); do echo -e "$(git show --format="%ci %cr %an" $branch | head -n 1)" \\t$branch; done | sort -r
+  for branch in $(git branch -r --no-merged | grep -v HEAD); do echo -e "$(git show --format="%ci %cr %an" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
