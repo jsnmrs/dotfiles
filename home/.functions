@@ -3,7 +3,8 @@
 # Git diff from HEAD to commit hash,
 # send to file on desktop, open in text editor
 function gitdiff() {
-  local timestamp=$(date +%Y%m%d%H%M%S);
+  local timestamp;
+  timestamp=$(date +%Y%m%d%H%M%S);
   git diff --name-status HEAD $1 > ~/Desktop/diff$timestamp.txt && open ~/Desktop/diff$timestamp.txt;
 }
 
@@ -51,7 +52,7 @@ function o() {
 function check-merged() {
   git branch &&
   git pull &&
-  for branch in `git branch -r --merged | grep -v HEAD`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
+  for branch in `git branch -r --merged | grep -v HEAD`; do echo -e "`git show --format="%ci %cr %an" $branch | head -n 1`" \\t$branch; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
@@ -59,6 +60,17 @@ function check-merged() {
 function check-unmerged() {
   git branch &&
   git pull &&
-  for branch in `git branch -r --no-merged | grep -v HEAD`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
+  for branch in `git branch -r --no-merged | grep -v HEAD`; do echo -e "`git show --format="%ci %cr %an" $branch | head -n 1`" \\t$branch; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
+}
+
+# Show most used commands
+# via: https://remysharp.com/2019/10/08/listing-your-most-used-commands
+function command-history() {
+  history |
+  awk 'BEGIN {FS="\\|"; OFS="\n"} { $1=$1; gsub(/^[0-9* ]+/, ""); print $0 }' |
+  awk '{ $1=$1 } /^[a-z]/ { print $1 }' |
+  sort |
+  uniq -c |
+  sort -n
 }
