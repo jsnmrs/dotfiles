@@ -1,3 +1,5 @@
 language: bash
 script:
     - shellcheck **/*.sh
+    - shellcheck home/.aliases
+    - shellcheck home/.functions
