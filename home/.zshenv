@@ -6,8 +6,18 @@ export PATH="$PATH:$HOME/.composer/vendor/bin";
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1;
 
-# Increase Bash history size. Allow 32³ entries; the default is 500.
-export HISTSIZE='32768';
+# timestamps for later analysis. www.debian-administration.org/users/rossen/weblog/1
+export HISTTIMEFORMAT='%F %T ';
+
+# Increase history size.
+export HISTSIZE='100000';
+export HISTFILESIZE="${HISTSIZE}";
+
+# Append to history, don't overwrite it.
+which shopt > /dev/null && shopt -s histappend
+
+# Increase history size.
+export HISTSIZE='100000';
 export HISTFILESIZE="${HISTSIZE}";
 
 # Omit duplicates and commands that begin with a space from history.
