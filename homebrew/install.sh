@@ -23,6 +23,7 @@ brew install mas
 brew install mysql
 brew install openssh
 brew install openssl@1.1
+brew install python
 brew install shellcheck
 brew install trash
 brew install tree
