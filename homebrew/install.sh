@@ -46,6 +46,7 @@ mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 441258766 # Magnet
+mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 880001334 # Reeder 3
