@@ -97,6 +97,7 @@ brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" sketchup
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" sublime-merge
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" taskpaper
