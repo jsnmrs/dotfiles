@@ -46,10 +46,12 @@ mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 441258766 # Magnet
+mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 880001334 # Reeder 3
 # mas install 1449412482 # Reeder 4
+mas install 442168834 # Site Sucker
 mas install 904280696 # Things 3
 mas install 494803304 # WiFi Explorer
 
@@ -87,6 +89,7 @@ brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" namechanger
 brew cask install --appdir="/Applications" omnidisksweeper
+brew cask install --appdir="/Applications" qbserve
 brew cask install --appdir="/Applications" rocket
 brew cask install --appdir="/Applications" screaming-frog-seo-spider
 brew cask install --appdir="/Applications" scrutiny
@@ -94,10 +97,12 @@ brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" sketchup
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" sublime-merge
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" taskpaper
 brew cask install --appdir="/Applications" the-unarchiver
+brew cask install --appdir="/Applications" toggl
 brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" transmit4 # homebrew/cask-versions
