@@ -14,6 +14,7 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
     - [Installing RVM and Ruby gems](#installing-rvm-and-ruby-gems)
     - [Installing Composer packages](#installing-composer-packages)
     - [Configuring Atom](#configuring-atom)
+    - [Configuring Sublime Text](#configuring-sublime-text)
     - [Setting macOS](#setting-macos-defaults)
     - [Configure macOS dock icons](#configure-macos-dock-icons)
 - [Housekeeping](#housekeeping)
@@ -117,6 +118,19 @@ The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/inst
 3. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
 
 **Run it:** `source atom/install.sh`
+
+### Configuring Sublime Text
+
+The [`sublime/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/sublime/install.sh) script will:
+
+1. Copy the contents of `~/Library/Application Support/Sublime Text 3/Packages/User` to `~/.sublime`
+2. Copy `Package Control.sublime-settings` and `Preferences.sublime-settings` from this repo to `~/.sublime`
+3. Delete `~/Library/Application Support/Sublime Text 3/Packages/User`
+4. Create a symbolic link from `~/Library/Application Support/Sublime Text 3/Packages/User` to `~/.sublime`
+
+**Run it:** `source sublime/install.sh`
+
+Afterwards, install [Package Control](https://packagecontrol.io/installation) and restart Sublime Text to install all of the configured packages.
 
 ### Setting macOS defaults
 
