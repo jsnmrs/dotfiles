@@ -25,7 +25,7 @@ fi
 rsync --exclude "install.sh" -avh --no-perms "$parent_path/" "$HOME/.sublime/";
 
 # Copy contents of existing Sublime Text user folder to ~/.sublime
-cp -R "$HOME/Library/Application Support/Sublime Text 3/Packages/User/" "$HOME/.sublime/"
+cp -R "$HOME/Library/Application Support/Sublime Text 3/Packages/User" "$HOME/.sublime"
 
 # Delete existing Sublime Text user folder
 rm -rf "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
