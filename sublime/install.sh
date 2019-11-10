@@ -21,9 +21,16 @@ if [ ! -d "$HOME/Library/Application Support/Sublime Text 3/Packages/User" ];
   mkdir "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 fi
 
+# Copy config from repo to ~/.sublime
 rsync --exclude "install.sh" -avh --no-perms "$parent_path/" "$HOME/.sublime/";
-cp -R "$HOME/Library/Application Support/Sublime Text 3/Packages/User/" "$HOME/.sublime/"
+
+# Copy contents of existing Sublime Text user folder to ~/.sublime
+cp -R "$HOME/Library/Application Support/Sublime Text 3/Packages/User" "$HOME/.sublime"
+
+# Delete existing Sublime Text user folder
 rm -rf "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
+
+# Create symlink from default user folder location to ~/.sublime
 ln -s "$HOME/.sublime" "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 
 cd "$current_path" || exit
