@@ -1,0 +1,27 @@
+{
+  "bootstrapped": true,
+  "in_process_packages": [],
+  "installed_packages": [
+    "A File Icon",
+    "BracketHighlighter",
+    "EditorConfig",
+    "GitGutter",
+    "MarkdownPreview",
+    "Monokai++",
+    "Package Control",
+    "PHP-Twig",
+    "Pretty JSON",
+    "Sass",
+    "SideBarEnhancements",
+    "SideBarTools",
+    "SSH Config",
+    "SublimeLinter",
+    "SublimeLinter-eslint",
+    "SublimeLinter-json",
+    "SublimeLinter-phpcs",
+    "SublimeLinter-phpmd",
+    "SublimeLinter-shellcheck",
+    "SublimeLinter-stylelint",
+    "Theme - Spacegray"
+  ]
+}
