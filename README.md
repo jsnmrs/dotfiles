@@ -146,3 +146,4 @@ The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/mac
 - [Kevin Deldycke’s dotfiles repo](https://github.com/kdeldycke/dotfiles)
 - [Paul Irish’s dotfiles repo](https://github.com/paulirish/dotfiles/)
 - [Paul Miller’s dotfiles repo](https://github.com/paulmillr/dotfiles)
+- [Matt Brictson’s dotfiles repo](https://github.com/mattbrictson/dotfiles)
