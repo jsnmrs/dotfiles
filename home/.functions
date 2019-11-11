@@ -10,11 +10,20 @@ function gitdiff() {
 
 # `a` with no arguments opens the current directory in Atom, otherwise
 # opens the given location
+# function a() {
+#   if [ $# -eq 0 ]; then
+#     atom .;
+#   else
+#     atom "$@";
+#   fi;
+# }
+
+# muscle memory override
 function a() {
   if [ $# -eq 0 ]; then
-    atom .;
+    subl .;
   else
-    atom "$@";
+    subl "$@";
   fi;
 }
 

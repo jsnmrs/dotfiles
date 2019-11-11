@@ -18,7 +18,7 @@ export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
 # Set Atom to default editor
-export EDITOR='atom -w'
+export EDITOR='subl -w'
 
 # Set up RVM
 source $HOME/.rvm/scripts/rvm;

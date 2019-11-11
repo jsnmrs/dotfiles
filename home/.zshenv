@@ -28,7 +28,7 @@ export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
 # Set Atom to default editor
-export EDITOR='atom -w'
+export EDITOR='subl -w'
 
 # Set up NVM
 export NVM_DIR="$HOME/.nvm"
