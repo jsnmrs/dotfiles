@@ -1,5 +1,9 @@
 // user.js - modified from https://github.com/pyllyukko/user.js
 
+// PREF: Disable web notifications
+// https://support.mozilla.org/en-US/questions/1140439
+user_pref("dom.webnotifications.enabled",     false);
+
 // PREF: Disable Location-Aware Browsing (geolocation)
 // https://www.mozilla.org/en-US/firefox/geolocation/
 user_pref("geo.enabled",          false);
@@ -247,6 +251,9 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",  false)
 // RFC 7686
 user_pref("network.dns.blockDotOnion",        true);
 
+// PREF: Set time range to "Everything" as default in "Clear Recent History"
+user_pref("privacy.sanitize.timeSpan",        0);
+
 // PREF: Clear everything but "Site Preferences" in "Clear Recent History"
 user_pref("privacy.cpd.offlineApps",        true);
 user_pref("privacy.cpd.cache",          true);
@@ -259,6 +266,9 @@ user_pref("privacy.cpd.sessions",       true);
 // PREF: Disable password manager
 // CIS Version 1.2.0 October 21st, 2011 2.5.2
 user_pref("signon.rememberSignons",       false);
+
+// PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
+user_pref("browser.formfill.enable",        false);
 
 // PREF: Do not create screenshots of visited pages (relates to the "new tab page" feature)
 // https://support.mozilla.org/en-US/questions/973320
