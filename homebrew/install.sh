@@ -74,6 +74,7 @@ brew cask install --appdir="/Applications" colour-contrast-analyser
 brew cask install --appdir="/Applications" couleurs
 brew cask install --appdir="/Applications" daisydisk
 brew cask install --appdir="/Applications" dash
+brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" firefox
