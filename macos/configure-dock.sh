@@ -40,7 +40,7 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "Brave Browser"
+add_app_to_dock "Firefox"
 add_spacer_to_dock
 add_app_to_dock "Fantastical 2"
 add_app_to_dock "OmniFocus"
@@ -48,7 +48,7 @@ add_app_to_dock "Reminders"
 add_app_to_dock "Notes"
 add_spacer_to_dock
 add_app_to_dock "iTerm"
-add_app_to_dock "Atom"
+add_app_to_dock "Sublime Text"
 add_app_to_dock "Tower"
 add_app_to_dock "Spotify"
 
