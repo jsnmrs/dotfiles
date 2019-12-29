@@ -49,6 +49,7 @@ mas install 441258766 # Magnet
 mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
+mas install 407963104 # Pixelmator
 mas install 880001334 # Reeder 3
 # mas install 1449412482 # Reeder 4
 mas install 442168834 # Site Sucker
