@@ -47,7 +47,7 @@ add_app_to_dock "OmniFocus"
 add_app_to_dock "Reminders"
 add_app_to_dock "Notes"
 add_spacer_to_dock
-add_app_to_dock "iTerm"
+add_app_to_dock "Terminal"
 add_app_to_dock "Sublime Text"
 add_app_to_dock "Tower"
 add_app_to_dock "Spotify"
