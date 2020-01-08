@@ -105,6 +105,7 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" taskpaper
 brew cask install --appdir="/Applications" the-unarchiver
+brew cask install --appdir="/Applications" ticktick
 brew cask install --appdir="/Applications" toggl
 brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
