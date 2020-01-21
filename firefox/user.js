@@ -1,6 +1,9 @@
 // user.js
 // modified version of https://github.com/pyllyukko/user.js
 
+// PREF: pull
+user_pref("accessibility.typeaheadfind.flashBar", 0);
+
 // PREF: Disable SHIELD
 // https://support.mozilla.org/en-US/kb/shield
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1370801
@@ -18,13 +21,34 @@ user_pref("beacon.enabled", false);
 // A list of submitted crash reports can be found at about:crashes
 user_pref("breakpad.reportURL", "");
 
+// PREF: pull
+user_pref("browser.bookmarks.restore_default_bookmarks", false);
+
+// PREF: pull
+user_pref("browser.bookmarks.showMobileBookmarks", false);
+
+// PREF: pull
+user_pref("browser.contentblocking.category", "custom");
+
 // PREF: Disable sending reports of tab crashes to Mozilla (about:tabcrashed), don't nag user about unsent crash reports
 // https://hg.mozilla.org/mozilla-central/file/tip/browser/app/profile/firefox.js
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 
+// PREF: pull
+user_pref("browser.ctrlTab.recentlyUsedOrder", false);
+
+// PREF: pull
+user_pref("browser.discovery.enabled", false);
+
+// PREF: pull
+user_pref("browser.download.autohideButton", false);
+
 // PREF: Always ask the user where to download
 // https://developer.mozilla.org/en/Download_Manager_preferences (obsolete)
 user_pref("browser.download.useDownloadDir", false);
+
+// PREF: pull
+user_pref("browser.eme.ui.firstContentShown", true);
 
 // PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
 user_pref("browser.formfill.enable", false);
@@ -33,8 +57,23 @@ user_pref("browser.formfill.enable", false);
 // https://support.mozilla.org/en-US/kb/extension-recommendations
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 
+// PREF: pull
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+
 // PREF: Disable "Recommended by Pocket" in Firefox Quantum
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+
+// PREF: pull
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+
+// PREF: pull
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+
+// PREF: pull
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
+
+// PREF: pull
+user_pref("browser.newtabpage.enabled", false);
 
 // PREF: Display a notification bar when websites offer data for offline use
 // http://kb.mozillazine.org/Browser.offline-apps.notify
@@ -49,6 +88,11 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 // https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox
 // https://github.com/pyllyukko/user.js/issues/143
 user_pref("browser.pocket.enabled", false);
+
+// PREF: When Flash is enabled, download and use Mozilla SWF URIs blocklist
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1237198
+// https://github.com/mozilla-services/shavar-plugin-blocklist
+user_pref("browser.safebrowsing.blockedURIs.enabled", true);
 
 // PREF: Enable blocking reported web forgeries
 // https://wiki.mozilla.org/Security/Safe_Browsing
@@ -68,11 +112,6 @@ user_pref("browser.safebrowsing.malware.enabled", true);
 // https://www.mozilla.org/en-US/firefox/39.0/releasenotes/
 // https://wiki.mozilla.org/Security/Application_Reputation
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-
-// PREF: When Flash is enabled, download and use Mozilla SWF URIs blocklist
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1237198
-// https://github.com/mozilla-services/shavar-plugin-blocklist
-user_pref("browser.safebrowsing.blockedURIs.enabled", true);
 
 // PREF: Disable GeoIP lookup on your address to set default search engine region
 // https://trac.torproject.org/projects/tor/ticket/16254
@@ -97,9 +136,15 @@ user_pref("browser.send_pings.require_same_host", true);
 // PREF: Do not check if Firefox is the default browser
 user_pref("browser.shell.checkDefaultBrowser", false);
 
+// PREF: pull
+user_pref("browser.startup.homepage", "about:blank");
+
 // PREF: Disable sending reports of tab crashes to Mozilla (about:tabcrashed), don't nag user about unsent crash reports
 // https://hg.mozilla.org/mozilla-central/file/tip/browser/app/profile/firefox.js
 user_pref("browser.tabs.crashReporting.sendReport", false);
+
+// PREF: pull
+user_pref("browser.uidensity", 1);
 
 // PREF: Disable the UITour backend
 // https://trac.torproject.org/projects/tor/ticket/19047#comment:3
@@ -111,6 +156,13 @@ user_pref("browser.urlbar.trimURLs", false);
 
 // PREF: Disable face detection
 user_pref("camera.control.face_detection.enabled", false);
+
+// PREF: pull
+user_pref("datareporting.healthreport.uploadEnabled", false);
+
+// PREF: Disable sensor API
+// https://wiki.mozilla.org/Sensor_API
+user_pref("device.sensors.enabled", false);
 
 // PREF: Disable FlyWeb (discovery of LAN/proximity IoT devices that expose a Web interface)
 // https://wiki.mozilla.org/FlyWeb
@@ -129,10 +181,6 @@ user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 
 // PREF: When Flash crash reports are enabled, don't send the visited URL in the crash report
 user_pref("dom.ipc.plugins.reportCrashURL", false);
-
-// PREF: Disable sensor API
-// https://wiki.mozilla.org/Sensor_API
-user_pref("device.sensors.enabled", false);
 
 // PREF: Disable telephony API
 // https://wiki.mozilla.org/WebAPI/Security/WebTelephony
@@ -179,6 +227,9 @@ user_pref("extensions.blocklist.enabled", true);
 // https://github.com/pyllyukko/user.js/issues/143
 user_pref("extensions.pocket.enabled", false);
 
+// PREF: pull
+user_pref("extensions.privatebrowsing.notification", true);
+
 // PREF: Disable SHIELD
 // https://support.mozilla.org/en-US/kb/shield
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1370801
@@ -221,10 +272,25 @@ user_pref("media.webspeech.recognition.enable", false);
 // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
 user_pref("media.webspeech.synth.enabled", false);
 
+// PREF: pull
+user_pref("network.cookie.cookieBehavior", 1);
+
+// PREF: pull
+user_pref("network.cookie.thirdparty.sessionOnly", true);
+
 // PREF: Reject .onion hostnames before passing the to DNS
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1228457
 // RFC 7686
 user_pref("network.dns.blockDotOnion", true);
+
+// PREF: pull
+user_pref("network.dns.disablePrefetch", true);
+
+// PREF: pull
+user_pref("network.predictor.enabled", false);
+
+// PREF: pull
+user_pref("network.prefetch-next", false);
 
 // PREF: Enable HSTS preload list (pre-set HSTS sites list provided by Mozilla)
 // https://blog.mozilla.org/security/2012/11/01/preloading-hsts/
@@ -232,10 +298,17 @@ user_pref("network.dns.blockDotOnion", true);
 // https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 user_pref("network.stricttransportsecurity.preloadlist", true);
 
-// PREF: Enable plugins click-to-play
-// https://wiki.mozilla.org/Firefox/Click_To_Play
-// https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
-user_pref("plugins.click_to_play", true);
+// PREF: pull
+user_pref("permissions.default.camera", 2);
+
+// PREF: pull
+user_pref("permissions.default.desktop-notification", 2);
+
+// PREF: pull
+user_pref("permissions.default.geo", 2);
+
+// PREF: pull
+user_pref("permissions.default.microphone", 2);
 
 // PREF: Disable Flash Player NPAPI plugin
 // http://kb.mozillazine.org/Flash_plugin
@@ -247,6 +320,14 @@ user_pref("plugin.state.libgnome-shell-browser-plugin", 0);
 // PREF: Disable Java NPAPI plugin
 user_pref("plugin.state.java", 0);
 
+// PREF: Enable plugins click-to-play
+// https://wiki.mozilla.org/Firefox/Click_To_Play
+// https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
+user_pref("plugins.click_to_play", true);
+
+// PREF: pull
+user_pref("privacy.clearOnShutdown.offlineApps", true);
+
 // PREF: Clear everything but "Site Preferences" in "Clear Recent History"
 user_pref("privacy.cpd.offlineApps", true);
 user_pref("privacy.cpd.cache", true);
@@ -255,6 +336,9 @@ user_pref("privacy.cpd.downloads", true);
 user_pref("privacy.cpd.formdata", true);
 user_pref("privacy.cpd.history", true);
 user_pref("privacy.cpd.sessions", true);
+
+// PREF: pull
+user_pref("privacy.history.custom", true);
 
 // PREF: Enable Firefox's anti-fingerprinting mode ("resist fingerprinting" or RFP) (Tor Uplift project)
 // https://wiki.mozilla.org/Security/Tor_Uplift/Tracking
