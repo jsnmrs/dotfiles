@@ -1,5 +1,8 @@
 // user.js - modified from https://github.com/pyllyukko/user.js
 
+// Enable userChrome.css
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
 // PREF: Disable web notifications
 // https://support.mozilla.org/en-US/questions/1140439
 user_pref("dom.webnotifications.enabled",     false);
