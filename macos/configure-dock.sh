@@ -42,7 +42,7 @@ clear_dock
 
 add_app_to_dock "Firefox Developer Edition"
 add_spacer_to_dock
-add_app_to_dock "Fantastical 2"
+add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
 add_app_to_dock "TickTick"
 add_app_to_dock "Notes"
