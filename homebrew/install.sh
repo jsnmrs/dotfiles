@@ -41,6 +41,7 @@ echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
 
 mas install 937984704 # Amphetamine
 mas install 1435957248 # Drafts
+mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 mas install 1493996622 # Front and Center
 mas install 775737590 # iA Writer
