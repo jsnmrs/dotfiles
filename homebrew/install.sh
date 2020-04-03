@@ -80,6 +80,7 @@ brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" downie
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" figma
+brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" firefox-developer-edition # homebrew/cask-versions
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" handbrake

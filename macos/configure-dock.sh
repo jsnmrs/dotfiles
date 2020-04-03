@@ -40,7 +40,7 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "Firefox Developer Edition"
+add_app_to_dock "Firefox"
 add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
