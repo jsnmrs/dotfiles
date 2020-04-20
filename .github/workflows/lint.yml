@@ -1,0 +1,15 @@
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Lint check .sh
+        uses: azohra/shell-linter@v0.3.0
+      - name: Lint check .functions
+        uses: azohra/shell-linter@v0.3.0
+        with:
+          path: "home/.functions"
+      - name: Lint check .aliases
+        uses: azohra/shell-linter@v0.3.0
+        with:
+          path: "home/.aliases"
