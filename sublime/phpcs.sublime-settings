@@ -1,0 +1,15 @@
+{
+  "phpcs_executable_path": "~/.composer/vendor/bin/phpcs",
+  "phpcbf_executable_path": "~/.composer/vendor/bin/phpcbf",
+  "phpmd_executable_path": "~/.composer/vendor/bin/phpmd",
+
+  "phpcs_additional_args": {
+      "--standard": "Drupal,DrupalPractice",
+      "-n": ""
+  },
+
+  "phpcbf_additional_args": {
+      "--standard": "Drupal,DrupalPractice",
+      "-n": ""
+  },
+}

@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+  "linters": {
+        "phpcs":
+        {
+            // "selector": "source.php, source.module, source.inc, source.test",
+            "executable": "~/.composer/vendor/bin/phpcs",
+            "args": ["--standards=Drupal,DrupalPractice"]
+        },
+    }
+}
