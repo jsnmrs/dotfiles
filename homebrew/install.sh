@@ -71,6 +71,7 @@ brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
 brew cask install --appdir="/Applications" colour-contrast-analyser
+brew cask install --appdir="/Applications" commandq
 brew cask install --appdir="/Applications" couleurs
 brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" daisydisk
