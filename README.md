@@ -2,7 +2,7 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-![macOS 10.15 Catalina desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/master/assets/screenshot.jpg)
+![macOS 10.15 Catalina desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/main/assets/screenshot.jpg)
 
 - [Step zero](#step-zero)
 - [Getting started, using Git](#getting-started-using-git)
@@ -38,9 +38,9 @@ git clone https://github.com/jsnmrs/dotfiles.git && cd dotfiles
 
 ## Establishing dotfiles
 
-The [home/install.sh script](https://github.com/jsnmrs/dotfiles/blob/master/home/install.sh) will run a copy all of the dotfiles (.\*) in `home/` into to your home folder.
+The [home/install.sh script](https://github.com/jsnmrs/dotfiles/blob/main/home/install.sh) will run a copy all of the dotfiles (.\*) in `home/` into to your home folder.
 
-Take a look through [the dotfiles (.\*)](https://github.com/jsnmrs/dotfiles/blob/master/home/) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder will be overwritten.
+Take a look through [the dotfiles (.\*)](https://github.com/jsnmrs/dotfiles/blob/main/home/) before running bootstrap.sh to make any adjustments. The script will warn that files in your home folder will be overwritten.
 
 **Run it:** `source home/install.sh`
 
@@ -69,7 +69,7 @@ export APItoken=0000ffff0000ffff0000ffff0000ffff0000ffff
 
 ### Installing Homebrew, binaries, and applications
 
-The [homebrew/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/homebrew/install.sh) script will:
+The [homebrew/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/homebrew/install.sh) script will:
 
 1. Install (or update) Homebrew
 2. Install a list of Homebrew formulae
@@ -81,7 +81,7 @@ The [homebrew/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/homebre
 
 ### Installing NVM and global Node modules
 
-The [node/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/node/install.sh) script will:
+The [node/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/node/install.sh) script will:
 
 1. Install (or update) [NVM](https://github.com/nvm-sh/nvm)
 2. Install (or update to) the latest stable version of Node.js
@@ -91,7 +91,7 @@ The [node/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/node/instal
 
 ### Installing RVM and Ruby gems
 
-The [ruby/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/ruby/install.sh) script will:
+The [ruby/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/ruby/install.sh) script will:
 
 1. Install (or update) [RVM](https://rvm.io)
 2. Run RVM setup script
@@ -101,7 +101,7 @@ The [ruby/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/ruby/instal
 
 ### Installing Composer packages
 
-The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/composer/install.sh) script will:
+The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/composer/install.sh) script will:
 
 1. Check for Composer installation
 2. Copy composer.json into `/.composer`
@@ -111,17 +111,17 @@ The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/master/compose
 
 ### Configuring Atom
 
-The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/atom/install.sh) script will:
+The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/main/atom/install.sh) script will:
 
 1. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
-2. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/master/atom/config.cson) to `~/.atom/config.cson`.
-3. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/master/atom/packages.list)
+2. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/main/atom/config.cson) to `~/.atom/config.cson`.
+3. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/main/atom/packages.list)
 
 **Run it:** `source atom/install.sh`
 
 ### Configuring Sublime Text
 
-The [`sublime/install.sh`](https://github.com/jsnmrs/dotfiles/blob/master/sublime/install.sh) script will:
+The [`sublime/install.sh`](https://github.com/jsnmrs/dotfiles/blob/main/sublime/install.sh) script will:
 
 1. Copy the contents of `~/Library/Application Support/Sublime Text 3/Packages/User` to `~/.sublime`
 2. Copy `Package Control.sublime-settings` and `Preferences.sublime-settings` from this repo to `~/.sublime`
@@ -134,13 +134,13 @@ Afterwards, install [Package Control](https://packagecontrol.io/installation) an
 
 ### Setting macOS defaults
 
-The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS. Tip: review and comment out uncertain commands before running.
+The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/main/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS. Tip: review and comment out uncertain commands before running.
 
 **Run it:** `source macos/configure-macos.sh`
 
 ### Configure macOS dock icons
 
-The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/master/macos/configure-dock.sh) script will clear and add specific application icons to the dock.
+The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos/configure-dock.sh) script will clear and add specific application icons to the dock.
 
 **Run it:** `source macos/configure-dock.sh`
 
