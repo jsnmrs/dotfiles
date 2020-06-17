@@ -35,6 +35,10 @@
   # Automatically correct and execute mistyped commands
   autocorrect = 1
 
+[init]
+
+  templateDir = ~/.config/git/template/
+
 [merge]
 
   # Include summaries of merged commits in newly created merge commit messages
