@@ -44,7 +44,6 @@ mas install 1435957248 # Drafts
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 mas install 1493996622 # Front and Center
-mas install 775737590 # iA Writer
 mas install 439697913 # Icon Slate
 mas install 408981434 # iMovie
 mas install 441258766 # Magnet
@@ -54,7 +53,6 @@ mas install 1346203938 # OmniFocus 3
 mas install 407963104 # Pixelmator
 mas install 1449412482 # Reeder 4
 mas install 442168834 # Site Sucker
-mas install 904280696 # Things 3
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications via Homebrew Cask"
@@ -63,7 +61,6 @@ brew tap homebrew/cask-versions
 
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" applepi-baker
 brew cask install --appdir="/Applications" arq
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" bartender
@@ -77,7 +74,6 @@ brew cask install --appdir="/Applications" daisydisk
 brew cask install --appdir="/Applications" dash
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" downie
-brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" encryptme
 brew cask install --appdir="/Applications" figma
 brew cask install --appdir="/Applications" firefox

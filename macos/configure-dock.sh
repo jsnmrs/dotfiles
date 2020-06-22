@@ -41,15 +41,14 @@ function reset_dock {
 clear_dock
 
 add_app_to_dock "Firefox"
-add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
 add_app_to_dock "TickTick"
-add_app_to_dock "Obsidian"
 add_app_to_dock "Notes"
 add_spacer_to_dock
 add_app_to_dock "iTerm"
 add_app_to_dock "Sublime Text"
+add_app_to_dock "Sublime Merge"
 add_app_to_dock "Tower"
 add_app_to_dock "Spotify"
 
