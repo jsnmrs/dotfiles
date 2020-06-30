@@ -18,6 +18,7 @@ brew install composer
 brew install coreutils
 brew install git
 brew install git-lfs
+brew install github/gh/gh
 brew install libyaml
 brew install mas
 brew install mysql
