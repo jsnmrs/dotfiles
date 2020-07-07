@@ -3,6 +3,8 @@
   "phpcbf_executable_path": "~/.composer/vendor/bin/phpcbf",
   "phpmd_executable_path": "~/.composer/vendor/bin/phpmd",
 
+  "extensions_to_execute": ["php, theme, module"],
+
   "phpcs_additional_args": {
       "--standard": "Drupal,DrupalPractice",
       "-n": ""
