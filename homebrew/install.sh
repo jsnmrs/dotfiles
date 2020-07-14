@@ -54,6 +54,7 @@ mas install 1346203938 # OmniFocus 3
 mas install 407963104 # Pixelmator
 mas install 1449412482 # Reeder 4
 mas install 442168834 # Site Sucker
+mac install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications via Homebrew Cask"
