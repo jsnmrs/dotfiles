@@ -24,10 +24,12 @@ brew install mas
 brew install mysql
 brew install openssh
 brew install openssl@1.1
+brew install pngquant
 brew install python
 brew install shellcheck
 brew install trash
 brew install tree
+brew install zopfli
 
 echo -e "\\n⬇️  Installing fonts via Homebrew Cask"
 
