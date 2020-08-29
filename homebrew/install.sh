@@ -19,6 +19,7 @@ brew install coreutils
 brew install git
 brew install git-lfs
 brew install github/gh/gh
+brew install imagemagick
 brew install libyaml
 brew install mas
 brew install mysql
@@ -66,7 +67,6 @@ brew tap homebrew/cask-versions
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" arq
-brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
@@ -90,15 +90,12 @@ brew cask install --appdir="/Applications" kaleidoscope
 brew cask install --appdir="/Applications" kap
 brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" namechanger
-brew cask install --appdir="/Applications" obsidian
 brew cask install --appdir="/Applications" omnidisksweeper
-brew cask install --appdir="/Applications" raindropio
 brew cask install --appdir="/Applications" screaming-frog-seo-spider
 brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" sketchup
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" sublime-merge
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" taskpaper

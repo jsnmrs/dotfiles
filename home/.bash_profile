@@ -17,7 +17,7 @@ export HISTCONTROL='ignoreboth';
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
-# Set Atom to default editor
+# Set Sublime Text to default editor
 export EDITOR='subl -w'
 
 # Set up RVM

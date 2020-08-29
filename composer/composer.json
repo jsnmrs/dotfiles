@@ -2,7 +2,6 @@
   "require": {
     "dealerdirect/phpcodesniffer-composer-installer": "*",
     "drupal/coder": "*",
-    "mglaman/drupal-check": "*",
     "phpmd/phpmd": "*",
     "squizlabs/php_codesniffer": "*"
   }

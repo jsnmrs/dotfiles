@@ -13,7 +13,6 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
   - [Installing NVM and global Node modules](#installing-nvm-and-global-node-modules)
   - [Installing RVM and Ruby gems](#installing-rvm-and-ruby-gems)
   - [Installing Composer packages](#installing-composer-packages)
-  - [Configuring Atom](#configuring-atom)
   - [Configuring Sublime Text](#configuring-sublime-text)
   - [Setting macOS](#setting-macos-defaults)
   - [Configure macOS dock icons](#configure-macos-dock-icons)
@@ -109,24 +108,11 @@ The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/composer/
 
 **Run it:** `source composer/install.sh`
 
-### Configuring Atom
-
-The [`atom/install.sh`](https://github.com/jsnmrs/dotfiles/blob/main/atom/install.sh) script will:
-
-1. Create a backup of `~/.atom/config.cson` as `~/.atom/config-backup.cson`
-2. Copy the [config.cson from this repo](https://github.com/jsnmrs/dotfiles/blob/main/atom/config.cson) to `~/.atom/config.cson`.
-3. Install a [list of packages and themes](https://github.com/jsnmrs/dotfiles/blob/main/atom/packages.list)
-
-**Run it:** `source atom/install.sh`
-
 ### Configuring Sublime Text
 
 The [`sublime/install.sh`](https://github.com/jsnmrs/dotfiles/blob/main/sublime/install.sh) script will:
 
-1. Copy the contents of `~/Library/Application Support/Sublime Text 3/Packages/User` to `~/.sublime`
-2. Copy `Package Control.sublime-settings` and `Preferences.sublime-settings` from this repo to `~/.sublime`
-3. Delete `~/Library/Application Support/Sublime Text 3/Packages/User`
-4. Create a symbolic link from `~/Library/Application Support/Sublime Text 3/Packages/User` to `~/.sublime`
+1. Copy `Package Control.sublime-settings` and `Preferences.sublime-settings` from this repo into `~/Library/Application Support/Sublime Text 3/Packages/User`
 
 **Run it:** `source sublime/install.sh`
 
@@ -152,7 +138,6 @@ The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos
 - `npm list -g --depth=0` – list globally installed node modules
 - `gem query --local` – list locally installed Ruby gems
 - `composer global show` – list globally installed Composer packages
-- `apm list -i` – list installed Atom plugins and themes
 
 ## Heavily inspired by
 
