@@ -3,6 +3,8 @@
   "in_process_packages": [],
   "installed_packages": [
     "A File Icon",
+    "BracketHighlighter",
+    "Color Highlighter",
     "EditorConfig",
     "HTML-CSS-JS Prettify",
     "Monokai++",
@@ -11,6 +13,7 @@
     "Phpcs",
     "PHP-Twig",
     "Pretty JSON",
+    "Rainglow",
     "Sass",
     "SideBarTools",
     "SublimeLinter",
@@ -20,6 +23,5 @@
     "SublimeLinter-phpmd",
     "SublimeLinter-shellcheck",
     "SublimeLinter-stylelint",
-    "Theme - Spacegray"
   ]
 }

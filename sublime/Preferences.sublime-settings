@@ -1,7 +1,7 @@
 {
-  "color_scheme": "Packages/Monokai++/themes/Monokai++.tmTheme",
+  "color_scheme": "Packages/Rainglow/rainglow/Darkside Contrast (rainglow).tmTheme",
   "font_face": "Source Code Pro",
-  "font_size": 16,
+  "font_size": 17,
   "font_options":
   [
     "no_liga",
@@ -82,7 +82,7 @@
   "find_selected_text": true,
   "auto_find_in_selection": false,
   "drag_text": true,
-  "theme": "Spacegray Eighties.sublime-theme",
+  "theme": "Adaptive.sublime-theme",
   "scroll_speed": 1.0,
   "tree_animation_enabled": true,
   "animation_enabled": true,
