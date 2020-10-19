@@ -55,7 +55,7 @@ mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 407963104 # Pixelmator
-mas install 1449412482 # Reeder 4
+mac install 1529448980 # Reeder 5
 mas install 442168834 # Site Sucker
 mac install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
