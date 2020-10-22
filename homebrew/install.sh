@@ -105,4 +105,5 @@ brew cask install --appdir="/Applications" ticktick
 brew cask install --appdir="/Applications" tower
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" virtualbox
+brew cask install --appdir="/Applications" virtualbox-extension-pack
 brew cask install --appdir="/Applications" zoomus
