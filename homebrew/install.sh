@@ -44,19 +44,21 @@ brew cask install font-source-serif-pro
 echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
 
 mas install 937984704 # Amphetamine
+mas install 924726344 # Deliveries
 mas install 1435957248 # Drafts
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 mas install 1493996622 # Front and Center
 mas install 439697913 # Icon Slate
-mas install 408981434 # iMovie
 mas install 441258766 # Magnet
 mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 407963104 # Pixelmator
+mas install 463362050 # PhotoSweeper
 mac install 1529448980 # Reeder 5
 mas install 442168834 # Site Sucker
+mas install 1528890965 # TextSniper
 mac install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
 
@@ -66,7 +68,6 @@ brew tap homebrew/cask-versions
 
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" arq
 brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
@@ -79,7 +80,6 @@ brew cask install --appdir="/Applications" dash
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" downie
 brew cask install --appdir="/Applications" encryptme
-brew cask install --appdir="/Applications" figma
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" handbrake
@@ -90,7 +90,6 @@ brew cask install --appdir="/Applications" kaleidoscope
 brew cask install --appdir="/Applications" kap
 brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" namechanger
-brew cask install --appdir="/Applications" omnidisksweeper
 brew cask install --appdir="/Applications" screaming-frog-seo-spider
 brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" sim-daltonism
@@ -99,11 +98,7 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" superduper
-brew cask install --appdir="/Applications" taskpaper
 brew cask install --appdir="/Applications" the-unarchiver
 brew cask install --appdir="/Applications" ticktick
 brew cask install --appdir="/Applications" tower
-brew cask install --appdir="/Applications" transmission
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" virtualbox-extension-pack
 brew cask install --appdir="/Applications" zoomus
