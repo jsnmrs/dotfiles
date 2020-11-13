@@ -38,7 +38,6 @@ brew tap homebrew/cask-fonts
 
 brew cask install font-inconsolata
 brew cask install font-lato
-brew cask install font-open-sans
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
