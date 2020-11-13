@@ -37,6 +37,8 @@ echo -e "\\n⬇️  Installing fonts via Homebrew Cask"
 
 brew tap homebrew/cask-fonts
 
+brew cask install font-ia-writer-duospace
+brew cask install font-ia-writer-mono
 brew cask install font-inconsolata
 brew cask install font-lato
 brew cask install font-source-code-pro
