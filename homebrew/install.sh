@@ -34,6 +34,8 @@ brew install zopfli
 
 echo -e "\\n⬇️  Installing fonts via Homebrew Cask"
 
+brew tap homebrew/cask-fonts
+
 brew cask install font-inconsolata
 brew cask install font-lato
 brew cask install font-open-sans
@@ -56,10 +58,10 @@ mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 407963104 # Pixelmator
 mas install 463362050 # PhotoSweeper
-mac install 1529448980 # Reeder 5
+mas install 1529448980 # Reeder 5
 mas install 442168834 # Site Sucker
 mas install 1528890965 # TextSniper
-mac install 1191449274 # ToothFairy
+mas install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications via Homebrew Cask"
