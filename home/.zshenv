@@ -29,7 +29,3 @@ export LC_ALL='en_US.UTF-8';
 
 # Set Sublime Text to default editor
 export EDITOR='subl -w'
-
-# Set up NVM
-export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
