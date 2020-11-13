@@ -23,6 +23,7 @@ brew install imagemagick
 brew install libyaml
 brew install mas
 brew install mysql
+brew install node
 brew install openssh
 brew install openssl@1.1
 brew install pngquant
