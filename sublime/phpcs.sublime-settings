@@ -7,12 +7,15 @@
   "extensions_to_execute": ["php", "theme", "module"],
 
   "phpcs_additional_args": {
-      "--standard": "Drupal,DrupalPractice",
-      "-n": ""
+
   },
 
   "phpcbf_additional_args": {
-      "--standard": "Drupal,DrupalPractice",
-      "-n": ""
+
+  },
+
+  "phpmd_run": false,
+  "phpmd_additional_args": {
+      "cleancode,codesize,controversial,design,naming,unusedcode": ""
   },
 }
