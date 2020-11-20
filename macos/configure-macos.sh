@@ -44,13 +44,13 @@ defaults -currentHost write com.apple.systemuiserver dontAutoLoad -array \
         "/System/Library/CoreServices/Menu Extras/User.menu" \
         "/System/Library/CoreServices/Menu Extras/Eject.menu" \
         "/System/Library/CoreServices/Menu Extras/TextInput.menu" \
-        "/System/Library/CoreServices/Menu Extras/Displays.menu"
+        "/System/Library/CoreServices/Menu Extras/Displays.menu" \
+        "/System/Library/CoreServices/Menu Extras/VPN.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
         "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
         "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
         "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
         "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-        "/System/Library/CoreServices/Menu Extras/VPN.menu" \
         "/System/Library/CoreServices/Menu Extras/Battery.menu" \
         "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
