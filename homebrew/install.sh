@@ -71,6 +71,7 @@ echo -e "\\n⬇️  Installing applications via Homebrew Cask"
 brew tap homebrew/cask-versions
 
 brew cask install --appdir="/Applications" 1password
+brew cask install --appdir="/Applications" adobe-creative-cloud
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" calibre
@@ -90,9 +91,11 @@ brew cask install --appdir="/Applications" handbrake
 brew cask install --appdir="/Applications" hazel
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" jump
 brew cask install --appdir="/Applications" kaleidoscope
 brew cask install --appdir="/Applications" kap
 brew cask install --appdir="/Applications" little-snitch
+brew cask install --appdir="/Applications" microsoft-office
 brew cask install --appdir="/Applications" namechanger
 brew cask install --appdir="/Applications" screaming-frog-seo-spider
 brew cask install --appdir="/Applications" sequel-pro
@@ -105,4 +108,6 @@ brew cask install --appdir="/Applications" superduper
 brew cask install --appdir="/Applications" the-unarchiver
 brew cask install --appdir="/Applications" ticktick
 brew cask install --appdir="/Applications" tower
+brew cask install --appdir="/Applications" virtualbox
+brew cask install --appdir="/Applications" virtualbox-extension-pack
 brew cask install --appdir="/Applications" zoomus
