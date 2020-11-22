@@ -73,6 +73,7 @@ brew tap homebrew/cask-versions
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" adobe-creative-cloud
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" arq
 brew cask install --appdir="/Applications" bartender
 brew cask install --appdir="/Applications" calibre
 brew cask install --appdir="/Applications" cleanmymac
