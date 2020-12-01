@@ -33,20 +33,20 @@ brew install trash
 brew install tree
 brew install zopfli
 
-echo -e "\\n⬇️  Installing fonts via Homebrew Cask"
+echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
 
-brew cask install font-ia-writer-duospace
-brew cask install font-ia-writer-mono
-brew cask install font-ibm-plex
-brew cask install font-inconsolata
-brew cask install font-lato
-brew cask install font-source-code-pro
-brew cask install font-source-sans-pro
-brew cask install font-source-serif-pro
+brew install --cask font-ia-writer-duospace
+brew install --cask font-ia-writer-mono
+brew install --cask font-ibm-plex
+brew install --cask font-inconsolata
+brew install --cask font-lato
+brew install --cask font-source-code-pro
+brew install --cask font-source-sans-pro
+brew install --cask font-source-serif-pro
 
-echo -e "\\n⬇️  Installing Mac App Store applications via MAS"
+echo -e "\\n⬇️  Installing Mac App Store applications"
 
 mas install 937984704 # Amphetamine
 mas install 924726344 # Deliveries
@@ -67,49 +67,45 @@ mas install 1528890965 # TextSniper
 mas install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
 
-echo -e "\\n⬇️  Installing applications via Homebrew Cask"
+echo -e "\\n⬇️  Installing applications"
 
-brew tap homebrew/cask-versions
-
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" adobe-creative-cloud
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" arq
-brew cask install --appdir="/Applications" bartender
-brew cask install --appdir="/Applications" calibre
-brew cask install --appdir="/Applications" cleanmymac
-brew cask install --appdir="/Applications" colour-contrast-analyser
-brew cask install --appdir="/Applications" commandq
-brew cask install --appdir="/Applications" couleurs
-brew cask install --appdir="/Applications" cyberduck
-brew cask install --appdir="/Applications" daisydisk
-brew cask install --appdir="/Applications" dash
-brew cask install --appdir="/Applications" docker
-brew cask install --appdir="/Applications" downie
-brew cask install --appdir="/Applications" encryptme
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" handbrake
-brew cask install --appdir="/Applications" hazel
-brew cask install --appdir="/Applications" imageoptim
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" jump
-brew cask install --appdir="/Applications" kaleidoscope
-brew cask install --appdir="/Applications" kap
-brew cask install --appdir="/Applications" little-snitch
-brew cask install --appdir="/Applications" microsoft-office
-brew cask install --appdir="/Applications" namechanger
-brew cask install --appdir="/Applications" screaming-frog-seo-spider
-brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" sim-daltonism
-brew cask install --appdir="/Applications" sketchup
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" superduper
-brew cask install --appdir="/Applications" the-unarchiver
-brew cask install --appdir="/Applications" ticktick
-brew cask install --appdir="/Applications" tower
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" virtualbox-extension-pack
-brew cask install --appdir="/Applications" zoomus
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask arq
+brew install --cask bartender
+brew install --cask calibre
+brew install --cask cleanmymac
+brew install --cask colour-contrast-analyser
+brew install --cask commandq
+brew install --cask couleurs
+brew install --cask cyberduck
+brew install --cask daisydisk
+brew install --cask dash
+brew install --cask docker
+brew install --cask downie
+brew install --cask encryptme
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask handbrake
+brew install --cask hazel
+brew install --cask imageoptim
+brew install --cask iterm2
+brew install --cask jump
+brew install --cask kaleidoscope
+brew install --cask kap
+brew install --cask little-snitch
+brew install --cask namechanger
+brew install --cask screaming-frog-seo-spider
+brew install --cask sequel-pro
+brew install --cask sim-daltonism
+brew install --cask sketchup
+brew install --cask slack
+brew install --cask spotify
+brew install --cask sublime-text
+brew install --cask superduper
+brew install --cask the-unarchiver
+brew install --cask ticktick
+brew install --cask tower
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+brew install --cask zoom
