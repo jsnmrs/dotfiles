@@ -13,6 +13,7 @@ fi
 echo -e "\\n⬇️  Installing Homebrew formulae"
 
 brew install ack
+brew install act
 brew install cmake
 brew install composer
 brew install coreutils
