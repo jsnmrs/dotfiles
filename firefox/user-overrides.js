@@ -1,6 +1,11 @@
-/*** MY OVERRIDES ***/
+/*** Arkenfox user.js overrides ***/
+/*
+ * https://github.com/arkenfox/user.js
+ * 1. copy this file into profile directory
+ * 2. use prefsCleaner.sh in profile directory to zero all preferences
+ * 3. use updater.sh in profile directory to update user.js, merge overrides
+***/
 user_pref("_user.js.parrot", "overrides section syntax error");
-
 
 /* 0208: set search region ***/
 user_pref("browser.search.region", "US"); // [HIDDEN PREF]
