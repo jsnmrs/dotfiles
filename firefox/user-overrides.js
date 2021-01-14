@@ -37,6 +37,10 @@ user_pref("browser.sessionstore.privacy_level", 1);
 /* 1030: enable favicons in shortcuts ***/
 user_pref("browser.shell.shortcutFavicons", true);
 
+/* 2030: disable autoplay of HTML5 media [FF63+]
+ * 0=Allow all, 1=Block non-muted media (default in FF67+), 5=Block all (FF69+) ***/
+user_pref("media.autoplay.default", 5);
+
 /* 2402: enable website access to clipboard events/content ***/
 user_pref("dom.event.clipboardevents.enabled", true);
 
