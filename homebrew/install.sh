@@ -86,6 +86,7 @@ brew install --cask docker
 brew install --cask downie
 brew install --cask encryptme
 brew install --cask firefox
+brew install --cask focus
 brew install --cask google-chrome
 brew install --cask handbrake
 brew install --cask hazel
@@ -106,6 +107,7 @@ brew install --cask sublime-text
 brew install --cask superduper
 brew install --cask the-unarchiver
 brew install --cask ticktick
+brew install --cask timemator
 brew install --cask tower
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
