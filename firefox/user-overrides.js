@@ -62,6 +62,12 @@ user_pref("permissions.default.desktop-notification", 2);
 /* 2520: disable virtual reality devices ***/
 user_pref("dom.vr.enabled", false);
 
+/* 2601: permit accessibility services to accessing your browser ***/
+user_pref("accessibility.force_disabled", 0);
+
+/* 2607: enable various developer tools in browser context ***/
+user_pref("devtools.chrome.enabled", true);
+
 /* 2702: set third-party cookies (if enabled, see 2701) to session-only ***/
 user_pref("network.cookie.thirdparty.sessionOnly", false);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true); // [FF58+]
@@ -98,5 +104,6 @@ user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
 /* OTHER ***/
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false); // disable CFR [FF67+]
 user_pref("dom.flyweb.enabled", false); // disable FlyWeb (LAN/proximity IoT devices)
+user_pref("accessibility.AOM.enabled", true); // enable Accessibility Object Model (AOM)
 
 user_pref("_user.js.parrot", "overrides section successful");
