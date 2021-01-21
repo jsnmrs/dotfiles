@@ -37,6 +37,10 @@ user_pref("browser.sessionstore.privacy_level", 1);
 /* 1030: enable favicons in shortcuts ***/
 user_pref("browser.shell.shortcutFavicons", true);
 
+/* 1603: CROSS ORIGIN: control when to send a referer
+ * 0=always (default), 1=only if base domains match, 2=only if hosts match ***/
+user_pref("network.http.referer.XOriginPolicy", 0);
+
 /* 2030: disable autoplay of HTML5 media [FF63+]
  * 0=Allow all, 1=Block non-muted media (default in FF67+), 5=Block all (FF69+) ***/
 user_pref("media.autoplay.default", 5);
