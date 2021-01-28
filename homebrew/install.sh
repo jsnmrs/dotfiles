@@ -45,7 +45,6 @@ brew install --cask font-inconsolata
 brew install --cask font-lato
 brew install --cask font-source-code-pro
 brew install --cask font-source-sans-pro
-brew install --cask font-source-serif-pro
 
 echo -e "\\n⬇️  Installing Mac App Store applications"
 
