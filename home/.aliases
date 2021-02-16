@@ -4,11 +4,11 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias home="cd ~/"
 alias desktop="cd ~/Desktop"
 alias dotfiles="cd ~/Projects/dotfiles"
 alias downloads="cd ~/Downloads"
-alias dropbox="cd ~/Dropbox"
 alias projects="cd ~/Projects"
 
 # Start local servers

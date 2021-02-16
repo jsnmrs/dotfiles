@@ -59,6 +59,7 @@ mas install 441258766 # Magnet
 mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
+mas install 1547106997 # Pins for Pinboard
 mas install 407963104 # Pixelmator
 mas install 463362050 # PhotoSweeper
 mas install 1529448980 # Reeder 5
