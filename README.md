@@ -132,10 +132,9 @@ The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos
 
 ## Housekeeping
 
-- `brew leaves` – list installed Homebrew formulae
-- `brew cask list` – list installed Homebrew casks
+- `brew list` – list installed Homebrew formulae, including casks
 - `mas list` – list installed applications from Mac App Store
-- `npm list -g --depth=0` – list globally installed node modules
+- `npm list -g [--depth=0]` – list globally installed node modules
 - `gem query --local` – list locally installed Ruby gems
 - `composer global show` – list globally installed Composer packages
 
