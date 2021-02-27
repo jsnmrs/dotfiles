@@ -32,6 +32,7 @@ brew install python
 brew install shellcheck
 brew install trash
 brew install tree
+brew install webp
 brew install zopfli
 
 echo -e "\\n⬇️  Installing fonts"
