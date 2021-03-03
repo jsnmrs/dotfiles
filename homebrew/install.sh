@@ -96,6 +96,7 @@ brew install --cask iterm2
 brew install --cask jump
 brew install --cask kaleidoscope
 brew install --cask kap
+brew install --cask lingon-x
 brew install --cask little-snitch
 brew install --cask namechanger
 brew install --cask screaming-frog-seo-spider
