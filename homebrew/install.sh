@@ -66,12 +66,12 @@ mas install 463362050 # PhotoSweeper
 mas install 1529448980 # Reeder 5
 mas install 442168834 # Site Sucker
 mas install 1528890965 # TextSniper
-mas install 1191449274 # ToothFairy
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications"
 
 brew install --cask 1password
+brew install --cask adobe-acrobat-reader
 brew install --cask alfred
 brew install --cask arq
 brew install --cask bartender
@@ -107,7 +107,6 @@ brew install --cask slack
 brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask superduper
-brew install --cask the-unarchiver
 brew install --cask ticktick
 brew install --cask timemator
 brew install --cask tower
