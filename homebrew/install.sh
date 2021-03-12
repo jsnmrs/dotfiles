@@ -99,6 +99,7 @@ brew install --cask kap
 brew install --cask lingon-x
 brew install --cask little-snitch
 brew install --cask namechanger
+brew install --cask nova
 brew install --cask screaming-frog-seo-spider
 brew install --cask sequel-pro
 brew install --cask sim-daltonism

@@ -9,13 +9,23 @@ function gitdiff() {
 }
 
 # muscle memory override
-# `a` with no arguments opens the current directory in Sublime Text, otherwise
+# `a` with no arguments opens the current directory in Nova, otherwise
 # opens the given location
 function a() {
   if [ $# -eq 0 ]; then
-    subl .;
+    nova .;
   else
-    subl "$@";
+    nova "$@";
+  fi;
+}
+
+# `n` with no arguments opens the current directory in Nova, otherwise
+# opens the given location
+function n() {
+  if [ $# -eq 0 ]; then
+    nova .;
+  else
+    nova "$@";
   fi;
 }
 
