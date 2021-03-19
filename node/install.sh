@@ -13,10 +13,7 @@ if test ! "$(npm --version)"
   echo -e "\\nNPM not installed"
 else
   echo -e "\\n⬇️  Install global Node modules"
-  npm install -g axe-cli
-  npm install -g eslint
   npm install -g git-standup
   npm install -g npm-check-updates
-  npm install -g pa11y-ci
   npm install -g pure-prompt
 fi
