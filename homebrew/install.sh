@@ -3,7 +3,7 @@
 if test ! "$(brew --version)"
   then
   echo -e "\\n⬇️  Installing Homebrew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo -e "\\n🔁 Updating installed Homebrew"
   brew update
