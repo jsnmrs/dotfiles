@@ -29,25 +29,21 @@ sudo rm -rf ~/Public/Drop\ Box
 rm -rf ~/Public/.com.apple.timemachine.supported
 
 # Grant Full Disk Access permission
-for app (
-    "com.apple.Terminal"
-    "/Applications/Alfred 4.app"
-    "/Applications/Arq.app"
-    "/Applications/CleanMyMac X.app"
-); do
+for app in "com.apple.Terminal" \
+    "/Applications/Alfred 4.app" \
+    "/Applications/Arq.app" \
+    "/Applications/CleanMyMac X.app"; do
     sudo tccutil --service "kTCCServiceSystemPolicyAllFiles" --insert "${app}"
     sudo tccutil --service "kTCCServiceSystemPolicyAllFiles" --enable "${app}"
 done
 
 # Grant Accessibility permission
-for app (
-    "/Applications/Alfred 4.app"
-    "/Applications/Bartender 4.app"
-    "/Library/Application Support/Logitech.localized/Logitech Options.localized/Logi Options Daemon.app"
-    "/Applications/Logi Options.app"
-    "/Applications/Magnet.app"
-    "/Applications/Timemator.app"
-); do
+for app in "/Applications/Alfred 4.app" \
+    "/Applications/Bartender 4.app" \
+    "/Library/Application Support/Logitech.localized/Logitech Options.localized/Logi Options Daemon.app" \
+    "/Applications/Logi Options.app" \
+    "/Applications/Magnet.app" \
+    "/Applications/Timemator.app"; do
     sudo tccutil --insert "${app}"
     sudo tccutil --enable "${app}"
 done
@@ -480,7 +476,7 @@ defaults write com.apple.Safari SafariGeolocationPermissionPolicy -int 0
 ###############################################################################
 
 # Set Zsh as default shell
-sudo chsh -s /bin/zsh $USERNAME
+sudo chsh -s /bin/zsh "$USERNAME"
 sudo chsh -s /bin/zsh root
 
 # Only use UTF-8 in Terminal.app
