@@ -36,7 +36,7 @@ brew install --cask font-source-sans-pro
 
 echo -e "\\n⬇️  Installing Mac App Store applications"
 
-mas install 1440524897 # Acorn 7
+mas install 1547371478 # Acorn 7
 mas install 937984704 # Amphetamine
 mas install 924726344 # Deliveries
 mas install 1435957248 # Drafts
