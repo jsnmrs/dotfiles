@@ -2,6 +2,11 @@
 export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.composer/vendor/bin";
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/sbin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1;
