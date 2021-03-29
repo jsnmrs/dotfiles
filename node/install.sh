@@ -16,4 +16,5 @@ else
   npm install -g git-standup
   npm install -g npm-check-updates
   npm install -g pure-prompt
+  npm install -g wallace-cli
 fi
