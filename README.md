@@ -145,3 +145,4 @@ The [macos/configure-dock.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos
 - [Paul Irish’s dotfiles repo](https://github.com/paulirish/dotfiles/)
 - [Paul Miller’s dotfiles repo](https://github.com/paulmillr/dotfiles)
 - [Matt Brictson’s dotfiles repo](https://github.com/mattbrictson/dotfiles)
+- [Change macOS user preferences via command line by Pawel Grzybek](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/)
