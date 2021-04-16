@@ -86,6 +86,7 @@ brew install --cask screaming-frog-seo-spider # rosetta 2
 brew install --cask slack
 brew install --cask spotify # rosetta 2
 brew install --cask sublime-text # rosetta 2
+brew install --cask ticktick
 brew install --cask timemator
 brew install --cask tower
 brew install --cask zoom
