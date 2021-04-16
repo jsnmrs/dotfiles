@@ -10,3 +10,6 @@ source "$HOME/.rvm/scripts/rvm"
 echo -e "\\n⬇️  Install global Ruby gems"
 gem install bundler
 gem install github-pages
+
+# if fatal error: 'openssl/ssl.h' file not found, see:
+# https://github.com/eventmachine/eventmachine/issues/936

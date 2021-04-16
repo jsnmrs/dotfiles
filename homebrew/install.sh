@@ -49,7 +49,7 @@ mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 1547106997 # Pins for Pinboard
-mas install 407963104 # Pixelmator
+mas install 1289583905 # Pixelmator Pro
 mas install 463362050 # PhotoSweeper
 mas install 1529448980 # Reeder 5
 mas install 1518036000 # Sequel Ace
@@ -60,7 +60,7 @@ mas install 494803304 # WiFi Explorer
 echo -e "\\n⬇️  Installing applications"
 
 brew install --cask 1password
-# brew install --cask adobe-acrobat-pro
+brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 brew install --cask arq
 brew install --cask bartender
@@ -69,7 +69,7 @@ brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser # rosetta 2
 brew install --cask commandq # rosetta 2
 brew install --cask daisydisk
-# brew install --cask docker
+brew install --cask docker
 brew install --cask downie
 brew install --cask encryptme # rosetta 2
 brew install --cask firefox
@@ -86,6 +86,7 @@ brew install --cask screaming-frog-seo-spider # rosetta 2
 brew install --cask slack
 brew install --cask spotify # rosetta 2
 brew install --cask sublime-text # rosetta 2
+brew install --cask ticktick
 brew install --cask timemator
 brew install --cask tower
 brew install --cask zoom
