@@ -80,6 +80,7 @@ brew install --cask iterm2
 brew install --cask kaleidoscope # rosetta 2
 brew install --cask lingon-x # rosetta 2
 brew install --cask little-snitch
+brew install --cask michaelvillar-timer
 # brew install --cask microsoft-office
 brew install --cask nova
 brew install --cask screaming-frog-seo-spider # rosetta 2
