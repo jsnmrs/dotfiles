@@ -44,7 +44,6 @@ mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 mas install 1493996622 # Front and Center
 mas install 439697913 # Icon Slate
-mas install 441258766 # Magnet
 mas install 1289197285 # Mindnode 6
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
@@ -68,6 +67,7 @@ brew install --cask calibre # rosetta 2
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser # rosetta 2
 brew install --cask commandq # rosetta 2
+brew install --cask cyberduck # rosetta 2
 brew install --cask daisydisk
 brew install --cask docker
 brew install --cask downie
@@ -81,6 +81,7 @@ brew install --cask kaleidoscope # rosetta 2
 brew install --cask lingon-x # rosetta 2
 brew install --cask little-snitch
 # brew install --cask microsoft-office
+brew install --cask moom
 brew install --cask nova
 brew install --cask screaming-frog-seo-spider # rosetta 2
 brew install --cask slack
