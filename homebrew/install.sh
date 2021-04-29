@@ -31,8 +31,6 @@ brew install --cask font-ia-writer-mono
 brew install --cask font-ibm-plex
 brew install --cask font-inter
 brew install --cask font-lato
-brew install --cask font-source-code-pro
-brew install --cask font-source-sans-pro
 
 echo -e "\\n⬇️  Installing Mac App Store applications"
 
