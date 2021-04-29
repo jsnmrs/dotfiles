@@ -11,12 +11,12 @@ if test ! "$(subl --version)"
   cd "$current_path" || exit
 fi
 
-if [ ! -d "$HOME/Library/Application Support/Sublime Text 3/Packages/User" ];
+if [ ! -d "$HOME/Library/Application Support/Sublime Text/Packages/User" ];
   then
-  mkdir "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
+  mkdir "$HOME/Library/Application Support/Sublime Text/Packages/User"
 fi
 
 # Copy config from repo to Sublime User folder
-rsync --exclude "install.sh" -avh --no-perms "$parent_path/" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/";
+rsync --exclude "install.sh" -avh --no-perms "$parent_path/" "$HOME/Library/Application Support/Sublime Text/Packages/User/";
 
 cd "$current_path" || exit
