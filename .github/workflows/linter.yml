@@ -22,6 +22,5 @@ jobs:
           VALIDATE_MD: true
           VALIDATE_BASH: true
           VALIDATE_JAVASCRIPT_ES: true
-          VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_CSS: true
           DEFAULT_BRANCH: main
