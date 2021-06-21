@@ -12,7 +12,6 @@ fi
 
 echo -e "\\n⬇️  Installing Homebrew formulae"
 
-brew install act
 brew install composer
 brew install git
 brew install mas
@@ -42,7 +41,7 @@ mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 mas install 1493996622 # Front and Center
 mas install 439697913 # Icon Slate
-mas install 1289197285 # Mindnode 6
+mas install 1289197285 # Mindnode
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1346203938 # OmniFocus 3
 mas install 1547106997 # Pins for Pinboard
