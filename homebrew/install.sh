@@ -80,7 +80,6 @@ brew install --cask little-snitch
 brew install --cask michaelvillar-timer
 # brew install --cask microsoft-office
 brew install --cask moom
-brew install --cask obsidian
 brew install --cask screaming-frog-seo-spider # rosetta 2
 brew install --cask slack
 brew install --cask spotify # rosetta 2
