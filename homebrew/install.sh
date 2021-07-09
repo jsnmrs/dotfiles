@@ -14,6 +14,7 @@ echo -e "\\n⬇️  Installing Homebrew formulae"
 
 brew install composer
 brew install git
+brew install imagemagick
 brew install mas
 brew install node
 brew install openssh
