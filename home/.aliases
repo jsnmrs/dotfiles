@@ -19,7 +19,7 @@ alias phpsrv="php -S localhost:8000"
 alias webpme='for F in *.jpg; do cwebp $F -q 50 -o $(basename ${F%.jpg}).webp; done'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -ia --include-config-data; sudo gem update --system; sudo gem update; gem cleanup; brew update; brew upgrade; mas upgrade; npm install npm -g; npm update -g; brew cleanup'
+alias update='sudo softwareupdate -ia --include-config-data; sudo gem update --system; sudo gem update; gem cleanup; brew update; brew upgrade; mas upgrade; brew cleanup; nvm install node --latest-npm; nvm use node; npm update -g;'
 
 # Switch between light and dark mode
 alias switch="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
