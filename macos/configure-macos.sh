@@ -578,6 +578,13 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
+# Additional adjustments                                                      #
+###############################################################################
+
+# start screensaver after 5 minutes
+defaults -currentHost write com.apple.screensaver idleTime 300
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
