@@ -52,6 +52,7 @@ mas install 1529448980 # Reeder 5
 mas install 1518036000 # Sequel Ace
 mas install 442168834 # Site Sucker
 mas install 1528890965 # TextSniper
+mas install 904280696 # Things 3
 mas install 494803304 # WiFi Explorer
 
 echo -e "\\n⬇️  Installing applications"
@@ -76,6 +77,7 @@ brew install --cask hazel
 brew install --cask imageoptim
 brew install --cask iterm2
 brew install --cask kaleidoscope # rosetta 2
+brew install --cask keyboard-maestro
 brew install --cask lingon-x # rosetta 2
 brew install --cask little-snitch
 brew install --cask michaelvillar-timer
