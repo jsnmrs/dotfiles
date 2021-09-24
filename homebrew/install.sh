@@ -62,31 +62,32 @@ brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 brew install --cask arq
 brew install --cask bartender
-brew install --cask calibre # rosetta 2
+brew install --cask calibre
 brew install --cask cleanmymac
-brew install --cask colour-contrast-analyser # rosetta 2
-brew install --cask commandq # rosetta 2
-brew install --cask cyberduck # rosetta 2
+brew install --cask colour-contrast-analyser
+brew install --cask commandq
+brew install --cask cyberduck
 brew install --cask daisydisk
 brew install --cask docker
 brew install --cask downie
-brew install --cask encryptme # rosetta 2
+brew install --cask encryptme
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask hazel
 brew install --cask imageoptim
 brew install --cask iterm2
-brew install --cask kaleidoscope # rosetta 2
+brew install --cask kap
+brew install --cask kaleidoscope
 brew install --cask keyboard-maestro
-brew install --cask lingon-x # rosetta 2
+brew install --cask lingon-x
 brew install --cask little-snitch
 brew install --cask michaelvillar-timer
 # brew install --cask microsoft-office
 brew install --cask moom
 brew install --cask obsidian
-brew install --cask screaming-frog-seo-spider # rosetta 2
+brew install --cask screaming-frog-seo-spider
 brew install --cask slack
-brew install --cask spotify # rosetta 2
+brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask taskpaper
 brew install --cask ticktick
