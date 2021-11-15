@@ -2,6 +2,8 @@
   "color_scheme": "Packages/Rainglow/rainglow/Darkside Contrast (rainglow).tmTheme",
   "font_face": "IBM Plex Mono",
   "font_size": 16,
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
   "font_options":
   [
     "no_liga",
