@@ -60,6 +60,7 @@ echo -e "\\n⬇️  Installing applications"
 brew install --cask 1password
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
+brew install --cask amethyst
 brew install --cask arq
 brew install --cask bartender
 brew install --cask calibre
