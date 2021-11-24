@@ -32,67 +32,72 @@ brew install --cask font-ibm-plex
 brew install --cask font-inter
 brew install --cask font-lato
 
-echo -e "\\n⬇️  Installing Mac App Store applications"
-
-mas install 1547371478 # Acorn 7
-mas install 937984704 # Amphetamine
-mas install 924726344 # Deliveries
-mas install 1435957248 # Drafts
-mas install 1099120373 # Exporter
-mas install 975937182 # Fantastical
-mas install 1493996622 # Front and Center
-mas install 439697913 # Icon Slate
-mas install 1289197285 # Mindnode
-mas install 1295203466 # Microsoft Remote Desktop 10
-mas install 1346203938 # OmniFocus 3
-mas install 1547106997 # Pins for Pinboard
-mas install 1289583905 # Pixelmator Pro
-mas install 463362050 # PhotoSweeper
-mas install 1529448980 # Reeder 5
-mas install 1518036000 # Sequel Ace
-mas install 442168834 # Site Sucker
-mas install 1528890965 # TextSniper
-mas install 904280696 # Things 3
-mas install 494803304 # WiFi Explorer
-
 echo -e "\\n⬇️  Installing applications"
 
+brew tap homebrew/cask-drivers
+
 brew install --cask 1password
+mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
-brew install --cask amethyst
+mas install 937984704 # Amphetamine
 brew install --cask arq
 brew install --cask bartender
+brew install --cask caldigit-docking-utility
 brew install --cask calibre
+brew install --cask canon-eos-webcam-utility
+# Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
 brew install --cask commandq
 brew install --cask cyberduck
 brew install --cask daisydisk
+mas install 924726344 # Deliveries
 brew install --cask docker
 brew install --cask downie
+mas install 1435957248 # Drafts
 brew install --cask encryptme
+mas install 1099120373 # Exporter
+mas install 975937182 # Fantastical
 brew install --cask firefox
+mas install 1493996622 # Front and Center
 brew install --cask google-chrome
 brew install --cask hazel
+mas install 439697913 # Icon Slate
 brew install --cask imageoptim
 brew install --cask iterm2
-brew install --cask kap
 brew install --cask kaleidoscope
+brew install --cask kap
 brew install --cask karabiner-elements
 brew install --cask keyboard-maestro
+brew install --cask kobo
 brew install --cask lingon-x
 brew install --cask little-snitch
-brew install --cask michaelvillar-timer
 # brew install --cask microsoft-office
+mas install 1295203466 # Microsoft Remote Desktop 10
+mas install 1289197285 # Mindnode
 brew install --cask moom
-brew install --cask obsidian
+mas install 1346203938 # OmniFocus 3
+mas install 463362050 # PhotoSweeper
+mas install 1547106997 # Pins for Pinboard
+mas install 1289583905 # Pixelmator Pro
+brew install --cask qbserve
+mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
+mas install 1518036000 # Sequel Ace
+mas install 442168834 # Site Sucker
+brew install --cask sketchup
 brew install --cask slack
 brew install --cask spotify
+brew install --cask elgato-stream-deck
 brew install --cask sublime-text
+brew install --cask superduper
 brew install --cask taskpaper
+mas install 1528890965 # TextSniper
+mas install 904280696 # Things 3
 brew install --cask ticktick
-brew install --cask timemator
+brew install --cask michaelvillar-timer
 brew install --cask tower
+# Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
+mas install 494803304 # WiFi Explorer
 brew install --cask zoom
