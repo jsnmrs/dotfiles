@@ -76,7 +76,6 @@ brew install --cask little-snitch
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
-brew install --cask moom
 mas install 1346203938 # OmniFocus 3
 mas install 463362050 # PhotoSweeper
 mas install 1547106997 # Pins for Pinboard
