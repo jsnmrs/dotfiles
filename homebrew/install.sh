@@ -95,7 +95,6 @@ brew install --cask taskpaper
 mas install 1528890965 # TextSniper
 mas install 904280696 # Things 3
 brew install --cask ticktick
-brew install --cask michaelvillar-timer
 brew install --cask tower
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
 mas install 494803304 # WiFi Explorer
