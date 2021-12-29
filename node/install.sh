@@ -15,6 +15,7 @@ else
   echo -e "\\n⬇️  Install global Node modules"
   npm install -g git-standup
   npm install -g npm-check-updates
+  npm install -g npm-check
   npm install -g pure-prompt
   npm install -g wallace-cli
 fi
