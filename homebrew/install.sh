@@ -83,6 +83,7 @@ mas install 1289583905 # Pixelmator Pro
 brew install --cask qbserve
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
+brew install --cask screenflow
 mas install 1518036000 # Sequel Ace
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
