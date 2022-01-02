@@ -20,6 +20,7 @@ brew install node
 brew install openssh
 brew install openssl@1.1
 brew install shellcheck
+brew install svgo
 brew install webp
 brew install zopfli
 
