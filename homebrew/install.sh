@@ -65,6 +65,7 @@ brew install --cask google-chrome
 brew install --cask hazel
 mas install 439697913 # Icon Slate
 brew install --cask imageoptim
+brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask kaleidoscope
 brew install --cask kap
