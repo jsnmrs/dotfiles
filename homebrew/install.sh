@@ -24,6 +24,10 @@ brew install svgo
 brew install webp
 brew install zopfli
 
+brew tap archivebox/archivebox
+
+brew install archivebox
+
 echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
@@ -44,6 +48,7 @@ brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask arq
+brew install --cask balenaetcher
 brew install --cask bartender
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
