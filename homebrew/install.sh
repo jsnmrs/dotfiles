@@ -48,6 +48,7 @@ brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask arq
+brew install --cask asana
 brew install --cask balenaetcher
 brew install --cask bartender
 brew install --cask caldigit-docking-utility
@@ -70,6 +71,7 @@ brew install --cask firefox
 mas install 1493996622 # Front and Center
 brew install --cask google-chrome
 brew install --cask hazel
+mas install 775737590 # IA Writer
 mas install 439697913 # Icon Slate
 brew install --cask imageoptim
 brew install --cask inkscape
@@ -84,6 +86,7 @@ brew install --cask little-snitch
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
+brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 mas install 463362050 # PhotoSweeper
 mas install 1547106997 # Pins for Pinboard
@@ -93,6 +96,7 @@ mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
 mas install 1518036000 # Sequel Ace
+mas install 693112260 # Sim Daltonism
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
