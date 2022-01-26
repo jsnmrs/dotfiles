@@ -24,10 +24,6 @@ brew install svgo
 brew install webp
 brew install zopfli
 
-brew tap archivebox/archivebox
-
-brew install archivebox
-
 echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
@@ -71,18 +67,19 @@ brew install --cask firefox
 mas install 1493996622 # Front and Center
 brew install --cask google-chrome
 brew install --cask hazel
+mas install 1437226581 # Horo timer
 mas install 775737590 # IA Writer
 mas install 439697913 # Icon Slate
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask kaleidoscope
-brew install --cask kap
 brew install --cask karabiner-elements
 brew install --cask keyboard-maestro
 brew install --cask kobo
 brew install --cask lingon-x
 brew install --cask little-snitch
+brew install --cask macupdater
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
@@ -101,7 +98,6 @@ mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
 brew install --cask spotify
-brew install --cask elgato-stream-deck
 brew install --cask sublime-text
 brew install --cask superduper
 brew install --cask taskpaper
