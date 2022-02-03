@@ -43,7 +43,6 @@ mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 mas install 937984704 # Amphetamine
-brew install --cask arq
 brew install --cask asana
 brew install --cask balenaetcher
 brew install --cask bartender
@@ -60,6 +59,7 @@ mas install 924726344 # Deliveries
 brew install --cask docker
 brew install --cask downie
 mas install 1435957248 # Drafts
+brew install --cask elgato-control-center
 brew install --cask encryptme
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
