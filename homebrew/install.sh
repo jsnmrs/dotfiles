@@ -55,7 +55,7 @@ brew install --cask colour-contrast-analyser
 brew install --cask commandq
 brew install --cask cyberduck
 brew install --cask daisydisk
-mas install 924726344 # Deliveries
+mas install 290986013 # Deliveries
 brew install --cask docker
 brew install --cask downie
 mas install 1435957248 # Drafts
