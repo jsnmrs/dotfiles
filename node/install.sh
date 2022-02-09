@@ -16,5 +16,4 @@ else
   npm install -g git-standup
   npm install -g npm-check-updates
   npm install -g npm-check
-  npm install -g pure-prompt
 fi

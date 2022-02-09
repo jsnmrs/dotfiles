@@ -5,7 +5,7 @@
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 [[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
 
-fpath+=$HOME/.zsh/pure
+fpath+=/opt/homebrew/share/zsh/site-functions
 
 autoload -U promptinit; promptinit
 prompt pure
