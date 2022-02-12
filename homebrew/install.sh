@@ -86,6 +86,7 @@ mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
+brew install --cask parallels
 mas install 463362050 # PhotoSweeper
 mas install 1547106997 # Pins for Pinboard
 mas install 1289583905 # Pixelmator Pro
