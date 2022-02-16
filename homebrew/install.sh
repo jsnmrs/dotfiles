@@ -24,6 +24,7 @@ brew install shellcheck
 brew install svgo
 brew install webp
 brew install zopfli
+brew install zsh-autosuggestions
 
 echo -e "\\n⬇️  Installing fonts"
 
