@@ -78,7 +78,6 @@ brew install --cask iterm2
 brew install --cask kaleidoscope
 brew install --cask karabiner-elements
 brew install --cask keyboard-maestro
-brew install --cask librewolf
 brew install --cask lingon-x
 brew install --cask little-snitch
 brew install --cask macupdater

@@ -42,7 +42,6 @@ clear_dock
 
 add_app_to_dock "Firefox"
 add_spacer_to_dock
-add_app_to_dock "Drafts"
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
 add_app_to_dock "TickTick"
