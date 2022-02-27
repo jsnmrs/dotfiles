@@ -62,7 +62,6 @@ brew install --cask docker
 brew install --cask downie
 mas install 1435957248 # Drafts
 brew install --cask elgato-control-center
-brew install --cask encryptme
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 brew install --cask firefox
