@@ -51,6 +51,7 @@ brew install --cask bartender
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
 brew install --cask canon-eos-webcam-utility
+mas install 1290358394 # Cardhop
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
