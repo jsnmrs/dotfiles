@@ -108,5 +108,6 @@ mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
+brew install --cask warp
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
