@@ -51,7 +51,6 @@ brew install --cask bartender
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
 brew install --cask canon-eos-webcam-utility
-mas install 1290358394 # Cardhop
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
@@ -109,6 +108,5 @@ mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
-brew install --cask warp
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
