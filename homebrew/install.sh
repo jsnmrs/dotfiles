@@ -68,6 +68,7 @@ mas install 975937182 # Fantastical
 brew install --cask firefox
 mas install 1493996622 # Front and Center
 brew install --cask google-chrome
+brew install --cask hyper
 brew install --cask hazel
 mas install 1437226581 # Horo timer
 mas install 775737590 # IA Writer
