@@ -44,6 +44,7 @@ brew install --cask 1password
 mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
+brew install --cask alt-tab
 mas install 937984704 # Amphetamine
 brew install --cask asana
 brew install --cask balenaetcher
@@ -83,6 +84,7 @@ brew install --cask macupdater
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
+mas install  1464122853 # NextDNS
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 brew install --cask parallels
@@ -107,5 +109,6 @@ mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
+brew install --cask vscodium
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
