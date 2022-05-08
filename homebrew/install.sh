@@ -84,7 +84,7 @@ brew install --cask macupdater
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
-mas install  1464122853 # NextDNS
+mas install 1464122853 # NextDNS
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 brew install --cask parallels
