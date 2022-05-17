@@ -59,3 +59,5 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Strongly check for and update Node modules in package.json
 alias npmupdate="rm -rf node_modules && rm -f package-lock.json && ncu -u && npm install"
+
+alias npmu="npm-check -E -u -s"
