@@ -12,7 +12,9 @@ fi
 
 echo -e "\\n⬇️  Installing Homebrew formulae"
 
+brew install automake
 brew install composer
+brew install coreutils
 brew install git
 brew install imagemagick
 brew install mas
@@ -23,6 +25,8 @@ brew install pure
 brew install shellcheck
 brew install svgo
 brew install webp
+brew install yamllint
+brew install youtube-dl
 brew install zopfli
 brew install zsh-autosuggestions
 
@@ -30,6 +34,7 @@ echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
 
+brew install --cask font-atkinson-hyperlegible
 brew install --cask font-ia-writer-duospace
 brew install --cask font-ia-writer-mono
 brew install --cask font-ibm-plex
@@ -44,14 +49,12 @@ brew install --cask 1password
 mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
-brew install --cask alt-tab
 mas install 937984704 # Amphetamine
 brew install --cask asana
 brew install --cask balenaetcher
 brew install --cask bartender
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
-brew install --cask canon-eos-webcam-utility
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
@@ -68,17 +71,17 @@ mas install 975937182 # Fantastical
 brew install --cask firefox
 mas install 1493996622 # Front and Center
 brew install --cask google-chrome
+brew install --cask grammarly-desktop
+brew install --cask handbrake
 brew install --cask hazel
 mas install 1437226581 # Horo timer
 mas install 775737590 # IA Writer
-mas install 439697913 # Icon Slate
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask kaleidoscope
 brew install --cask karabiner-elements
 brew install --cask keyboard-maestro
-brew install --cask lingon-x
 brew install --cask little-snitch
 brew install --cask macupdater
 # brew install --cask microsoft-office
@@ -87,11 +90,10 @@ mas install 1289197285 # Mindnode
 mas install 1464122853 # NextDNS
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
-brew install --cask parallels
+# brew install --cask parallels
 mas install 463362050 # PhotoSweeper
 mas install 1547106997 # Pins for Pinboard
 mas install 1289583905 # Pixelmator Pro
-brew install --cask qbserve
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
@@ -108,6 +110,7 @@ mas install 1528890965 # TextSniper
 mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
+# TV Pro https://www.totalvalidator.com/downloads/pro.html
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
 brew install --cask vscodium
 mas install 494803304 # WiFi Explorer
