@@ -13,7 +13,7 @@ if test ! "$(npm --version)"
   echo -e "\\nNPM not installed"
 else
   echo -e "\\n⬇️  Install global Node modules"
-  npm install -g git-standup
-  npm install -g npm-check-updates
-  npm install -g npm-check
+  npm install git-standup --location=global
+  npm install npm-check-updates --location=global
+  npm install npm-check --location=global
 fi
