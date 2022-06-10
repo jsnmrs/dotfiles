@@ -101,3 +101,16 @@ function command-history() {
   uniq -c |
   sort -n
 }
+
+# Make a PDF look scanned
+# via: https://twitter.com/viljamis/status/1528688204962045952
+function scanpdf() {
+  if [ $# -eq 0 ]; then
+    echo "pick one:"
+    find . -name "*.pdf" | while read -r installer ; do echo "${installer}" ; done
+  else
+    convert -density 300 "$@" \
+-alpha remove -rotate 0.3 -attenuate 0.15 +noise Multiplicative +repage -monochrome \
+-compress group4 "scanned-$*"
+  fi;
+}
