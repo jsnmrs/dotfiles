@@ -70,7 +70,7 @@ mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 brew install --cask firefox
 brew install --cask focus
-mas install 1493996622 # Front and Center
+# mas install 1493996622 # Front and Center
 brew install --cask google-chrome
 brew install --cask grammarly-desktop
 brew install --cask handbrake
