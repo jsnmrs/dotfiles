@@ -114,3 +114,13 @@ function scanpdf() {
 -compress group4 "scanned-$*"
   fi;
 }
+
+# Update Docker desktop for macOS
+# Includes Docksal stop and start
+function update-docker() {
+  fin system stop
+  brew reinstall --cask docker
+  open -a docker
+  fin update
+  fin system reset
+}
