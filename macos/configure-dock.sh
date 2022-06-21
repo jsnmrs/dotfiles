@@ -120,6 +120,6 @@ add_app_to_dock "Tower"
 add_spacer_to_dock
 add_app_to_dock "Shortcuts"
 add_app_to_dock "Spotify"
-add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Screenshots" -s 2 -d 0 -v 1
+add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Screenshots" -s 2 -d 0 -v 2
 
 killall Dock
