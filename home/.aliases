@@ -65,4 +65,13 @@ alias path='echo -e ${PATH//:/\\n}'
 # Strongly check for and update Node modules in package.json
 alias npmupdate="rm -rf node_modules && rm -f package-lock.json && ncu -u && npm install"
 
+# Easier npm update check (alternative to `ncu`)
 alias npmu="npm-check -E -u -s"
+
+# Use bat (https://github.com/sharkdp/bat) instead of cat
+alias cat="bat"
+
+# Automatically run bat as file quick look
+# https://www.stefanjudis.com/today-i-learned/suffix-aliases-in-zsh/
+# shellcheck disable=SC2139
+alias -s {js,json,env,md,html,css,toml}=cat
