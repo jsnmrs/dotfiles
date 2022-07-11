@@ -32,6 +32,9 @@ brew install youtube-dl
 brew install zopfli
 brew install zsh-autosuggestions
 
+# https://github.com/dalance/amber/issues/46#issuecomment-756813259
+brew install danopia/tools/amber
+
 echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
