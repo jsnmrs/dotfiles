@@ -75,3 +75,6 @@ alias cat="bat"
 # https://www.stefanjudis.com/today-i-learned/suffix-aliases-in-zsh/
 # shellcheck disable=SC2139
 alias -s {js,json,env,md,html,css,toml}=cat
+
+# Weekly cleanup
+alias weekly="update; flush; emptytrash;"
