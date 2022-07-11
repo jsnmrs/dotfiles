@@ -52,7 +52,6 @@ brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask asana
-brew install --cask balenaetcher
 brew install --cask bartender
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
@@ -95,6 +94,7 @@ mas install 1346203938 # OmniFocus 3
 mas install 463362050 # PhotoSweeper
 mas install 1547106997 # Pins for Pinboard
 mas install 1289583905 # Pixelmator Pro
+brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
