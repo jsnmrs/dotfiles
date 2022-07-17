@@ -19,4 +19,6 @@ else
   npm install git-standup --location=global
   npm install npm-check-updates --location=global
   npm install npm-check --location=global
+  npm install pa11y-ci --location=global
+  npm install pa11y-ci-reporter-html --location=global
 fi
