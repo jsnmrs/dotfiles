@@ -13,6 +13,7 @@ if test ! "$(npm --version)"
   echo -e "\\nNPM not installed"
 else
   echo -e "\\n⬇️  Install global Node modules"
+  npm install cssstats-cli --location=global
   npm install depcheck --location=global
   npm install evaluatory --location=global
   npm install git-open --location=global
