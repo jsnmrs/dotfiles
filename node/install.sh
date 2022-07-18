@@ -21,5 +21,4 @@ else
   npm install npm-check --location=global
   npm install pa11y-ci --location=global
   npm install pa11y-ci-reporter-html --location=global
-  npm install wallace-cli --location=global
 fi
