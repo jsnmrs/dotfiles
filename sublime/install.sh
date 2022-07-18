@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Configure Sublime Text"
+
 current_path=$PWD
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" || exit; pwd -P )
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Setup NVM, Node, and global NPM packages"
+
 if test ! "$(nvm --version)"
   then
   echo -e "\\n⬇️  Installing NVM"

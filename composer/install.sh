@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Set up Composer, install globals"
+
 current_path=$PWD
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" || exit; pwd -P )
 

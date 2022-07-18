@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Configure macOS"
+
 # Adapted from:
 # https://mths.be/macos
 # https://github.com/kdeldycke/dotfiles/blob/master/scripts/macos-config.sh

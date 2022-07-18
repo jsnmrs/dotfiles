@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Configure macOS dock"
+
 # ./dock - contributed by @rpavlick
 # https://github.com/rpavlick/add_to_dock
 

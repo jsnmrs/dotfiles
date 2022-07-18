@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo -e "\\n⬇️  Set up Homebrew and install almost everything"
+
 if test ! "$(brew --version)"
   then
   echo -e "\\n⬇️  Installing Homebrew"
