@@ -14,6 +14,7 @@ echo -e "\\n⬇️  Installing Homebrew formulae"
 
 brew install automake
 brew install bat
+brew install chromium
 brew install composer
 brew install coreutils
 brew install ffmpeg
