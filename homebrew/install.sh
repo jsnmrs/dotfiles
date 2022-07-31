@@ -120,6 +120,7 @@ brew install --cask ticktick
 brew install --cask tower
 # TV Pro https://www.totalvalidator.com/downloads/pro.html
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
+brew install --cask utm
 brew install --cask vscodium
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
