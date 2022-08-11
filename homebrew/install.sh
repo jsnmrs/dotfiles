@@ -76,6 +76,7 @@ mas install 975937182 # Fantastical
 brew install --cask firefox
 brew install --cask focus
 # mas install 1493996622 # Front and Center
+brew install --cask gemini
 brew install --cask google-chrome
 brew install --cask grammarly-desktop
 brew install --cask handbrake
