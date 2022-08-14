@@ -90,6 +90,7 @@ brew install --cask kaleidoscope
 brew install --cask karabiner-elements
 brew install --cask kap
 brew install --cask keyboard-maestro
+mas install 1534275760 # LanguageTool
 brew install --cask little-snitch
 brew install --cask macupdater
 # brew install --cask microsoft-office
