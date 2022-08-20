@@ -26,6 +26,7 @@ brew install node
 brew install openssh
 brew install openssl@1.1
 brew install pure
+brew install qemu
 brew install shellcheck
 brew install svgo
 brew install webp
@@ -96,6 +97,7 @@ brew install --cask macupdater
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
+brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
