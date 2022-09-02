@@ -103,7 +103,6 @@ brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 # brew install --cask parallels
 mas install 463362050 # PhotoSweeper
-mas install 1547106997 # Pins for Pinboard
 mas install 1289583905 # Pixelmator Pro
 brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
