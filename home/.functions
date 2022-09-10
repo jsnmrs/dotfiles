@@ -9,23 +9,17 @@ function gitdiff() {
 }
 
 # muscle memory override
-# `a` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function a() {
-  if [ $# -eq 0 ]; then
-    subl .;
-  else
-    subl "$@";
-  fi;
-}
+alias a="s"
+alias n="s"
 
-# `n` with no arguments opens the current directory in Nova, otherwise
+
+# `c` with no arguments opens the current directory in VSCodium, otherwise
 # opens the given location
-function n() {
+function c() {
   if [ $# -eq 0 ]; then
-    nova .;
+    codium .;
   else
-    nova "$@";
+    codium "$@";
   fi;
 }
 
