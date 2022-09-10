@@ -8,11 +8,6 @@ function gitdiff() {
   git diff --name-status HEAD "$1" > ~/Desktop/diff"$timestamp".txt && open ~/Desktop/diff"$timestamp".txt;
 }
 
-# muscle memory override
-alias a="s"
-alias n="s"
-
-
 # `c` with no arguments opens the current directory in VSCodium, otherwise
 # opens the given location
 function c() {

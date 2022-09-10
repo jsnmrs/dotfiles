@@ -7,14 +7,19 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias home="cd ~/"
 alias desktop="cd ~/Desktop"
-alias docs="cd ~/Library/Mobile Documents/com~apple~CloudDocs/Documents"
-alias documents="cd ~/Library/Mobile Documents/com~apple~CloudDocs/Documents"
+alias docs="cd ~/Documents"
+alias documents="cd ~/Documents"
 alias dotfiles="cd ~/Projects/dotfiles"
 alias downloads="cd ~/Downloads"
 alias p="cd ~/Projects && ls"
 alias projects="cd ~/Projects && ls"
-alias screenshots="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Screenshots && ls"
-alias ss="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Screenshots && ls"
+alias screenshots="cd ~/Documents/Screenshots && ls"
+alias ss="cd ~/Documents/Screenshots && ls"
+
+# IDE muscle memory override
+alias a="s"
+alias n="s"
+alias code="codium"
 
 # Start local servers
 alias jksrv="bundle exec jekyll serve --watch"
