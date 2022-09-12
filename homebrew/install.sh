@@ -54,6 +54,7 @@ echo -e "\\n⬇️  Installing applications"
 brew tap homebrew/cask-drivers
 
 brew install --cask 1password
+brew install --cask 1password/tap/1password-cli
 mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
