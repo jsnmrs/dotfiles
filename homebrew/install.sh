@@ -118,6 +118,7 @@ brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask superduper
 brew install --cask taskpaper
+mas install 899247664 # TestFlight
 mas install 1528890965 # TextSniper
 mas install 904280696 # Things 3
 brew install --cask ticktick
