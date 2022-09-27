@@ -61,7 +61,6 @@ brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask asana
 brew install --cask bartender
-brew install --cask betterdisplay
 brew install --cask caldigit-docking-utility
 brew install --cask calibre
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
