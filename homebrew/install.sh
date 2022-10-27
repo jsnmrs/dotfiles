@@ -83,7 +83,6 @@ brew install --cask google-chrome
 brew install --cask grammarly-desktop
 brew install --cask handbrake
 brew install --cask hazel
-mas install 1437226581 # Horo timer
 mas install 775737590 # IA Writer
 brew install --cask imageoptim
 brew install --cask inkscape
