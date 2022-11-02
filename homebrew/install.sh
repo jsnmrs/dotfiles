@@ -15,7 +15,7 @@ if test ! "$(brew --version)"
   echo -e "\\n⭐️ Installed Homebrew! Close all terminal sessions and run this script again."
   exit
 else
-  echo -e "\\n🔁 Updating installed Homebrew"
+  echo -e "\\n🔁 Homebrew is installed! Updating instead."
   brew update
   brew upgrade
 fi
