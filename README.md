@@ -2,7 +2,7 @@
 
 These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
-![macOS 10.15 Catalina desktop with Snazzy iTerm window](https://raw.githubusercontent.com/jsnmrs/dotfiles/main/assets/screenshot.jpg)
+![macOS 13 Ventura desktop with iTerm prompt](https://raw.githubusercontent.com/jsnmrs/dotfiles/main/assets/screenshot.jpg)
 
 - [Step zero](#step-zero)
 - [Getting started, using Git](#getting-started-using-git)
