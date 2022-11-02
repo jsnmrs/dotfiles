@@ -12,6 +12,8 @@ if test ! "$(brew --version)"
   then
   echo -e "\\n⬇️  Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo -e "\\n⭐️ Installed Homebrew! Close all terminal sessions and run this script again."
+  exit
 else
   echo -e "\\n🔁 Updating installed Homebrew"
   brew update
