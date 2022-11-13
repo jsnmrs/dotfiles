@@ -113,3 +113,12 @@ function update-docker() {
   fin update
   fin system reset
 }
+
+# https://www.stefanjudis.com/snippets/a-native-shell-alternative-to-the-trash-cli/
+function trash() {
+  echo -e "🗑️  Moving files to trash...";
+  for var in "$@"
+  do
+    mv "$var" "$HOME/.trash";
+  done
+}
