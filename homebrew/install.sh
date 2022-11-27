@@ -102,6 +102,7 @@ brew install --cask keyboard-maestro
 mas install 1534275760 # LanguageTool
 brew install --cask little-snitch
 brew install --cask macupdater
+mas install 441258766 # Magnet
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
