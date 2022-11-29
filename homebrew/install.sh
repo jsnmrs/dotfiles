@@ -81,6 +81,7 @@ brew install --cask commandq
 brew install --cask cyberduck
 brew install --cask daisydisk
 mas install 290986013 # Deliveries
+brew install --cask descript
 brew install --cask docker
 brew install --cask downie
 mas install 1435957248 # Drafts
