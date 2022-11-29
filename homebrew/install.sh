@@ -43,6 +43,9 @@ brew install youtube-dl
 brew install zopfli
 brew install zsh-autosuggestions
 
+brew tap terrastruct/d2
+brew install d2
+
 # https://github.com/dalance/amber/issues/46#issuecomment-756813259
 brew install danopia/tools/amber
 
