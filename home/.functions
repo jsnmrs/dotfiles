@@ -8,13 +8,13 @@ function gitdiff() {
   git diff --name-status HEAD "$1" > ~/Desktop/diff"$timestamp".txt && open ~/Desktop/diff"$timestamp".txt;
 }
 
-# `c` with no arguments opens the current directory in VSCodium, otherwise
+# `c` with no arguments opens the current directory in VSCode, otherwise
 # opens the given location
 function c() {
   if [ $# -eq 0 ]; then
-    codium .;
+    code .;
   else
-    codium "$@";
+    code "$@";
   fi;
 }
 

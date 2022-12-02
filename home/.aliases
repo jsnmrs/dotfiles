@@ -17,9 +17,9 @@ alias screenshots="cd ~/Documents/Screenshots && ls"
 alias ss="cd ~/Documents/Screenshots && ls"
 
 # IDE muscle memory override
-alias a="s"
-alias n="s"
-alias code="codium"
+alias a="c"
+alias n="c"
+#alias code="codium"
 
 # Start local servers
 alias jksrv="bundle exec jekyll serve --watch"
