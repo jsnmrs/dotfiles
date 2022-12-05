@@ -35,6 +35,8 @@ brew install openssh
 brew install openssl@1.1
 brew install pure
 brew install qemu
+brew install rbenv
+brew install ruby-build
 brew install shellcheck
 brew install svgo
 brew install webp

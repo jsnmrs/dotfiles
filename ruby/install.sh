@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
-echo -e "\\n⬇️  Installing RVM"
-curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
+# Initialize rbenv to run now
+eval "$(rbenv init -)"
 
-echo -e "\\n➡️  Run rvm setup script"
-# shellcheck source=/dev/null
-source "$HOME/.rvm/scripts/rvm"
+rbenv install "$(rbenv install -l | grep -v - | tail -1)"
+rbenv global "$(rbenv install -l | grep -v - | tail -1)"
 
 echo -e "\\n⬇️  Install global Ruby gems"
 gem install bundler
