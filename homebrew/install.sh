@@ -141,6 +141,5 @@ brew install --cask tower
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
 brew install --cask utm
 brew install --cask visual-studio-code
-# brew install --cask vscodium
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
