@@ -116,7 +116,7 @@ brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
-# brew install --cask parallels
+brew install --cask parallels
 mas install 463362050 # PhotoSweeper
 mas install 1289583905 # Pixelmator Pro
 brew install --cask raspberry-pi-imager
@@ -139,7 +139,6 @@ brew install --cask ticktick
 brew install --cask tower
 # TV Pro https://www.totalvalidator.com/downloads/pro.html
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
-brew install --cask utm
 brew install --cask visual-studio-code
 mas install 494803304 # WiFi Explorer
 brew install --cask zoom
