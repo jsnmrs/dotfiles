@@ -97,12 +97,12 @@ brew install --cask google-chrome
 brew install --cask grammarly-desktop
 brew install --cask handbrake
 brew install --cask hazel
-brew install --cask hyperkey
 mas install 775737590 # IA Writer
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask kaleidoscope
+brew install --cask karabiner-elements
 brew install --cask kap
 brew install --cask keyboard-maestro
 mas install 1534275760 # LanguageTool
