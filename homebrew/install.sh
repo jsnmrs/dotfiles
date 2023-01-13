@@ -124,6 +124,7 @@ brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
+brew install --cask screens-connect
 mas install 1518036000 # Sequel Ace
 mas install 1594183810 # Shortery
 mas install 693112260 # Sim Daltonism
