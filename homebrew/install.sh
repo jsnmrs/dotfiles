@@ -89,6 +89,7 @@ brew install --cask downie
 mas install 1435957248 # Drafts
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
+mas install 1444961766 # Feedbin
 brew install --cask firefox
 brew install --cask focus
 # mas install 1493996622 # Front and Center
@@ -114,6 +115,7 @@ mas install 1295203466 # Microsoft Remote Desktop 10
 mas install 1289197285 # Mindnode
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
+mas install 1464122853 # Notion
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 mas install 1604176982 # One Thing
@@ -140,8 +142,11 @@ mas install 1528890965 # TextSniper
 mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
+mas install 1034035493 # TP-Link Kasa
 # TV Pro https://www.totalvalidator.com/downloads/pro.html
 # Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
+mas install 1057750338 # UniFi
 brew install --cask visual-studio-code
 mas install 494803304 # WiFi Explorer
+mas install 1288415553 # Wyze
 brew install --cask zoom
