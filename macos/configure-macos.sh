@@ -228,7 +228,7 @@ defaults write com.apple.screencapture type -string "jpg"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Disable screenshot thumbnail previews
-defaults write com.apple.screencapture show-thumbnail -bool FALSE
+#defaults write com.apple.screencapture show-thumbnail -bool FALSE
 
 ###############################################################################
 # Finder                                                                      #
