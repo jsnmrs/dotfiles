@@ -74,12 +74,10 @@ brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask asana
 brew install --cask bartender
-brew install --cask caldigit-docking-utility
 brew install --cask calibre
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
-brew install --cask commandq
 brew install --cask cyberduck
 brew install --cask daisydisk
 mas install 290986013 # Deliveries
@@ -92,7 +90,6 @@ mas install 975937182 # Fantastical
 mas install 1444961766 # Feedbin
 brew install --cask firefox
 brew install --cask focus
-# mas install 1493996622 # Front and Center
 brew install --cask gemini
 brew install --cask google-chrome
 brew install --cask grammarly-desktop
@@ -106,13 +103,10 @@ brew install --cask kaleidoscope
 brew install --cask karabiner-elements
 brew install --cask kap
 brew install --cask keyboard-maestro
-mas install 1534275760 # LanguageTool
 brew install --cask little-snitch
 brew install --cask macupdater
-mas install 441258766 # Magnet
 # brew install --cask microsoft-office
 mas install 1295203466 # Microsoft Remote Desktop 10
-mas install 1289197285 # Mindnode
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 mas install 1464122853 # Notion
@@ -138,7 +132,6 @@ brew install --cask sublime-text
 brew install --cask superduper
 brew install --cask taskpaper
 mas install 899247664 # TestFlight
-mas install 1528890965 # TextSniper
 mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
