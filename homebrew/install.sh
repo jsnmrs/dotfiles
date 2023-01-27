@@ -72,7 +72,6 @@ mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 brew install --cask alfred
 mas install 937984704 # Amphetamine
-brew install --cask asana
 brew install --cask bartender
 brew install --cask calibre
 # Cascable Pro Webcam https://cascable.se/pro-webcam/
@@ -106,7 +105,6 @@ brew install --cask keyboard-maestro
 brew install --cask little-snitch
 brew install --cask macupdater
 # brew install --cask microsoft-office
-mas install 1295203466 # Microsoft Remote Desktop 10
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 mas install 1464122853 # Notion
@@ -115,6 +113,7 @@ mas install 1346203938 # OmniFocus 3
 mas install 1604176982 # One Thing
 brew install --cask parallels
 mas install 463362050 # PhotoSweeper
+brew install --cask pika
 mas install 1289583905 # Pixelmator Pro
 brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
@@ -130,7 +129,6 @@ brew install --cask slack
 brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask superduper
-brew install --cask taskpaper
 mas install 899247664 # TestFlight
 mas install 904280696 # Things 3
 brew install --cask ticktick
