@@ -107,10 +107,8 @@ brew install --cask macupdater
 # brew install --cask microsoft-office
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
-mas install 1464122853 # Notion
 brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
-mas install 1604176982 # One Thing
 brew install --cask parallels
 mas install 463362050 # PhotoSweeper
 brew install --cask pika
@@ -122,7 +120,6 @@ brew install --cask screenflow
 brew install --cask screens-connect
 mas install 1518036000 # Sequel Ace
 mas install 1594183810 # Shortery
-mas install 693112260 # Sim Daltonism
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
