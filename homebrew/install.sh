@@ -74,7 +74,6 @@ brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
-# Cascable Pro Webcam https://cascable.se/pro-webcam/
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
@@ -104,7 +103,7 @@ brew install --cask kap
 brew install --cask keyboard-maestro
 brew install --cask little-snitch
 brew install --cask macupdater
-# brew install --cask microsoft-office
+brew install --cask microsoft-office
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 brew install --cask obsidian
