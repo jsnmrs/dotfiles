@@ -74,6 +74,7 @@ brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
+# Canon EOS Webcam https://downloads.canon.com/webcam/EOSWebcamUtilityPro-MAC2.0.pkg.zip
 brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
