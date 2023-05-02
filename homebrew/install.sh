@@ -91,6 +91,7 @@ brew install --cask firefox
 brew install --cask focus
 brew install --cask gemini
 brew install --cask google-chrome
+brew install --cask google-drive
 brew install --cask grammarly-desktop
 brew install --cask handbrake
 brew install --cask hazel
