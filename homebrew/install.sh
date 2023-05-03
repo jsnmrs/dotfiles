@@ -121,6 +121,7 @@ brew install --cask screenflow
 brew install --cask screens-connect
 mas install 1518036000 # Sequel Ace
 mas install 1594183810 # Shortery
+brew install --cask shottr
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
