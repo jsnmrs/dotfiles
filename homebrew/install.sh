@@ -70,7 +70,6 @@ brew install --cask 1password
 brew install --cask 1password/tap/1password-cli
 mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
-brew install --cask alfred
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
@@ -80,22 +79,17 @@ brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
 brew install --cask daisydisk
 mas install 290986013 # Deliveries
-brew install --cask descript
 brew install --cask docker
 brew install --cask downie
-mas install 1435957248 # Drafts
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
-mas install 1444961766 # Feedbin
 brew install --cask firefox
-brew install --cask focus
 brew install --cask gemini
 brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask grammarly-desktop
 brew install --cask handbrake
 brew install --cask hazel
-mas install 775737590 # IA Writer
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
@@ -113,7 +107,7 @@ mas install 1346203938 # OmniFocus 3
 brew install --cask parallels
 mas install 463362050 # PhotoSweeper
 brew install --cask pika
-mas install 1289583905 # Pixelmator Pro
+mas install 1289583905 # Photomator Pro
 brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
@@ -129,7 +123,6 @@ brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask superduper
 mas install 899247664 # TestFlight
-mas install 904280696 # Things 3
 brew install --cask ticktick
 brew install --cask tower
 mas install 1034035493 # TP-Link Kasa
