@@ -78,7 +78,6 @@ brew install --cask cleanmymac
 brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
 brew install --cask daisydisk
-mas install 290986013 # Deliveries
 brew install --cask docker
 brew install --cask downie
 mas install 1099120373 # Exporter
