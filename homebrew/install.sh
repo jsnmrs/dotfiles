@@ -39,6 +39,7 @@ brew install rbenv
 brew install ruby-build
 brew install shellcheck
 brew install svgo
+brew install tldr
 brew install webp
 brew install yamllint
 brew install youtube-dl
