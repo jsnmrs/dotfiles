@@ -106,6 +106,7 @@ brew install --cask obsidian
 mas install 1346203938 # OmniFocus 3
 brew install --cask parallels
 mas install 639968404 # Parcel
+mas install 1444998321 # Permute 3
 mas install 463362050 # PhotoSweeper
 brew install --cask pika
 mas install 1289583905 # Photomator Pro
@@ -123,6 +124,7 @@ brew install --cask slack
 brew install --cask spotify
 brew install --cask sublime-text
 brew install --cask superduper
+mas install 904280696 # Things
 brew install --cask tower
 mas install 1034035493 # TP-Link Kasa
 # TV Pro https://www.totalvalidator.com/downloads/pro.html
