@@ -108,6 +108,7 @@ brew install --cask parallels
 mas install 639968404 # Parcel
 mas install 1444998321 # Permute 3
 mas install 463362050 # PhotoSweeper
+brew install --cask piezo
 brew install --cask pika
 mas install 1289583905 # Photomator Pro
 brew install --cask raspberry-pi-imager
