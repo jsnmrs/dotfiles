@@ -111,6 +111,7 @@ mas install 463362050 # PhotoSweeper
 brew install --cask piezo
 brew install --cask pika
 mas install 1289583905 # Photomator Pro
+brew install --cask polypane
 brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
