@@ -74,8 +74,8 @@ brew install --cask adobe-acrobat-pro
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
-# Canon EOS Webcam https://downloads.canon.com/webcam/EOSWebcamUtilityPro-MAC2.0.pkg.zip
 brew install --cask cleanmymac
+brew install --cask cleanshot
 brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
 brew install --cask daisydisk
@@ -85,6 +85,7 @@ mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 brew install --cask firefox
 brew install --cask gemini
+brew install --cask github
 brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask grammarly-desktop
@@ -93,13 +94,11 @@ brew install --cask hazel
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
-brew install --cask kaleidoscope
 brew install --cask karabiner-elements
 brew install --cask kap
 brew install --cask keyboard-maestro
 brew install --cask little-snitch
 brew install --cask macupdater
-brew install --cask microsoft-office
 brew install --cask mullvadvpn
 mas install 1464122853 # NextDNS
 brew install --cask obsidian
@@ -118,8 +117,6 @@ brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
 brew install --cask screens-connect
 mas install 1518036000 # Sequel Ace
-mas install 1594183810 # Shortery
-brew install --cask shottr
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
@@ -128,11 +125,6 @@ brew install --cask sublime-text
 brew install --cask superduper
 mas install 904280696 # Things
 brew install --cask tower
-mas install 1034035493 # TP-Link Kasa
-# TV Pro https://www.totalvalidator.com/downloads/pro.html
-# Uniden R Series Tool https://www.uniden.info/download/index.cfm?s=R7
-mas install 1057750338 # UniFi
 brew install --cask visual-studio-code
 mas install 494803304 # WiFi Explorer
-mas install 1288415553 # Wyze
 brew install --cask zoom
