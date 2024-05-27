@@ -109,6 +109,7 @@ function reset_dock {
 clear_dock
 
 add_app_to_dock "Firefox"
+add_app_to_dock "Google Chrome"
 add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
