@@ -32,32 +32,22 @@ brew install imagemagick
 brew install mas
 brew install node
 brew install openssh
-brew install openssl@1.1
+brew install openssl
 brew install pure
 brew install qemu
 brew install rbenv
 brew install ruby-build
 brew install shellcheck
-brew install svgo
-brew install tldr
 brew install webp
-brew install yamllint
 brew install youtube-dl
 brew install zopfli
 brew install zsh-autosuggestions
-
-brew tap terrastruct/d2
-brew install d2
-
-# https://github.com/dalance/amber/issues/46#issuecomment-756813259
-brew install danopia/tools/amber
 
 echo -e "\\n⬇️  Installing fonts"
 
 brew tap homebrew/cask-fonts
 
 brew install --cask font-atkinson-hyperlegible
-brew install --cask font-ia-writer-duospace
 brew install --cask font-ia-writer-mono
 brew install --cask font-ibm-plex
 brew install --cask font-inter
@@ -74,6 +64,7 @@ brew install --cask adobe-acrobat-pro
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
+brew install --cask chromium
 brew install --cask cleanmymac
 brew install --cask cleanshot
 brew install --cask colour-contrast-analyser
@@ -90,41 +81,36 @@ brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask grammarly-desktop
 brew install --cask handbrake
-brew install --cask hazel
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask karabiner-elements
-brew install --cask kap
 brew install --cask keyboard-maestro
-brew install --cask little-snitch
+brew install --cask lm-studio
 brew install --cask macupdater
+brew install --cask macwhisper
 brew install --cask mullvadvpn
-mas install 1464122853 # NextDNS
+mas install 1505432629 # NotePlan
 brew install --cask obsidian
-mas install 1346203938 # OmniFocus 3
+mas install 1542143627 # OmniFocus 4
 brew install --cask parallels
 mas install 639968404 # Parcel
 mas install 1444998321 # Permute 3
 mas install 463362050 # PhotoSweeper
 brew install --cask piezo
 brew install --cask pika
-mas install 1289583905 # Photomator Pro
+mas install 1289583905 # Pixelmator Pro
 brew install --cask polypane
-brew install --cask raspberry-pi-imager
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
-brew install --cask screens-connect
 mas install 1518036000 # Sequel Ace
 mas install 442168834 # Site Sucker
 brew install --cask sketchup
 brew install --cask slack
 brew install --cask spotify
-brew install --cask sublime-text
+mas install 6471380298 # Stop the Madness Pro
 brew install --cask superduper
-mas install 904280696 # Things
 brew install --cask tower
 brew install --cask visual-studio-code
-mas install 494803304 # WiFi Explorer
 brew install --cask zoom
