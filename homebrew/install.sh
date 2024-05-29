@@ -101,6 +101,7 @@ brew install --cask piezo
 brew install --cask pika
 mas install 1289583905 # Pixelmator Pro
 brew install --cask polypane
+brew install --cask raycast
 mas install 1529448980 # Reeder 5
 brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
