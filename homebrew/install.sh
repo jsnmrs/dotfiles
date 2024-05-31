@@ -64,7 +64,6 @@ brew install --cask adobe-acrobat-pro
 mas install 937984704 # Amphetamine
 brew install --cask bartender
 brew install --cask calibre
-brew install --cask chromium
 brew install --cask cleanmymac
 brew install --cask cleanshot
 brew install --cask colour-contrast-analyser
