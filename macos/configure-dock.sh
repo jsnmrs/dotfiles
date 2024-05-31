@@ -114,6 +114,7 @@ add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
 add_app_to_dock "Notes"
+add_app_to_dock "NotePlan"
 add_app_to_dock "Obsidian"
 add_spacer_to_dock
 add_app_to_dock "iTerm"

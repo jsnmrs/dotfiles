@@ -4,20 +4,20 @@ These are the dotfiles and scripts that I use to setup and maintain my Mac.
 
 ![macOS 13 Ventura desktop with iTerm prompt](https://raw.githubusercontent.com/jsnmrs/dotfiles/main/assets/screenshot.jpg)
 
-- [Step zero](#step-zero)
-- [Getting started, using Git](#getting-started-using-git)
-- [Establishing dotfiles](#establishing-dotfiles)
-  - [Add private commands and settings to `.extra`](#add-private-commands-and-settings-to-extra)
-- [Install scripts](#install-scripts)
-  - [Installing Homebrew, binaries, and applications](#installing-homebrew-binaries-and-applications)
-  - [Installing NVM and global Node modules](#installing-nvm-and-global-node-modules)
-  - [Installing RVM and Ruby gems](#installing-rvm-and-ruby-gems)
-  - [Installing Composer packages](#installing-composer-packages)
-  - [Configuring Sublime Text](#configuring-sublime-text)
-  - [Setting macOS](#setting-macos-defaults)
-  - [Configure macOS dock icons](#configure-macos-dock-icons)
-- [Housekeeping](#housekeeping)
-- [Inspiration](#heavily-inspired-by)
+- [Jason’s dotfiles](#jasons-dotfiles)
+  - [Step zero](#step-zero)
+  - [Getting started, using Git](#getting-started-using-git)
+  - [Establishing dotfiles](#establishing-dotfiles)
+    - [Add private commands and settings to `.extra`](#add-private-commands-and-settings-to-extra)
+  - [Install scripts](#install-scripts)
+    - [Installing Homebrew, binaries, and applications](#installing-homebrew-binaries-and-applications)
+    - [Installing NVM and global Node modules](#installing-nvm-and-global-node-modules)
+    - [Installing RVM and Ruby gems](#installing-rvm-and-ruby-gems)
+    - [Installing Composer packages](#installing-composer-packages)
+    - [Setting macOS defaults](#setting-macos-defaults)
+    - [Configure macOS dock icons](#configure-macos-dock-icons)
+  - [Housekeeping](#housekeeping)
+  - [Heavily inspired by](#heavily-inspired-by)
 
 ## Step zero
 
@@ -108,19 +108,9 @@ The [composer/install.sh](https://github.com/jsnmrs/dotfiles/blob/main/composer/
 
 **Run it:** `source composer/install.sh`
 
-### Configuring Sublime Text
-
-The [`sublime/install.sh`](https://github.com/jsnmrs/dotfiles/blob/main/sublime/install.sh) script will:
-
-1. Copy `Package Control.sublime-settings` and `Preferences.sublime-settings` from this repo into `~/Library/Application Support/Sublime Text 3/Packages/User`
-
-**Run it:** `source sublime/install.sh`
-
-Afterwards, install [Package Control](https://packagecontrol.io/installation) and restart Sublime Text to install all of the configured packages.
-
 ### Setting macOS defaults
 
-The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/main/scripts/macos-config.sh) and [Mathias Bynens’ .macos](https://mths.be/macos) scripts. It sets a number of sensible defaults for macOS. Tip: review and comment out uncertain commands before running.
+The [macos/configure-macos.sh](https://github.com/jsnmrs/dotfiles/blob/main/macos/configure-macos.sh) script is a blend of [Kevin Deldycke’s macos-config.sh](https://github.com/kdeldycke/dotfiles/blob/main/macos-config.sh) and [Mathias Bynens’ .macos](https://github.com/mathiasbynens/dotfiles/blob/main/.macos) scripts. It sets a number of sensible defaults for macOS. Tip: review and comment out uncertain commands before running.
 
 **Run it:** `source macos/configure-macos.sh`
 
