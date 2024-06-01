@@ -74,6 +74,7 @@ brew install --cask downie
 mas install 1099120373 # Exporter
 mas install 975937182 # Fantastical
 brew install --cask firefox
+brew install --cask firefox@developer-edition
 brew install --cask gemini
 brew install --cask github
 brew install --cask google-chrome
@@ -106,7 +107,6 @@ brew install --cask screaming-frog-seo-spider
 brew install --cask screenflow
 mas install 1518036000 # Sequel Ace
 mas install 442168834 # Site Sucker
-brew install --cask sketchup
 brew install --cask slack
 brew install --cask spotify
 mas install 6471380298 # Stop the Madness Pro
