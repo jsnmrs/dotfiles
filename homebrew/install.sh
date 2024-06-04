@@ -62,7 +62,6 @@ brew install --cask 1password/tap/1password-cli
 mas install 1547371478 # Acorn 7
 brew install --cask adobe-acrobat-pro
 mas install 937984704 # Amphetamine
-brew install --cask bartender
 brew install --cask calibre
 brew install --cask cleanmymac
 brew install --cask cleanshot
