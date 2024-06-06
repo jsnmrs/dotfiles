@@ -80,6 +80,7 @@ brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask grammarly-desktop
 brew install --cask handbrake
+mas install 1452453066 # Hidden Bar
 brew install --cask imageoptim
 brew install --cask inkscape
 brew install --cask iterm2
