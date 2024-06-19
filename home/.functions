@@ -28,9 +28,19 @@ function s() {
   fi;
 }
 
-# `t` with no arguments opens the current directory in Github Desktop, otherwise
+# `t` with no arguments opens the current directory in Fork git client, otherwise
 # opens the given location
 function t() {
+  if [ $# -eq 0 ]; then
+    fork .;
+  else
+   fork "$@";
+  fi;
+}
+
+# `ghc` with no arguments opens the current directory in Github Desktop, otherwise
+# opens the given location
+function ghc() {
   if [ $# -eq 0 ]; then
     github .;
   else

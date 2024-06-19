@@ -301,7 +301,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items to 36 pixels
+# Set the icon size of Dock items to 52 pixels
 defaults write com.apple.dock tilesize -int 52
 
 # Change minimize/maximize window effect
