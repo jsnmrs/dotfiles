@@ -49,6 +49,8 @@ brew tap homebrew/cask-fonts
 
 brew install --cask font-atkinson-hyperlegible
 brew install --cask font-ia-writer-mono
+brew install --cask font-ia-writer-duo
+brew install --cask font-ia-writer-quattro
 brew install --cask font-ibm-plex
 brew install --cask font-inter
 brew install --cask font-lato
