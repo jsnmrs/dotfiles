@@ -118,7 +118,7 @@ add_app_to_dock "Notes"
 add_spacer_to_dock
 add_app_to_dock "iTerm"
 add_app_to_dock "Visual Studio Code"
-add_app_to_dock "GitHub Desktop"
+add_app_to_dock "Tower"
 add_app_to_dock "Parallels Desktop"
 add_spacer_to_dock
 add_app_to_dock "Shortcuts"
