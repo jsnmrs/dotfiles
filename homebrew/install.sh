@@ -89,11 +89,13 @@ brew install --cask iterm2
 brew install --cask karabiner-elements
 brew install --cask keyboard-maestro
 brew install --cask lm-studio
+brew install --cask macai
 brew install --cask macupdater
 brew install --cask macwhisper
 brew install --cask mullvadvpn
 mas install 1505432629 # NotePlan
 brew install --cask obsidian
+brew install --cask ollama
 mas install 1542143627 # OmniFocus 4
 brew install --cask parallels
 mas install 639968404 # Parcel
