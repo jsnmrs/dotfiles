@@ -70,6 +70,7 @@ brew install --cask cleanshot
 brew install --cask colour-contrast-analyser
 brew install --cask cyberduck
 brew install --cask daisydisk
+brew install --cask deltawalker
 brew install --cask docker
 brew install --cask downie
 mas install 1099120373 # Exporter
