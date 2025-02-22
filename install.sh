@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# set -euo pipefail  # Exit on error, undefined vars, and pipe failures
-
 # Save current directory
 current_path=$(pwd)
 
