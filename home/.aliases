@@ -11,10 +11,7 @@ alias docs="cd ~/Documents"
 alias documents="cd ~/Documents"
 alias dotfiles="cd ~/Projects/dotfiles"
 alias downloads="cd ~/Downloads"
-alias p="cd ~/Projects && ls"
 alias projects="cd ~/Projects && ls"
-alias screenshots="cd ~/Documents/Screenshots && ls"
-alias ss="cd ~/Documents/Screenshots && ls"
 
 # IDE muscle memory override
 alias a="c"
@@ -24,10 +21,10 @@ alias jksrv="bundle exec jekyll serve --watch"
 alias phpsrv="php -S localhost:8000"
 
 # Convert JPGs in current directory to q=50 WebP
-alias webpme='for F in *.jpg; do cwebp $F -q 50 -o $(basename ${F%.jpg}).webp; done'
+alias webpme='for F in *.{jpg,JPG}; do cwebp "${F}" -q 50 -o "${F%.*}.webp"; done'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -l; mas outdated; mas upgrade; brew update; brew upgrade; brew cleanup; gem update; gem cleanup; nvm install node --latest-npm; nvm use node; npmu -gy; ncu -g;'
+alias update='sudo softwareupdate -l; mas outdated; mas upgrade; brew update; brew upgrade; brew cleanup; gem update; gem cleanup; nvm install node --latest-npm; nvm use node; npm update -g -y; ncu -g;'
 
 # Switch between light and dark mode
 alias switch="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
@@ -47,12 +44,6 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Also, clear Apple’s System Logs to improve shell startup speed.
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 'delete from LSQuarantineEvent'; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 'vacuum LSQuarantineEvent'"
-
-# Launch Chrome with localStorage disabled
-alias localstorage="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-local-storage"
-
-# Add spacer (blank) icon to dock
-alias dockspace="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}' && killall Dock"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
