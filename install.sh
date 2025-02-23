@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "This script is only for macOS"
+  exit 1
+fi
+
 echo -e "\\n⬇️ Set up Homebrew"
 
 # Check if Homebrew is installed
@@ -341,6 +346,9 @@ sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -int 1
 # Enable firewall logging
 sudo defaults write /Library/Preferences/com.apple.alf loggingenabled -int 1
 
+# Enable secondary click (right-click)
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode TwoButton
+
 # Set mouse and scrolling speed.
 defaults write NSGlobalDomain com.apple.mouse.scaling -int 3
 defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.6875
@@ -367,8 +375,17 @@ sudo defaults write /Library/Preferences/com.apple.timezone.auto TimeZoneName -s
 sudo sntp -sS time.apple.com
 sudo systemsetup -setusingnetworktime on
 
+# Disable the startup sound
+sudo nvram StartupMute=%01
+
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
+
+# Disable the Spotlight keyboard shortcut (⌘ + Space) so Raycast can use it
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{ enabled = 0; value = { parameters = (32, 49, 1048576); type = standard; }; }"
+
+# Disable Show Finder search window (⌥ + ⌘ + Space) so OmniFocus can use it
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "{ enabled = 0; value = { parameters = (32, 49, 1572864); type = standard; }; }"
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
@@ -640,6 +657,9 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 
 # Google Chrome: Expand the print dialog by default
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
+
+# Docker Desktop: set RAM allocation
+defaults write com.docker.docker memoryMiB -int 4096
 
 # Batch kill applications at the end
 kill_apps() {
