@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -euo pipefail  # Exit on error, undefined vars, and pipeline failures
 
 # Script to sync dotfiles from the current directory to the home directory,
 # excluding the install script itself
