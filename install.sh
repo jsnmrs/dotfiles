@@ -14,6 +14,8 @@ echo -e "\\n🔁 Homebrew is installed! Updating instead."
 # Enable parallel downloads
 export HOMEBREW_CURL_RETRIES=3
 export HOMEBREW_NO_AUTO_UPDATE=1  # Skip auto-update since we just updated
+export HOMEBREW_BAT=1  # Enable parallel installations
+export HOMEBREW_INSTALL_CLEANUP=1  # Auto cleanup after installations
 
 brew update && brew upgrade
 
