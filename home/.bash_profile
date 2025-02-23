@@ -1,7 +1,17 @@
+#!/bin/bash
+
 # Add to PATH
-export PATH="$HOME/bin:$PATH";
-export PATH="/usr/local/sbin:$PATH";
-export PATH="$PATH:$HOME/.composer/vendor/bin";
+# Local user binaries take highest precedence
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+
+# Local system admin binaries
+[ -d "/usr/local/sbin" ] && PATH="/usr/local/sbin:$PATH"
+
+# Composer binaries
+[ -d "$HOME/.composer/vendor/bin" ] && PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# Finally, export the modified PATH
+export PATH
 
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1;
@@ -16,9 +26,6 @@ export HISTCONTROL='ignoreboth';
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
-
-# Set Sublime Text to default editor
-export EDITOR='subl -w'
 
 # Set up RVM
 source $HOME/.rvm/scripts/rvm;
