@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
 # Script to sync dotfiles from ./home directory to $HOME,
+# creating backups of replaced files in ~/dotfiles-YYYY-MM-DD
 
-echo -e "\\n⬇️  Transfer dotfiles to ~/"
+# Create timestamp for backup directory
+backup_date=$(date +%Y-%m-%d)
+backup_dir="$HOME/dotfiles-$backup_date"
+
+echo -e "\\n⬇️  Transfer dotfiles to ~/ (with backups in $backup_dir)"
 
 current_path="$PWD"
 
@@ -14,9 +19,19 @@ if [ ! -d "$parent_path/home" ]; then
     exit 1
 fi
 
-if ! rsync -avh --no-perms "$parent_path/home/" "$HOME"; then
+# Create backup directory if it doesn't exist
+mkdir -p "$backup_dir"
+
+# Use rsync with backup options
+if ! rsync -avh --no-perms --backup --backup-dir="$backup_dir" "$parent_path/home/" "$HOME"; then
     echo "Error: Failed to sync dotfiles" >&2
     exit 1
+fi
+
+# Remove backup directory if empty
+if [ -z "$(ls -A "$backup_dir")" ]; then
+    rmdir "$backup_dir"
+    echo "No files were replaced (backup directory removed)"
 fi
 
 cd "$current_path" || exit
