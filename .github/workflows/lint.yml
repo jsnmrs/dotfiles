@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Lint check .sh
-        uses: azohra/shell-linter@v0.6.0
+        uses: Azbagheri/shell-linter@@v0.8.0
       - name: Lint check .functions
-        uses: azohra/shell-linter@v0.6.0
+        uses: Azbagheri/shell-linter@@v0.8.0
         with:
           path: "home/.functions"
       - name: Lint check .aliases
-        uses: azohra/shell-linter@v0.6.0
+        uses: Azbagheri/shell-linter@@v0.8.0
         with:
           path: "home/.aliases"
