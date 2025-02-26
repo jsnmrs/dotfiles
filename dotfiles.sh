@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Script to sync dotfiles from ./home directory to $HOME,
-# creating backups of replaced files in ~/dotfiles-YYYY-MM-DD
+# creating backups of replaced files in ~/dotfiles-YYYY-MM-DD-HHMMSS
 
 # Create timestamp for backup directory
-backup_date=$(date +%Y-%m-%d)
+backup_date=$(date +%Y-%m-%d-%H%M%S)
 backup_dir="$HOME/dotfiles-$backup_date"
 
 echo -e "\\n⬇️  Transfer dotfiles to ~/ (with backups in $backup_dir)"
