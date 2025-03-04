@@ -388,6 +388,9 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Disable Show Finder search window (⌥ + ⌘ + Space) so OmniFocus can use it
 # defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "{ enabled = 0; value = { parameters = (32, 49, 1572864); type = standard; }; }"
 
+# Enable touchID for sudo, persists across software updates
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
