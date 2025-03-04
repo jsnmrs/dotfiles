@@ -239,7 +239,7 @@ add_app_to_dock "Parallels Desktop"
 add_spacer_to_dock
 add_app_to_dock "Shortcuts"
 add_app_to_dock "Spotify"
-add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Inbox" -s 2 -d 0 -v 2
+# add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Inbox" -s 2 -d 0 -v 2
 
 killall Dock
 
