@@ -35,7 +35,7 @@ brew unlink node 2>/dev/null || true
 
 # Install everything
 echo -e "\\n⬇️ Installing everything from Brewfile"
-brew bundle --no-lock
+brew bundle
 
 # Force link node if needed
 brew link --overwrite node 2>/dev/null || true
