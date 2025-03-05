@@ -48,26 +48,6 @@ function v() {
   fi;
 }
 
-# `ghc` with no arguments opens the current directory in Github Desktop, otherwise
-# opens the given location
-function ghc() {
-  if [ $# -eq 0 ]; then
-    github .;
-  else
-    github "$@";
-  fi;
-}
-
-# `gt` with no arguments opens the current directory in Git Tower, otherwise
-# opens the given location
-function gt() {
-  if [ $# -eq 0 ]; then
-    gittower .;
-  else
-    gittower "$@";
-  fi;
-}
-
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
