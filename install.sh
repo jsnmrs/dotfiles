@@ -74,6 +74,7 @@ gem install github-pages
 echo -e "\\n⬇️ Setup NVM, Node, and global NPM packages"
 
 # Load NVM if it exists
+# shellcheck disable=SC1091
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 if ! command -v nvm &> /dev/null; then
@@ -81,6 +82,7 @@ if ! command -v nvm &> /dev/null; then
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
   # Load NVM immediately after installation
   export NVM_DIR="$HOME/.nvm"
+  # shellcheck disable=SC1091
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 fi
 
