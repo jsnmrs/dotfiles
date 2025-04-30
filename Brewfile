@@ -92,6 +92,7 @@ cask "zoom"
 # Mac App Store Applications
 mas "Acorn 7", id: 1547371478
 mas "Amphetamine", id: 937984704
+mas "CARROT Weather", id: 961390574
 mas "Exporter", id: 1099120373
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
