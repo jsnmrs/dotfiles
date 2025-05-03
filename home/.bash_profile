@@ -13,6 +13,9 @@
 # Finally, export the modified PATH
 export PATH
 
+# Load Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1;
 

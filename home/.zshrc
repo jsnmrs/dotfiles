@@ -21,6 +21,9 @@ export HOMEBREW_NO_ANALYTICS=1
 export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.composer/vendor/bin"
 fpath+=/opt/homebrew/share/zsh/site-functions
 
+# Load Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Load zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
