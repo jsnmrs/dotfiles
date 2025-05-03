@@ -39,7 +39,6 @@ cask "font-lato"
 cask "1password"
 cask "1password-cli"
 cask "adobe-acrobat-pro"
-cask "anythingllm"
 cask "asana"
 cask "box-drive"
 cask "calibre"
@@ -90,7 +89,6 @@ cask "vivaldi"
 cask "zoom"
 
 # Mac App Store Applications
-mas "Acorn 7", id: 1547371478
 mas "Amphetamine", id: 937984704
 mas "CARROT Weather", id: 961390574
 mas "Exporter", id: 1099120373
