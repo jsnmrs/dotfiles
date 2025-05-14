@@ -93,10 +93,12 @@ if test ! "$(npm --version)"
   echo -e "\\nNPM not installed"
 else
   echo -e "\\n⬇️ Install global Node modules"
+  npm install node-gyp --location=global
   npm install npm-check-updates --location=global
   npm install npm-check --location=global
   npm install pa11y-ci --location=global
   npm install pa11y-ci-reporter-html --location=global
+  npm install @anthropic-ai/claude-code --location=global
 fi
 
 # Set up Composer
