@@ -89,6 +89,7 @@ cask "tailscale"
 cask "tower"
 cask "visual-studio-code"
 cask "vivaldi"
+cask "void"
 cask "zoom"
 
 # Mac App Store Applications

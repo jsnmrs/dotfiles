@@ -8,25 +8,16 @@ function gitdiff() {
   git diff --name-status HEAD "$1" > ~/Desktop/diff"$timestamp".txt && open ~/Desktop/diff"$timestamp".txt;
 }
 
-# `c` with no arguments opens the current directory in VSCode, otherwise
+# `v` with no arguments opens the current directory in Void, otherwise
 # opens the given location
-function c() {
+function v() {
   if [ $# -eq 0 ]; then
-    cursor .;
+    void .;
   else
-    cursor "$@";
+    void "$@';";
   fi;
 }
 
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function s() {
-  if [ $# -eq 0 ]; then
-    subl .;
-  else
-    subl "$@";
-  fi;
-}
 
 # `t` with no arguments opens the current directory in Git Tower, otherwise
 # opens the given location
@@ -40,7 +31,7 @@ function t() {
 
 # `v` with no arguments opens the current directory in VSCode, otherwise
 # opens the given location
-function v() {
+function vs() {
   if [ $# -eq 0 ]; then
     code .;
   else

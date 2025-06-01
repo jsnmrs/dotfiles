@@ -14,7 +14,7 @@ alias downloads="cd ~/Downloads"
 alias projects="cd ~/Projects && ls"
 
 # IDE muscle memory override
-alias a="c"
+alias a="v"
 
 # Start local servers
 alias jksrv="bundle exec jekyll serve --watch"
