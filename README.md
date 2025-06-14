@@ -77,5 +77,3 @@ The [install.sh](https://github.com/jsnmrs/dotfiles/blob/main/install.sh) script
 - [Matt Brictson’s dotfiles repo](https://github.com/mattbrictson/dotfiles)
 - [Stephan Judis’ dotfiles repo](https://github.com/stefanjudis/dotfiles/)
 - [Change macOS user preferences via command line by Pawel Grzybek](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/)
-- [Jesse Vincent's .claude configuration](https://github.com/obra/dotfiles/tree/main/.claude)
-- [Harper Reed's .claude configuration](https://github.com/harperreed/dotfiles/tree/master/.claude)
