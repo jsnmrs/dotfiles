@@ -89,6 +89,7 @@ cask "tailscale"
 cask "tower"
 cask "visual-studio-code"
 cask "vivaldi"
+# cask "vmware-fusion" 2025-06-23 requires authentication to download
 cask "void"
 cask "zoom"
 

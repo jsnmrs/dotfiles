@@ -229,7 +229,6 @@ clear_dock
 
 add_app_to_dock "Firefox Developer Edition"
 add_app_to_dock "Google Chrome"
-add_app_to_dock "Vivaldi"
 add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "Things3"
@@ -240,6 +239,7 @@ add_spacer_to_dock
 add_app_to_dock "iTerm"
 add_app_to_dock "Void"
 add_app_to_dock "Tower"
+add_app_to_dock "VMware Fusion"
 add_app_to_dock "Parallels Desktop"
 add_spacer_to_dock
 add_app_to_dock "Shortcuts"
