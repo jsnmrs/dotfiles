@@ -49,7 +49,6 @@ cask "cleanshot"
 cask "colour-contrast-analyser"
 cask "cyberduck"
 cask "daisydisk"
-cask "deltawalker"
 cask "docker"
 cask "downie"
 cask "firefox@developer-edition"
@@ -104,3 +103,4 @@ mas "Reeder 5", id: 1529448980
 mas "Screens 5", id: 1663047912
 mas "Sequel Ace", id: 1518036000
 mas "Things 3", id: 904280696
+mas "Xcode", id: 497799835
