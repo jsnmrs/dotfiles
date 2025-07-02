@@ -100,6 +100,7 @@ mas "Parcel", id: 639968404
 mas "Permute 3", id: 1444998321
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder 5", id: 1529448980
+mas "Say No to Notch", id: 1639306886
 mas "Screens 5", id: 1663047912
 mas "Sequel Ace", id: 1518036000
 mas "Things 3", id: 904280696
