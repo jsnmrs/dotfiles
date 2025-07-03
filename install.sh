@@ -231,7 +231,7 @@ add_app_to_dock "Firefox Developer Edition"
 add_app_to_dock "Google Chrome"
 add_spacer_to_dock
 add_app_to_dock "Fantastical"
-add_app_to_dock "Things3"
+add_app_to_dock "OmniFocus"
 add_app_to_dock "Obsidian"
 add_app_to_dock "Notes"
 add_app_to_dock "Claude"
