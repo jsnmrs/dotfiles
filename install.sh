@@ -394,7 +394,22 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "{ enabled = 0; value = { parameters = (32, 49, 1572864); type = standard; }; }"
 
 # Enable touchID for sudo, persists across software updates
+# Backup the original file first
+if [ -f /etc/pam.d/sudo_local ]; then
+  sudo cp /etc/pam.d/sudo_local /etc/pam.d/sudo_local.backup.$(date +%Y%m%d%H%M%S)
+  echo "Backed up existing sudo_local to /etc/pam.d/sudo_local.backup.*"
+fi
+
+# Modify the file
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
+# Verify the modification
+if ! sudo -n true 2>/dev/null; then
+  echo "Warning: sudo authentication may have been affected"
+  echo "Backup available at: /etc/pam.d/sudo_local.backup.*"
+else
+  echo "TouchID for sudo enabled successfully"
+fi
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
