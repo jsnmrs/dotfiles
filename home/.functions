@@ -73,11 +73,11 @@ function check-unmerged() {
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
-# List merged remote branches - list for editing
+# List unmerged remote branches - list for editing
 function check-unmerged-list() {
   git branch &&
   git pull &&
-  for branch in $(git branch -r --merged | grep -v HEAD); do echo -e "$(git show --format="%ci %n" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
+  for branch in $(git branch -r --no-merged | grep -v HEAD); do echo -e "$(git show --format="%ci %n" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
@@ -117,10 +117,25 @@ function update-docker() {
 
 # https://www.stefanjudis.com/snippets/a-native-shell-alternative-to-the-trash-cli/
 function trash() {
+  # Ensure trash directory exists
+  mkdir -p "$HOME/.trash"
+  
   echo -e "🗑️  Moving files to trash...";
-  for var in "$@"
-  do
-    mv "$var" "$HOME/.trash";
+  
+  for var in "$@"; do
+    if [ ! -e "$var" ]; then
+      echo "Warning: '$var' does not exist"
+      continue
+    fi
+    
+    # Handle name collisions by appending timestamp
+    basename=$(basename "$var")
+    if [ -e "$HOME/.trash/$basename" ]; then
+      timestamp=$(date +%Y%m%d%H%M%S)
+      mv "$var" "$HOME/.trash/${basename}.${timestamp}" && echo "Moved: $var"
+    else
+      mv "$var" "$HOME/.trash/" && echo "Moved: $var"
+    fi
   done
 }
 
@@ -128,4 +143,50 @@ function webm2gif() {
   ffmpeg -y -i "$1" -vf palettegen _tmp_palette.png
   ffmpeg -y -i "$1" -i _tmp_palette.png -filter_complex paletteuse -r 10  "${1%.webm}.gif"
   rm _tmp_palette.png
+}
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+function update() {
+  echo "🔄 Starting system update..."
+  
+  # macOS updates
+  echo "📱 Checking macOS updates..."
+  sudo softwareupdate -l
+  
+  # Mac App Store
+  if command -v mas &> /dev/null; then
+    echo "🏪 Updating Mac App Store apps..."
+    mas outdated
+    mas upgrade
+  fi
+  
+  # Homebrew
+  if command -v brew &> /dev/null; then
+    echo "🍺 Updating Homebrew..."
+    brew update && brew upgrade && brew cleanup
+  fi
+  
+  # Ruby gems
+  if command -v gem &> /dev/null; then
+    echo "💎 Updating Ruby gems..."
+    gem update && gem cleanup
+  fi
+  
+  # Node/npm (with nvm)
+  if [ -s "$NVM_DIR/nvm.sh" ]; then
+    # shellcheck source=/dev/null
+    source "$NVM_DIR/nvm.sh"
+    if command -v nvm &> /dev/null; then
+      echo "📦 Updating Node.js..."
+      nvm install node --latest-npm
+      nvm use node
+      npm update -g -y
+      
+      if command -v ncu &> /dev/null; then
+        ncu -g
+      fi
+    fi
+  fi
+  
+  echo "✅ Update complete!"
 }
