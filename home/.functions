@@ -117,10 +117,25 @@ function update-docker() {
 
 # https://www.stefanjudis.com/snippets/a-native-shell-alternative-to-the-trash-cli/
 function trash() {
+  # Ensure trash directory exists
+  mkdir -p "$HOME/.trash"
+  
   echo -e "🗑️  Moving files to trash...";
-  for var in "$@"
-  do
-    mv "$var" "$HOME/.trash";
+  
+  for var in "$@"; do
+    if [ ! -e "$var" ]; then
+      echo "Warning: '$var' does not exist"
+      continue
+    fi
+    
+    # Handle name collisions by appending timestamp
+    basename=$(basename "$var")
+    if [ -e "$HOME/.trash/$basename" ]; then
+      timestamp=$(date +%Y%m%d%H%M%S)
+      mv "$var" "$HOME/.trash/${basename}.${timestamp}" && echo "Moved: $var"
+    else
+      mv "$var" "$HOME/.trash/" && echo "Moved: $var"
+    fi
   done
 }
 
