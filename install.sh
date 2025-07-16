@@ -56,10 +56,23 @@ fi
 eval "$(rbenv init -)"
 
 # Get latest stable Ruby version
-latest_ruby=$(rbenv install -l | grep -v - | tail -1 | tr -d '[:space:]')
-if ! rbenv versions | grep -q "$latest_ruby"; then
+latest_ruby=$(rbenv install -l 2>/dev/null | grep -E "^[[:space:]]*[0-9]+\.[0-9]+\.[0-9]+[[:space:]]*$" | tail -1 | xargs)
+
+if [ -z "$latest_ruby" ]; then
+  echo "Error: Could not determine latest Ruby version"
+  exit 1
+fi
+
+echo "Latest Ruby version detected: $latest_ruby"
+
+# Check if already installed
+if rbenv versions | grep -q "$latest_ruby"; then
+  echo "Ruby $latest_ruby is already installed"
+else
+  echo "Installing Ruby $latest_ruby..."
   rbenv install "$latest_ruby"
 fi
+
 rbenv global "$latest_ruby"
 
 echo -e "\\n⬇️ Install global Ruby gems"
