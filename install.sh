@@ -409,7 +409,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Enable touchID for sudo, persists across software updates
 # Backup the original file first
 if [ -f /etc/pam.d/sudo_local ]; then
-  sudo cp /etc/pam.d/sudo_local /etc/pam.d/sudo_local.backup.$(date +%Y%m%d%H%M%S)
+  sudo cp /etc/pam.d/sudo_local "/etc/pam.d/sudo_local.backup.$(date +%Y%m%d%H%M%S)"
   echo "Backed up existing sudo_local to /etc/pam.d/sudo_local.backup.*"
 fi
 
