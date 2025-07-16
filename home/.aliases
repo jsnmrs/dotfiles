@@ -23,9 +23,6 @@ alias phpsrv="php -S localhost:8000"
 # Convert JPGs in current directory to q=50 WebP
 alias webpme='for F in *.{jpg,JPG}; do cwebp "${F}" -q 50 -o "${F%.*}.webp"; done'
 
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -l; mas outdated; mas upgrade; brew update; brew upgrade; brew cleanup; gem update; gem cleanup; nvm install node --latest-npm; nvm use node; npm update -g -y; ncu -g;'
-
 # Switch between light and dark mode
 alias switch="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 alias dark=switch
