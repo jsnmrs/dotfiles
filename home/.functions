@@ -73,11 +73,11 @@ function check-unmerged() {
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
-# List merged remote branches - list for editing
+# List unmerged remote branches - list for editing
 function check-unmerged-list() {
   git branch &&
   git pull &&
-  for branch in $(git branch -r --merged | grep -v HEAD); do echo -e "$(git show --format="%ci %n" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
+  for branch in $(git branch -r --no-merged | grep -v HEAD); do echo -e "$(git show --format="%ci %n" "$branch" | head -n 1)" "\\t$branch"; done | sort -r
   echo -e "\nto remove:\\ngit push origin --delete branch-name";
 }
 
