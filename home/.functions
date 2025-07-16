@@ -174,6 +174,7 @@ function update() {
   
   # Node/npm (with nvm)
   if [ -s "$NVM_DIR/nvm.sh" ]; then
+    # shellcheck source=/dev/null
     source "$NVM_DIR/nvm.sh"
     if command -v nvm &> /dev/null; then
       echo "📦 Updating Node.js..."
