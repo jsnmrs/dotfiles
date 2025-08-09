@@ -241,8 +241,6 @@ function reset_dock {
 clear_dock
 
 add_app_to_dock "Firefox Developer Edition"
-add_app_to_dock "Google Chrome"
-add_spacer_to_dock
 add_app_to_dock "Fantastical"
 add_app_to_dock "OmniFocus"
 add_app_to_dock "Obsidian"
@@ -253,9 +251,6 @@ add_app_to_dock "iTerm"
 add_app_to_dock "Void"
 add_app_to_dock "Tower"
 add_app_to_dock "VMware Fusion"
-add_app_to_dock "Parallels Desktop"
-add_spacer_to_dock
-add_app_to_dock "Shortcuts"
 add_app_to_dock "Spotify"
 # add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Inbox" -s 2 -d 0 -v 2
 
