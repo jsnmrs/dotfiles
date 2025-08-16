@@ -79,6 +79,7 @@ cask "spotify"
 cask "superduper"
 cask "tailscale"
 cask "tower"
+cask "transmit"
 cask "visual-studio-code"
 # cask "vmware-fusion" 2025-06-23 requires authentication to download
 cask "void"
