@@ -10,7 +10,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Lint check .sh
         uses: Azbagheri/shell-linter@v0.8.0
       - name: Lint check .functions
