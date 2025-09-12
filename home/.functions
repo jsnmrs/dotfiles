@@ -178,8 +178,13 @@ function update() {
     source "$NVM_DIR/nvm.sh"
     if command -v nvm &> /dev/null; then
       echo "📦 Updating Node.js..."
-      nvm install node --latest-npm
+      
+      # Install latest Node and reinstall packages from current version
+      nvm install node --reinstall-packages-from=node --latest-npm
       nvm use node
+      
+      # Update existing global packages
+      echo "📦 Updating global NPM packages..."
       npm update -g -y
       
       if command -v ncu &> /dev/null; then
