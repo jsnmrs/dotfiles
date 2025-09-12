@@ -1,0 +1,6 @@
+node-gyp
+npm-check-updates
+npm-check
+pa11y-ci
+pa11y-ci-reporter-html
+@anthropic-ai/claude-code

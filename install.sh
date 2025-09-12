@@ -106,12 +106,18 @@ if test ! "$(npm --version)"
   echo -e "\\nNPM not installed"
 else
   echo -e "\\n⬇️ Install global Node modules"
-  npm install node-gyp --location=global
-  npm install npm-check-updates --location=global
-  npm install npm-check --location=global
-  npm install pa11y-ci --location=global
-  npm install pa11y-ci-reporter-html --location=global
-  npm install @anthropic-ai/claude-code --location=global
+  # Read packages from centralized list
+  if [ -f "npm-global-packages.txt" ]; then
+    while IFS= read -r package || [ -n "$package" ]; do
+      # Skip empty lines and comments
+      if [ -n "$package" ] && [[ ! "$package" =~ ^# ]]; then
+        echo "Installing: $package"
+        npm install "$package" --location=global
+      fi
+    done < npm-global-packages.txt
+  else
+    echo "Warning: npm-global-packages.txt not found"
+  fi
 fi
 
 # Set up Composer
