@@ -29,6 +29,16 @@ function t() {
   fi;
 }
 
+# `n` with no arguments opens the current directory in Nova, otherwise
+# opens the given location
+function n() {
+  if [ $# -eq 0 ]; then
+    nova .;
+  else
+    nova "$@";
+  fi;
+}
+
 # `v` with no arguments opens the current directory in VSCode, otherwise
 # opens the given location
 function vs() {
@@ -119,15 +129,15 @@ function update-docker() {
 function trash() {
   # Ensure trash directory exists
   mkdir -p "$HOME/.trash"
-  
+
   echo -e "🗑️  Moving files to trash...";
-  
+
   for var in "$@"; do
     if [ ! -e "$var" ]; then
       echo "Warning: '$var' does not exist"
       continue
     fi
-    
+
     # Handle name collisions by appending timestamp
     basename=$(basename "$var")
     if [ -e "$HOME/.trash/$basename" ]; then
@@ -148,50 +158,50 @@ function webm2gif() {
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 function update() {
   echo "🔄 Starting system update..."
-  
+
   # macOS updates
   echo "📱 Checking macOS updates..."
   sudo softwareupdate -l
-  
+
   # Mac App Store
   if command -v mas &> /dev/null; then
     echo "🏪 Updating Mac App Store apps..."
     mas outdated
     mas upgrade
   fi
-  
+
   # Homebrew
   if command -v brew &> /dev/null; then
     echo "🍺 Updating Homebrew..."
     brew update && brew upgrade && brew cleanup
   fi
-  
+
   # Ruby gems
   if command -v gem &> /dev/null; then
     echo "💎 Updating Ruby gems..."
     gem update && gem cleanup
   fi
-  
+
   # Node/npm (with nvm)
   if [ -s "$NVM_DIR/nvm.sh" ]; then
     # shellcheck source=/dev/null
     source "$NVM_DIR/nvm.sh"
     if command -v nvm &> /dev/null; then
       echo "📦 Updating Node.js..."
-      
+
       # Install latest Node and reinstall packages from current version
       nvm install node --reinstall-packages-from=node --latest-npm
       nvm use node
-      
+
       # Update existing global packages
       echo "📦 Updating global NPM packages..."
       npm update -g -y
-      
+
       if command -v ncu &> /dev/null; then
         ncu -g
       fi
     fi
   fi
-  
+
   echo "✅ Update complete!"
 }
