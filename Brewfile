@@ -69,7 +69,7 @@ cask "microsoft-office"
 cask "mullvad-vpn"
 cask "nova"
 cask "obsidian"
-cask "ollama"
+cask "ollama-app"
 cask "parallels"
 cask "pika"
 cask "polypane"
@@ -78,7 +78,7 @@ cask "screaming-frog-seo-spider"
 cask "slack"
 cask "spotify"
 cask "superduper"
-cask "tailscale"
+cask "tailscale-app"
 cask "tower"
 cask "transmit"
 cask "visual-studio-code"
@@ -88,7 +88,6 @@ cask "zoom"
 
 # Mac App Store Applications
 mas "Amphetamine", id: 937984704
-mas "CARROT Weather", id: 961390574
 mas "Exporter", id: 1099120373
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
