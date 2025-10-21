@@ -42,7 +42,6 @@ cask "1password"
 cask "1password-cli"
 cask "adobe-acrobat-pro"
 cask "asana"
-cask "box-drive"
 cask "calibre"
 cask "claude"
 cask "cleanmymac"
@@ -92,7 +91,6 @@ mas "Amphetamine", id: 937984704
 mas "Exporter", id: 1099120373
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
-mas "Hidden Bar", id: 1452453066
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825

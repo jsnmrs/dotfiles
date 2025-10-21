@@ -254,7 +254,7 @@ add_app_to_dock "Notes"
 add_app_to_dock "Claude"
 add_spacer_to_dock
 add_app_to_dock "iTerm"
-add_app_to_dock "Void"
+add_app_to_dock "Nova"
 add_app_to_dock "Tower"
 add_app_to_dock "VMware Fusion"
 add_app_to_dock "Spotify"
