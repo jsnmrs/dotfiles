@@ -256,7 +256,7 @@ add_spacer_to_dock
 add_app_to_dock "iTerm"
 add_app_to_dock "Nova"
 add_app_to_dock "Tower"
-add_app_to_dock "VMware Fusion"
+add_app_to_dock "UTM"
 add_app_to_dock "Spotify"
 # add_folder_to_dock "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/Inbox" -s 2 -d 0 -v 2
 
