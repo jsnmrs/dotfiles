@@ -173,7 +173,9 @@ function update() {
   # Homebrew
   if command -v brew &> /dev/null; then
     echo "🍺 Updating Homebrew..."
-    brew update && brew upgrade && brew cleanup
+    brew update
+    brew upgrade
+    brew cleanup
   fi
 
   # Ruby gems
