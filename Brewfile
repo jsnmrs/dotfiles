@@ -2,6 +2,7 @@
 tap "1password/tap"
 
 # CLI tools
+brew "age"
 brew "automake"
 brew "bat"
 brew "composer"
