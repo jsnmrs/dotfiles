@@ -1,5 +1,7 @@
 # Jason’s dotfiles
 
+2026-08-30: This repo is archived. I have moved to a series of scripts in a private repo that accomplishes a similar "macOS setup and maintenance".
+
 These are the dotfiles and scripts that I use to setup and maintain my macOS-based devices.
 
 - [Jason’s dotfiles](#jasons-dotfiles)
